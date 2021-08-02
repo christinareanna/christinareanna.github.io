@@ -76,6 +76,10 @@ ol {
   margin: 2%;
 }
 
+a { /* sets text to black for all links */
+  color: black;
+}
+
 a:visited { /* change color when visited */
   color: hotpink;
 }
@@ -86,10 +90,6 @@ a:hover { /* changes link color to light pink when hovering over */
 
 a:active { /* changes color when you select the link */
   color: blue;
-}
-
-a { /* sets text to black for all links */
-  color: black;
 }
 
 footer {
