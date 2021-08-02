@@ -77,7 +77,7 @@ ol {
 }
 
 a:visited { /* change color when visited */
-  color: black;
+  color: hotpink;
 }
 
 a:hover { /* changes link color to light pink when hovering over */
