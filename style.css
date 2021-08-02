@@ -1,4 +1,4 @@
-* {
+* { /* added universal selector to have all elements the same if change is needed */
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
   background-color: #FFB6C1;
 }
 
-h1 {
+h1 { /* centers 'Christina Reanna' header text to middle of page. Added letter spacing for it to stand out */
   text-align: center;
   font-family: copperplate;
   font-size: 50px;
@@ -16,54 +16,53 @@ h1 {
   padding: 20px;
 }
 
-h2 {
+h2 { /* Makes the background color white of the 'Welcome to my page!' heading */
   font-family: copperplate;
   background-color: white;
 }
 
-h3 {
+h3 { /* added letter spacing to 'My name is Christina' for more emphasis due to the smaller size of the heading, same white background color */
   font-family: copperplate;
   letter-spacing: 5%;
   background-color: white;
 }
 
-header {
-  border: 2px solid white;
+header { /* white space and black text for top of page 'Christina Reanna' */
   background-color: white;
   color: black;
 }
 
-.header-image {
+.header-image { /* centers image */
   text-align: center;
 }
 
-.header-image img {
+.header-image img { /* gives a black border around the image that's inside the header-image */
   border: 2px solid black;
 }
 
 section {
   text-align: center;
   font-size: 20px;
-  margin-left: auto;
+  margin-left: auto; /* auto - automatically centers sections */
   margin-right: auto;
   margin-top: 5%;
   background-color: whitesmoke;
-  width: 600px;
+  width: 600px; /* gives all sections same width, height and background color, separate color from headings, header and footer */
   height: 250px;
 }
 
 p {
-  text-align: justify;
+  text-align: justify; /* aligns text to make it more readable */
   font-family: helvetica;
   font-size: 20px;
-  padding: 0 10px;
+  padding: 0 10px; /* padding on left and right sides of text */
   margin-top: 3%;
   letter-spacing: 1px;
 }
 
 ul {
   text-align: left;
-  list-style-position: inside;
+  list-style-position: inside; /* lists bullet points inside section */
   font-size: 20px;
   font-family: helvetica;
   margin: 2%;
@@ -71,17 +70,25 @@ ul {
 
 ol {
   text-align: center;
-  list-style-position: inside;
+  list-style-position: inside; /* lists numbers inside section */
   font-family: helvetica;
   font-size: 20px;
   margin: 2%;
 }
 
-a:hover {
-  color: white;
+a:visited { /* change color when visited */
+  color: orange;
 }
 
-a {
+a:hover { /* changes link color to light pink when hovering over */
+  color: #FFB6C1;
+}
+
+a:active { /* changes color when you select the link */
+  color: blue;
+}
+
+a { /* sets text to black for all links */
   color: black;
 }
 
@@ -98,5 +105,5 @@ footer {
 
 .footer-links {
   text-align: center;
-  padding: 0 5% 0 10%;
+  padding: 0 5% 0 10%; /* padding on left and right sides of links, none on top or bottom */
 }
