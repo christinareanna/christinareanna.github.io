@@ -77,7 +77,7 @@ ol {
 }
 
 a:link { /* sets text to black for all links */
-  color: hotpink;
+  color: black;
 }
 
 a:visited { /* change color when visited */
