@@ -76,7 +76,7 @@ ol {
   margin: 2%;
 }
 
-a { /* sets text to black for all links */
+a:link { /* sets text to black for all links */
   color: black;
 }
 
