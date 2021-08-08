@@ -37,6 +37,10 @@ h3 { /* added letter spacing to 'My name is Christina' for more emphasis due to 
   border: 2px solid black;
 }
 
+nav {
+  text-align: center;
+}
+
 section {
   text-align: center;
   font-size: 20px;
