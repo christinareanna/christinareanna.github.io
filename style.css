@@ -20,8 +20,7 @@ header { /* centers 'Christina Reanna' header text to middle of page. Added lett
 
 h2 { /* Makes the background color white of the 'Welcome to my page!' heading */
   font-family: copperplate;
-  background-color: white;
-  width: 400px;
+  background-color: #FFB6C1;
 }
 
 h3 { /* added letter spacing to 'My name is Christina' for more emphasis due to the smaller size of the heading, same white background color */
