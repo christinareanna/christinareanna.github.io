@@ -114,6 +114,7 @@ footer {
 }
 
 .parent {
+  display: inline;
   width: 100%;
   background-color: white;
   border: 2px solid black;
