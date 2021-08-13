@@ -113,6 +113,15 @@ footer {
   padding: 0 5% 0 10%; /* padding on left and right sides of links, none on top or bottom */
 }
 
-.poetry-image-1 {
-  padding: 10%;
+.parent {
+  width: 50%;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.child {
+  float: right;
+  width: 50%;
+  background-color: white;
+  border: 2px solid black;
 }
