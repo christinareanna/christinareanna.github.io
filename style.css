@@ -14,7 +14,8 @@ header { /* centers 'Christina Reanna' header text to middle of page. Added lett
   color: black;
   font-family: copperplate;
   font-size: 50px;
-  width: auto;
+  width: 100%;
+  max-width: 100%;
   letter-spacing: 5px;
   padding: 20px;
 }
@@ -155,3 +156,27 @@ footer {
       content: attr(data-src-800px, url);
   }
 }
+
+img { 
+  max-width: 100%; 
+  display: block;
+}
+
+html {
+  font-size: 100%;
+}
+
+@media (min-width: 640px) { 
+  body {font-size:1rem;
+  } 
+} 
+
+@media (min-width:960px) { 
+  body {font-size:1.2rem;
+  } 
+} 
+
+@media (min-width:1100px) { 
+  body {font-size:1.5rem;
+  } 
+} 
