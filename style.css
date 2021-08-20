@@ -157,11 +157,6 @@ footer {
   }
 }
 
-img { 
-  max-width: 100%; 
-  display: block;
-}
-
 html {
   font-size: 100%;
 }
