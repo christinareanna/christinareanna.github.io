@@ -14,7 +14,7 @@ header { /* centers 'Christina Reanna' header text to middle of page. Added lett
   color: black;
   font-family: copperplate;
   font-size: 50px;
-  width: auto;
+  width: 100%;
   letter-spacing: 5px;
   padding: 20px;
 }
