@@ -143,8 +143,14 @@ footer {
   }
 
   .header-image {
-    width: 450px;
-    height: 150px;
+    width: 80vh;
+    height: 80vh;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
   }
 
 
