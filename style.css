@@ -193,3 +193,9 @@ html {
   body {font-size:1.5rem;
   } 
 } 
+
+.responsive {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
