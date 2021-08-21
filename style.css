@@ -33,6 +33,9 @@ h3 { /* added letter spacing to 'My name is Christina' for more emphasis due to 
 
 .header-image { /* centers image */
   text-align: center;
+  width: auto;
+  height: 350px;
+  width: 750px;
 }
 
 .header-image img { /* gives a black border around the image that's inside the header-image */
@@ -133,6 +136,23 @@ footer {
   padding: 8px;
 }
 
+@media screen and (min-width: 150px) and (max-width: 600px) {
+  .body {
+    width: 90%;
+    font-size: 95%;
+  }
+
+  .header-image {
+    width: 450px;
+    height: 150px;
+  }
+
+
+
+
+
+}
+
 @media screen and (max-width: 1060px) {
   #primary { width:67%; }
   #secondary { width:30%; margin-left:3%;}  
@@ -140,8 +160,7 @@ footer {
 
 /* Tabled Portrait */
 @media screen and (max-width: 768px) {
-  #primary { width:100%; }
-  #secondary { width:100%; margin:0; border:none; }
+  #primary { width:100%; } #secondary { width:100%; margin:0; border:none; }
 }
 
 @media (min-device-width:600px) {
