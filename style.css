@@ -152,7 +152,7 @@ footer {
     max-height: 100vh;
   }
 
-  img {
+  .img {
     max-width: 100%;
     height: auto;
     max-height: 100%;
