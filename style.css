@@ -22,7 +22,7 @@ header { /* centers 'Christina Reanna' header text to middle of page. Added lett
 h2 { /* Makes the background color white of the 'Welcome to my page!' heading */
   font-family: copperplate;
   text-align: center;
-  background-color: #FFB6C1;
+  background-color: beige;
 }
 
 h3 { /* added letter spacing to 'My name is Christina' for more emphasis due to the smaller size of the heading, same white background color */
@@ -43,10 +43,30 @@ h3 { /* added letter spacing to 'My name is Christina' for more emphasis due to 
   border: 2px solid black;
 }
 
-nav ul {
-  text-align: center;
+.navbar { /* trying to change font to copperplate */
+  font-family: copperplate; /* not working */
+  font-size: 14px;
+  display: inline-block;
+}
+
+.poetry {
   display: inline;
-  list-style-type: none;
+  border: 2px solid white;
+  background-color: white;
+  text-decoration: none;
+  font-family: copperplate; /* not working */
+  margin: 6px;
+  border-radius: 4px;
+}
+
+.modeling {
+  display: inline;
+  border: 2px solid white;
+  background-color: white;
+  text-decoration: none;
+  font-family: copperplate; /* not working */
+  margin: 6px;
+  border-radius: 4px;
 }
 
 section {
@@ -60,7 +80,7 @@ section {
   height: 250px;
 }
 
-p {
+p { /* text in second section */
   text-align: justify; /* aligns text to make it more readable */
   font-family: helvetica;
   font-size: 20px;
@@ -69,17 +89,18 @@ p {
   letter-spacing: 1px;
 }
 
-ul {
+ul { /* text in first section */
   text-align: left;
-  list-style-position: inside; /* lists bullet points inside section */
+  list-style-type: none;
   font-size: 20px;
   font-family: helvetica;
   margin: 2%;
+  text-decoration: none;
 }
 
-ol {
+ol { /* text in third section */
   text-align: center;
-  list-style-position: inside; /* lists numbers inside section */
+  list-style-type: none;
   font-family: helvetica;
   font-size: 20px;
   margin: 2%;
@@ -87,6 +108,8 @@ ol {
 
 a:link { /* sets text to black for all links */
   color: black;
+  text-decoration: none;
+  font-family: helvetica;
 }
 
 a:visited { /* change color when visited */
@@ -104,32 +127,33 @@ a:active { /* changes color when you select the link */
 footer {
   text-align: center;
   font-size: 22px;
-  font-family: copperplate;
+  font-family: copperplate; /* not working, also didn't work when put in footer-links */
   color: black;
   background-color: white;
   border: 2px solid black;
   margin-top: 20px;
-  padding: 1%;
+  padding: 6px;
 }
 
 .footer-links {
+  text-decoration: none;
   text-align: center;
-  padding: 0 5% 0 10%; /* padding on left and right sides of links, none on top or bottom */
+  padding: 0 10% 0 10%; /* padding on left and right sides of links, none on top or bottom */
 }
 
-.parent {
+.parent { /* poetry.html content */
   display: inline;
   width: 100%;
 }
 
-.left {
+.left { /* poetry.html */
   width: 50%;
   float: left;
   padding-top: 70px;
   padding-left: 140px;
 }
 
-.words {
+.words { /* poetry.html */
   float: right;
   width: 30%;
   height: 495px;
@@ -137,8 +161,10 @@ footer {
   padding: 8px;
 }
 
+
 @media screen and (min-width: 150px) and (max-width: 600px) {
   /* styles for browsers larger than 150px less than 600px */
+
   .body {
     width: 90%;
     font-size: 95%;
@@ -157,6 +183,8 @@ footer {
     height: auto;
     max-height: 100%;
   }
+
+  /* insert nav bar stuff later */
 
   .h2-header { /* welcome to my page */
     font-size: 16px;
@@ -203,13 +231,13 @@ footer {
   }
 
   .footer {
-    font-size: 10px;
+    font-size: 14px;
 
   }
 }
 
 /* Tabled Portrait */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /* everything not working here, works in 1060p code, idk why yet */
 #primary { 
   width:100%; 
  }
@@ -238,8 +266,10 @@ footer {
     max-height: 100%;
   }
 
+  /* insert navbar stuff later */
+
   .h2-header { /* welcome to my page */
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .section-1 {
@@ -284,7 +314,6 @@ footer {
 
   .footer {
     font-size: 10px;
-
   }
 }
 
@@ -298,7 +327,7 @@ footer {
   }
   
   .header-name {
-    font-size: 18px;
+    font-size: 8px;
   }
   .header-image {
     max-width: 100vw;
@@ -311,8 +340,18 @@ footer {
     max-height: 100%;
   }
 
+  .poetry {
+    font-size: 14px; /* works */
+    font-family: copperplate; /* not working */
+  }
+
+  .modeling {
+    font-size: 14px; /* works */
+    font-family: copperplate; /* not working */
+  }
+
   .h2-header { /* welcome to my page */
-    font-size: 26px;
+    font-size: 16px;
   }
 
   .section-1 {
@@ -320,12 +359,12 @@ footer {
   }
 
   .section-1-h3 {
-    font-size: 20px;
+    font-size: 14px;
 
   }
 
   .section-1-ul {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .section-2 {
@@ -333,11 +372,11 @@ footer {
   }
 
   .section-2-p {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .section-2-h3 {
-    font-size: 22px;
+    font-size: 14px;
   }
 
   .section-3 {
@@ -346,21 +385,23 @@ footer {
 
 
   .section-3-h3 {
-    font-size: 22px;
+    font-size: 14px;
 
   }
 
   .section-3-ol {
-    font-size: 18px;
+    font-size: 12px;
 
   }
 
   .footer {
-    font-size: 22px;
+    font-size: 14px;
 
   }
 }
 
+
+/* ignore below for now */
 
 @media (min-device-width:600px) {
   img[data-src-600px] {
