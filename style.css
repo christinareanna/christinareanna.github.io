@@ -5,13 +5,13 @@
 }
 
 body {
-  background-color: #FFB6C1;
+  background-color: black;
 }
 
 header { /* centers 'Christina Reanna' header text to middle of page. Added letter spacing for it to stand out */
   text-align: center;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   font-family: copperplate;
   font-size: 50px;
   width: 100%;
@@ -22,13 +22,14 @@ header { /* centers 'Christina Reanna' header text to middle of page. Added lett
 h2 { /* Makes the background color white of the 'Welcome to my page!' heading */
   font-family: copperplate;
   text-align: center;
-  background-color: beige;
+  background-color: black;
+  color: white;
 }
 
 h3 { /* added letter spacing to 'My name is Christina' for more emphasis due to the smaller size of the heading, same white background color */
   font-family: copperplate;
   letter-spacing: 5%;
-  background-color: white;
+  background-color: black;
 }
 
 .header-image { /* centers image */
@@ -40,11 +41,12 @@ h3 { /* added letter spacing to 'My name is Christina' for more emphasis due to 
 }
 
 .header-image img { /* gives a black border around the image that's inside the header-image */
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 .navbar li {
   display: inline;
+  background-color: white;
   margin: 0 15% 0 15%;
 }
 
@@ -52,7 +54,8 @@ h3 { /* added letter spacing to 'My name is Christina' for more emphasis due to 
   font-family: copperplate; 
   text-align: center;
   font-size: 20px;
-  background-color: white;
+  background-color: black;
+  color: white;
   border-radius: 4px;
   border: 2px solid white;
   text-decoration: none;
@@ -64,7 +67,8 @@ section {
   margin-left: auto; /* auto - automatically centers sections */
   margin-right: auto;
   margin-top: 5%;
-  background-color: whitesmoke;
+  color: white;
+  background-color: black;
   width: 600px; /* gives all sections same width, height and background color, separate color from headings, header and footer */
   height: 250px;
 }
@@ -72,6 +76,7 @@ section {
 p { /* text in second section */
   text-align: justify; /* aligns text to make it more readable */
   font-family: helvetica;
+  color: white;
   font-size: 20px;
   padding: 0 10px; /* padding on left and right sides of text */
   margin-top: 3%;
@@ -82,6 +87,7 @@ ul { /* text in first section */
   text-align: left;
   list-style-type: none;
   font-size: 20px;
+  color: white;
   font-family: helvetica;
   margin: 2%;
   text-decoration: none;
@@ -91,18 +97,19 @@ ol { /* text in third section */
   text-align: center;
   list-style-type: none;
   font-family: helvetica;
+  color: white;
   font-size: 20px;
   margin: 2%;
 }
 
 ol a:link { /* sets text to black for all links */
-  color: black;
+  color: pink;
   text-decoration: none;
   font-family: helvetica;
 }
 
 ol a:visited { /* change color when visited */
-  color: black;
+  color: pink;
 }
 
 ol a:hover { /* changes link color to light pink when hovering over */
@@ -110,7 +117,7 @@ ol a:hover { /* changes link color to light pink when hovering over */
 }
 
 ol a:active { /* changes color when you select the link */
-  color: blue;
+  color: yellow;
 }
 
 .footer .footer-links {
@@ -119,14 +126,17 @@ ol a:active { /* changes color when you select the link */
   display: inline-block;
   font-size: 22px;
   font-family: copperplate;
-  color: black;
-  background-color: white;
-  padding: 0 10% 0 10%; /* padding on left and right sides of links, none on top or bottom */
+  color: white;
+  background-color: black;
+  padding: 5% 15%; /* padding on left and right sides of links, none on top or bottom */
+  margin: 10px;
 }
 
 .parent { /* poetry.html content */
   display: inline;
   width: 100%;
+  background-color: black;
+  color: white;
 }
 
 .left { /* poetry.html */
@@ -134,6 +144,8 @@ ol a:active { /* changes color when you select the link */
   float: left;
   padding-top: 70px;
   padding-left: 140px;
+  background-color: black;
+  color: white;
 }
 
 .words { /* poetry.html */
@@ -142,6 +154,8 @@ ol a:active { /* changes color when you select the link */
   height: 495px;
   margin-right: 140px;
   padding: 8px;
+  background-color: black;
+  color: white;
 }
 
 
