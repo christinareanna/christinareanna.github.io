@@ -1,4 +1,4 @@
-HTML code that is semantic and valid
+<!-- HTML code that is semantic and valid
 <br>CSS code that has been written by you, without the use of templates
 <br>Content that is clear and readable
 <br>An Intro section that contains the following information:
@@ -10,4 +10,4 @@ HTML code that is semantic and valid
 <br>A Contact section that contains the following information:
 <br>A link to your LinkedIn profile
 <br>A link to your GitHub profile
-<br>A link to your email (optional)
+<br>A link to your email (optional) -->
