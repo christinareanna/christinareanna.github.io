@@ -1,0 +1,13 @@
+body {
+  overscroll-behavior: none;
+  margin: 0;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+
+}
+
+code {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
