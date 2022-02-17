@@ -24,12 +24,12 @@ function App() {
         <header>
           Welcome to my page!
         </header>
-          Still under construction for mobile dev purposes
+        Still under construction for mobile dev purposes
         <div>
           <img className="photo5" src={photo5} alt="me"></img>
         </div>
         <h1 id="about" style={{ textDecoration: "underline" }}>About Me</h1>
-        <Card style={{ width: '24rem', display: "inline-block", backgroundColor: "lightgrey", border: "2px lightgrey groove", padding: "20px", margin: "30px 0" }}>
+        <Card style={{ width: '20rem', display: "inline-block", backgroundColor: "lightgrey", border: "2px lightgrey groove", padding: "20px", margin: "30px 0" }}>
           <Card.Body>
             <Card.Title style={{ fontSize: "32px" }}>I'm Christina.</Card.Title>
             <Card.Subtitle className="mb-2 text-muted" style={{ fontSize: "24px" }}>Software Engineer</Card.Subtitle>
@@ -42,30 +42,31 @@ function App() {
           </Card.Body>
         </Card>
         <h1 id="discover" style={{ textDecoration: "underline" }}>Discover</h1>
-        <Card style={{ width: '24rem', display: "inline-block", backgroundColor: "lightgrey", border: "2px lightgrey groove", padding: "20px", margin: "30px 0", textAlign: "center" }}>
+        <Card style={{ width: '20rem', display: "inline-block", backgroundColor: "lightgrey", border: "2px lightgrey groove", padding: "20px", margin: "30px 0", textAlign: "center", height: "300px" }}>
           <Card.Body style={{ textAlign: "center" }}>
             <Card.Title>Just graduated from Thinkful in Feb '22.</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">Click to see my favorite projects from school!</Card.Subtitle>
             <Card.Text className="card-text">
-              <a href="https://github.com/stars/christinareanna/lists/react-projects" rel="noreferrer noopener" target="_blank"><img className="react" src={react} alt="react" style={{ width: "100px", padding: "0 20px" }} /></a>
-              <a href="https://github.com/christinareanna" rel="noreferrer noopener" target="_blank"><img className="github" src={github} alt="github" style={{ width: "100px", padding: "0 20px" }} /></a>
-              <a href="https://github.com/stars/christinareanna/lists/javascript-projects" rel="noreferrer noopener" target="_blank"><img className="javascript" src={javascript} alt="javascript" style={{ width: "100px", padding: "0 20px" }} /></a>
-              <a href="https://final-capstone-front-end.herokuapp.com/dashboard" rel="noreferrer noopener" target="_blank"><img className="heroku" src={heroku} alt="heroku" style={{ width: "100px", padding: "0 20px" }} /></a>
+              <a href="https://github.com/stars/christinareanna/lists/react-projects" rel="noreferrer noopener" target="_blank"><img className="icon" src={react} alt="react" style={{ width: "100px", padding: "0 20px" }} /></a>
+              <a href="https://github.com/christinareanna" rel="noreferrer noopener" target="_blank"><img className="icon" src={github} alt="github" style={{ width: "100px", padding: "0 20px" }} /></a>
+              <a href="https://github.com/stars/christinareanna/lists/javascript-projects" rel="noreferrer noopener" target="_blank"><img className="icon" src={javascript} alt="javascript" style={{ width: "100px", padding: "0 20px" }} /></a>
+              <a href="https://final-capstone-front-end.herokuapp.com/dashboard" rel="noreferrer noopener" target="_blank"><img className="icon" src={heroku} alt="heroku" style={{ width: "100px", padding: "0 20px" }} /></a>
             </Card.Text>
           </Card.Body>
         </Card>
-        <Card style={{ width: '24rem', display: "inline-block", backgroundColor: "lightgrey", border: "2px lightgrey groove", padding: "20px", margin: "30px 0" }}>
-          <Card.Body>
-            <Card.Title>I'm Christina.</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">Software Engineer</Card.Subtitle>
-            <Card.Text>
-              <img className="thinkful" src={thinkful} alt="thinkful" style={{ width: "300px", padding: "0 20px" }}></img>
-              Graduate of Thinkful Bootcamp.
-              <img className="accenture" src={accenture} alt="accenture" style={{ width: "300px", padding: "0 20px" }}></img>
-              Apprentice at Accenture.
+        <Card style={{ width: '20rem', display: "inline-block", backgroundColor: "lightgrey", border: "2px lightgrey groove", padding: "20px", margin: "30px 0", textAlign: "center", height: "300px" }}>
+          <Card.Body style={{ textAlign: "center" }}>
+            <Card.Title>Just graduated from Thinkful in Feb '22.</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">Click to see my favorite projects from school!</Card.Subtitle>
+            <Card.Text className="card-text">
+              <a href="https://github.com/stars/christinareanna/lists/react-projects" rel="noreferrer noopener" target="_blank"><img className="icon" src={react} alt="react" style={{ width: "100px", padding: "0 20px" }} /></a>
+              <a href="https://github.com/christinareanna" rel="noreferrer noopener" target="_blank"><img className="icon" src={github} alt="github" style={{ width: "100px", padding: "0 20px" }} /></a>
+              <a href="https://github.com/stars/christinareanna/lists/javascript-projects" rel="noreferrer noopener" target="_blank"><img className="icon" src={javascript} alt="javascript" style={{ width: "100px", padding: "0 20px" }} /></a>
+              <a href="https://final-capstone-front-end.herokuapp.com/dashboard" rel="noreferrer noopener" target="_blank"><img className="icon" src={heroku} alt="heroku" style={{ width: "100px", padding: "0 20px" }} /></a>
             </Card.Text>
           </Card.Body>
         </Card>
+
         <h1 id="contact" style={{ textDecoration: "underline" }}>Contact</h1>
         <ContactForm />
       </div>

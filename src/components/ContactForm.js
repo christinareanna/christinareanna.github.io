@@ -10,6 +10,10 @@ function ContactForm() {
         reply_to: '',
     });
 
+    function refreshPage() {
+        window.location.reload(false);
+    }
+
     const onSubmit = (e) => {
         e.preventDefault();
         send(
@@ -30,29 +34,36 @@ function ContactForm() {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
 
+
     return (
         <div className='contact-form'>
             <form onSubmit={onSubmit}>
                 <input
                     type='text'
                     name='from_name'
-                    placeholder='from name'
+                    placeholder='Your name'
                     value={toSend.from_name}
                     onChange={handleChange}
+                    required
+                    style={{width: "400px"}}
                 />
                 <input
                     type='text'
                     name='to_name'
-                    placeholder='to name'
+                    placeholder='Christina'
                     value={toSend.to_name}
                     onChange={handleChange}
+                    required
+                    style={{width: "400px"}}
                 />
-                <input
+                <textarea
                     type='text'
                     name='message'
-                    placeholder='Your message'
+                    placeholder='Message'
                     value={toSend.message}
                     onChange={handleChange}
+                    required
+                    style={{width: "400px"}}
                 />
                 <input
                     type='text'
@@ -60,8 +71,12 @@ function ContactForm() {
                     placeholder='Your email'
                     value={toSend.reply_to}
                     onChange={handleChange}
+                    required
+                    style={{width: "400px"}}
                 />
-                <button type='submit'>Submit</button>
+                <br />
+                <button className="button" onClick={refreshPage}>Reload</button>
+                <button className="button" type='submit' onClick={onSubmit}>Submit</button>
             </form>
         </div>
     )

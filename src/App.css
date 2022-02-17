@@ -33,7 +33,11 @@
   box-shadow: 0 5px 10px rgb(63, 37, 37);
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 1024px) {
+
+  .foreground {
+    width: 100%;
+  }
 
   .sidebar {
     display: none;
@@ -45,7 +49,152 @@
   }
 }
 
+@media screen and (max-width: 375px) {
+
+  .foreground {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .sidebar {
+    width: 100%;
+    display: inline;
+  }
+
+  .photo5 {
+    width: 400px;
+    margin: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .foreground {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    width: auto;
+    display: inline;
+  }
+
+  .photo5 {
+    width: 200px;
+    margin-top: 40px;
+  }
+
+  .icon {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .foreground {
+    max-width: 100%;
+  }
+  
+  .sidebar {
+    width: auto;
+    display: inline;
+    overflow-x: hidden;
+  }
+
+  .photo5 {
+    width: 200px;
+    margin-top: 40px;
+  }
+
+  .icon {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  .sidebar {
+    display: none;
+  }
+
+  .photo5 {
+    width: 400px;
+    margin: 40px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+
+  .foreground {
+    max-width: 100%;
+  }
+
+  .sidebar {
+    width: auto;
+    overflow-x: hidden;
+    display: inline;
+  }
+
+  .photo5 {
+    width: 200px;
+    margin-top: 40px;
+  }
+
+  .icon {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .foreground {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .sidebar {
+    display: inline;
+    max-width: 100%;
+  }
+
+  .photo5 {
+    width: 200px;
+    margin-top: 40px;
+  }
+
+  .icon {
+    width: 200px;
+  }
+}
+
+
 @media screen and (max-width: 480px) {
+
+  .foreground {
+    max-width: 100%;
+  }
+
+  .sidebar {
+    width: auto;
+    overflow-x: hidden;
+  }
+
+  .photo5 {
+    width: 200px;
+    margin-top: 40px;
+  }
+
+  .icon {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .foreground {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
   .sidebar {
     width: auto;
@@ -55,13 +204,16 @@
     width: 200px;
     margin-top: 40px;
   }
+
+  .icon {
+    width: 200px;
+  }
 }
 
 header {
   margin: 20px;
   padding: 20px;
   text-align: center;
-  /* border-radius: 20vh; */
   font-size: 32px;
 }
 

@@ -9,9 +9,9 @@ const Home = () => {
         setIsOpen(!isOpen)
     };
 
-// const PageNotFound = () => (
-//     <div>404 not found.</div>
-// )
+    // const PageNotFound = () => (
+    //     <div>404 not found.</div>
+    // )
 
 
 
