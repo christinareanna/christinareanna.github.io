@@ -72,10 +72,12 @@ margin-right: 22px;
 export const NavItem = styled.li`
 height: 80px;
 letter-spacing: 5px;
+margin-top: 50px;
 `
 
 export const Link = styled(LinkS)`
 color: #fff;
+border-radius: 20px;
 display: flex;
 align-items: center;
 padding: 0 1rem;

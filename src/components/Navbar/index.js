@@ -19,13 +19,13 @@ const Navbar = ({ toggle }) => {
           <NavLogo to="/" onClick={toggle}>Christina Reanna</NavLogo>
           <NavMenu>
             <NavItem>
-              <a href="#about">About</a>
+              <button><a href="#about">About</a></button>
             </NavItem>
             <NavItem>
-              <a href="#discover">Discover</a>
+              <button><a href="#discover">Discover</a></button>
             </NavItem>
             <NavItem>
-              <a href="#contact">Contact</a>
+              <button><a href="#contact">Contact</a></button>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
