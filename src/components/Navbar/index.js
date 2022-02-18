@@ -12,6 +12,8 @@ import {
 
 // come back to fix later, sidebar works but nav 
 const Navbar = ({ toggle }) => {
+
+  
   return (
     <>
       <Nav>
