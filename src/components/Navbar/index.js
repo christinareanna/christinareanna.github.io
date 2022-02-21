@@ -10,10 +10,10 @@ import {
   NavItem,
 } from "./NavbarElements";
 
-// come back to fix later, sidebar works but nav 
+
 const Navbar = ({ toggle }) => {
 
-  
+
   return (
     <>
       <Nav>
@@ -21,13 +21,13 @@ const Navbar = ({ toggle }) => {
           <NavLogo to="/" onClick={toggle}>Christina Reanna</NavLogo>
           <NavMenu>
             <NavItem>
-              <button><a href="#about">About</a></button>
+              <a href="#about">About</a>
             </NavItem>
             <NavItem>
-              <button><a href="#discover">Discover</a></button>
+              <a href="#discover">Discover</a>
             </NavItem>
             <NavItem>
-              <button><a href="#contact">Contact</a></button>
+              <a href="#contact">Contact</a>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

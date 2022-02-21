@@ -45,8 +45,9 @@ function ContactForm() {
                     value={toSend.from_name}
                     onChange={handleChange}
                     required
-                    style={{width: "400px"}}
+                    style={{width: "250px"}}
                 />
+                <br/>
                 <input
                     type='text'
                     name='to_name'
@@ -54,8 +55,9 @@ function ContactForm() {
                     value={toSend.to_name}
                     onChange={handleChange}
                     required
-                    style={{width: "400px"}}
+                    style={{width: "250px"}}
                 />
+                <br/>
                 <textarea
                     type='text'
                     name='message'
@@ -63,8 +65,9 @@ function ContactForm() {
                     value={toSend.message}
                     onChange={handleChange}
                     required
-                    style={{width: "400px"}}
+                    style={{width: "250px"}}
                 />
+                <br/>
                 <input
                     type='text'
                     name='reply_to'
@@ -72,7 +75,7 @@ function ContactForm() {
                     value={toSend.reply_to}
                     onChange={handleChange}
                     required
-                    style={{width: "400px"}}
+                    style={{width: "250px"}}
                 />
                 <br />
                 <button className="button" onClick={refreshPage}>Reload</button>

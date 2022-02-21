@@ -53,9 +53,9 @@
 
   .foreground {
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
-  
+
   .sidebar {
     width: 100%;
     display: inline;
@@ -67,37 +67,16 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
 
   .foreground {
-    max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
   }
 
   .sidebar {
-    width: auto;
-    display: inline;
-  }
-
-  .photo5 {
-    width: 200px;
-    margin-top: 40px;
-  }
-
-  .icon {
-    width: 200px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-
-  .foreground {
-    max-width: 100%;
-  }
-  
-  .sidebar {
-    width: auto;
-    display: inline;
+    width: 100%;
+    display: grid;
     overflow-x: hidden;
   }
 
@@ -109,7 +88,30 @@
   .icon {
     width: 200px;
   }
-}
+} */
+
+/* @media screen and (max-width: 375px) {
+
+  .foreground {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    width: auto;
+    display: inline;
+    overflow-x: hidden;
+  }
+
+  .photo5 {
+    width: 200px;
+    margin-top: 40px;
+  }
+
+  .icon {
+    width: 200px;
+  }
+} */
 
 @media screen and (max-width: 960px) {
 
@@ -149,11 +151,11 @@
 
   .foreground {
     max-width: 100%;
-    overflow-x: hidden;
   }
-  
+
   .sidebar {
-    display: inline;
+    display: grid;
+    overflow-x: hidden;
     max-width: 100%;
   }
 
@@ -175,8 +177,8 @@
   }
 
   .sidebar {
-    width: auto;
     overflow-x: hidden;
+    width: auto;
   }
 
   .photo5 {
@@ -193,11 +195,12 @@
 
   .foreground {
     max-width: 100%;
-    overflow-x: hidden;
   }
 
   .sidebar {
     width: auto;
+    display: block;
+    overflow-x: hidden;
   }
 
   .photo5 {
