@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
+import Layout from './Layout';
 
 
 const Home = () => {
@@ -20,8 +21,9 @@ const Home = () => {
             <div className='sidebar'>
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div>
-            <Navbar toggle={toggle} />
-
+            <h1>home stuff here</h1>
+            <hr style={{border: "none"}}/>
+            {/* <Navbar toggle={toggle} /> */}
         </>
     )
 }

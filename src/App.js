@@ -1,49 +1,63 @@
 import "./App.css";
-import Card from "react-bootstrap/Card"
+// import Card from "react-bootstrap/Card"
 import ParticleBackground from "./ParticleBackground";
 // import photochristmas from "./photochristmas.jpg";
-import react from "./react.png"
-import photo5 from "./photo5.jpg"
-import github from "./github.png"
-import heroku from "./heroku.png"
-import instagram from "./instagram.png"
-import facebook from "./facebook.png"
-import javascript from "./javascript.png"
-import { BrowserRouter as Router } from "react-router-dom";
-import Home from "./pages";
-import ContactForm from "./components/ContactForm";
-import thinkful from "./thinkful.png"
-import accenture from "./accenture.png"
+// import react from "./react.png"
+// import photo5 from "./photo5.jpg"
+// import github from "./github.png"
+// import heroku from "./heroku.png"
+// import instagram from "./instagram.png"
+// import facebook from "./facebook.png"
+// import javascript from "./javascript.png"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Layout from "./pages/Layout";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
+// import ContactForm from "./components/ContactForm";
+// import thinkful from "./thinkful.png"
+// import accenture from "./accenture.png"
+import Navbar from "./components/Navbar"
 
-
+// added the nav bar
 function App() {
   return (
     <div className="App">
       <div className="foreground">
         <Router>
-          <Home />
+          <Navbar/>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+              {/* <Route element={<Home />} /> */}
+              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NoPage />} />
+          </Routes>
         </Router>
-        <header>
-          Welcome to my page!
-        </header>
-        Still under construction for mobile dev purposes
-        <div>
+
+        {/* <div>
           <img className="photo5" src={photo5} alt="me"></img>
-        </div>
-        <h1 id="about" style={{ textDecoration: "underline" }}>About Me</h1>
+        </div> */}
+
+        {/* ABOUT ME INFOOOOO */}
+
+        {/* <h1 id="about" style={{ textDecoration: "underline" }}>About Me</h1>
         <Card style={{ maxWidth: '300px', display: "inline-block", position: "initial", backgroundColor: "lightgrey", border: "2px lightgrey groove", margin: "10px" }}>
           <Card.Body>
             <Card.Title style={{ fontSize: "32px" }}>I'm Christina.</Card.Title>
             <Card.Subtitle className="mb-2 text-muted" style={{ fontSize: "24px" }}>Software Engineer</Card.Subtitle>
             <Card.Text>
-              <img className="thinkful" src={thinkful} alt="thinkful" style={{ width: "300px", height: "100px"}}></img>
+              <img className="thinkful" src={thinkful} alt="thinkful" style={{ width: "300px", height: "100px" }}></img>
               Graduate of Thinkful Bootcamp.
               <img className="thinkful" src={accenture} alt="accenture" style={{ width: "250px", padding: "20px" }}></img>
               Apprentice at Accenture.
             </Card.Text>
           </Card.Body>
-        </Card>
-        <div>
+        </Card> */}
+
+        {/* DISCOVER INFOOOO */}
+        {/* <div>
           <h1 id="discover" style={{ textDecoration: "underline" }}>Discover</h1>
           <Card style={{ maxWidth: '300px', display: "inline-block", position: "initial", backgroundColor: "lightgrey", border: "2px lightgrey groove", padding: "0 10px", margin: "0 10px" }}>
             <Card.Body style={{ textAlign: "center" }}>
@@ -57,8 +71,11 @@ function App() {
               </Card.Text>
             </Card.Body>
           </Card>
-          </div>
-        <div>
+        </div> */}
+
+        {/* MORE DISCOVER INFOOOO */}
+
+        {/* <div>
           <Card style={{ maxWidth: '300px', display: "inline-block", position: "initial", backgroundColor: "lightgrey", border: "2px lightgrey groove", padding: "0 10px", margin: "30px 0" }}>
             <Card.Body style={{ textAlign: "center" }}>
               <Card.Title>Social Media</Card.Title>
@@ -69,9 +86,11 @@ function App() {
               </Card.Text>
             </Card.Body>
           </Card>
-        </div>
-        <h1 id="contact" style={{ textDecoration: "underline" }}>Contact</h1>
-        <ContactForm />
+        </div> */}
+
+        {/* CONTACT INFO */}
+        {/* <h1 id="contact" style={{ textDecoration: "underline" }}>Contact</h1> */}
+        {/* <ContactForm /> */}
       </div>
       <div className="background">
         <ParticleBackground />

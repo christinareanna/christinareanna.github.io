@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   SidebarContainer,
   Icon,
@@ -10,6 +10,10 @@ import {
 } from "./SidebarElements";
 import { FaBars } from 'react-icons/fa'
 import { MobileIcon } from "../Navbar/NavbarElements";
+
+// {/* Link instead of a href */ }
+// {/* build component Contact */ }
+
 
 const Sidebar = () => {
   const [isSidebarShowing, setIsSidebarShowing] = useState(false)
@@ -33,14 +37,16 @@ const Sidebar = () => {
   function Menu() {
     return isSidebarShowing ? (
       <SidebarWrapper>
-        <SidebarMenu>
+        <SidebarMenu style={{ padding: "10em" }}>
           {/* <NavLogo to="/" onMouseDown={hide}>Christina Reanna</NavLogo> */}
-          <a href="#about" onMouseDown={hide}>About</a>
+
+
+          <Link to="about" onMouseDown={hide} style={{ color: "#FF1493", fontSize: "44px", padding: "1em 0", margin: "0", textDecoration: "none" }}>About</Link>
           {/* <div onMouseDown={hide} onClick={() => window.location.replace("/#about")}>
             <span>Go to about</span>
           </div> */}
-          <a href="#discover" onMouseDown={hide}>Discover</a>
-          <a href="#contact" onMouseDown={hide}>Contact</a>
+          <Link to="blogs" onMouseDown={hide} style={{ color: "#FF1493", fontSize: "44px", padding: "3em 0", textDecoration: "none" }}>Blogs</Link>
+          <Link to="contact" onMouseDown={hide} style={{ color: "#FF1493", fontSize: "44px", padding: "5em 0", textDecoration: "none" }}>Contact</Link>
         </SidebarMenu>
       </SidebarWrapper>
     ) : null

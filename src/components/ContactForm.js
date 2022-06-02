@@ -35,6 +35,7 @@ function ContactForm() {
     };
 
 
+    // this is ugly as fuck bitch what the fuck were you doing lol
     return (
         <div className='contact-form'>
             <form onSubmit={onSubmit}>
@@ -45,9 +46,9 @@ function ContactForm() {
                     value={toSend.from_name}
                     onChange={handleChange}
                     required
-                    style={{width: "250px"}}
+                    style={{ width: "60em", height: "5em", backgroundColor: "black" }}
                 />
-                <br/>
+                <br />
                 <input
                     type='text'
                     name='to_name'
@@ -55,19 +56,9 @@ function ContactForm() {
                     value={toSend.to_name}
                     onChange={handleChange}
                     required
-                    style={{width: "250px"}}
+                    style={{ width: "60em", height: "5em", backgroundColor: "black" }}
                 />
-                <br/>
-                <textarea
-                    type='text'
-                    name='message'
-                    placeholder='Message'
-                    value={toSend.message}
-                    onChange={handleChange}
-                    required
-                    style={{width: "250px"}}
-                />
-                <br/>
+                <br />
                 <input
                     type='text'
                     name='reply_to'
@@ -75,7 +66,17 @@ function ContactForm() {
                     value={toSend.reply_to}
                     onChange={handleChange}
                     required
-                    style={{width: "250px"}}
+                    style={{ width: "60em", height: "5em", backgroundColor: "black" }}
+                />
+                <br />
+                <textarea
+                    type='text'
+                    name='message'
+                    placeholder='Message'
+                    value={toSend.message}
+                    onChange={handleChange}
+                    required
+                    style={{ width: "60em", height: "5em", resize: "none", fontFamily: "calibri", backgroundColor: "black" }}
                 />
                 <br />
                 <button className="button" onClick={refreshPage}>Reload</button>
