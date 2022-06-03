@@ -38,7 +38,7 @@ const Sidebar = () => {
   function Menu() {
     return isSidebarShowing ? (
       <SidebarWrapper>
-        <SidebarMenu style={{ padding: "10em" }}>
+        <SidebarMenu>
           {/* <NavLogo to="/" onMouseDown={hide}>Christina Reanna</NavLogo> */}
           {/* <div onMouseDown={hide} onClick={() => window.location.replace("/#about")}>
             <span>Go to about</span>

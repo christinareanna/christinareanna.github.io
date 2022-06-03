@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Layout from './Layout';
+import { AiOutlineGithub } from 'react-icons/ai'
+import { FaReact } from 'react-icons/fa';
 
 
 const Home = () => {
@@ -21,8 +23,12 @@ const Home = () => {
             <div className='sidebar'>
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div>
-            <h1>home stuff here</h1>
-            <hr style={{border: "none"}}/>
+            <h3 className='home'>About me</h3>
+            <hr style={{ border: "none" }} />
+            <p className='title'>Proficient in...</p>
+            <p className='about-me'>
+                <AiOutlineGithub size={30}/>
+                <FaReact size={30}/></p>
             {/* <Navbar toggle={toggle} /> */}
         </>
     )

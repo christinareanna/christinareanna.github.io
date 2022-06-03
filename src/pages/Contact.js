@@ -1,13 +1,15 @@
 import React from "react";
 import ContactForm from "../components/ContactForm"
 import Sidebar from "../components/Sidebar";
-const Contact = ({isOpen, toggle}) => {
+const Contact = ({ isOpen, toggle }) => {
     return (
         <>
-        <div className='sidebar'>
+            <div className='sidebar'>
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div>
-        <ContactForm />
+            <h3 className="contact">Contact</h3>
+            <hr style={{ border: "none" }} />
+            <ContactForm />
         </>
     )
 
