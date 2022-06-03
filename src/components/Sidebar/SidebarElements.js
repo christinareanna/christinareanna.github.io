@@ -33,6 +33,11 @@ export const SidebarWrapper = styled.div`
   background-color: black;
   height: 100%;
 `
+export const SidebarItem = styled.li`
+  height: 80px;
+  letter-spacing: 5px;
+  margin-top: 50px;
+`
 
 export const SidebarMenu = styled.ul`
     display: grid;

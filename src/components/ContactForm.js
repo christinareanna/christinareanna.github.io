@@ -46,7 +46,7 @@ function ContactForm() {
                     value={toSend.from_name}
                     onChange={handleChange}
                     required
-                    style={{ width: "60em", height: "5em", backgroundColor: "black" }}
+                    style={{height: "5em", backgroundColor: "black" }}
                 />
                 <br />
                 <input
@@ -56,7 +56,7 @@ function ContactForm() {
                     value={toSend.to_name}
                     onChange={handleChange}
                     required
-                    style={{ width: "60em", height: "5em", backgroundColor: "black" }}
+                    style={{ height: "5em", backgroundColor: "black" }}
                 />
                 <br />
                 <input
@@ -66,7 +66,7 @@ function ContactForm() {
                     value={toSend.reply_to}
                     onChange={handleChange}
                     required
-                    style={{ width: "60em", height: "5em", backgroundColor: "black" }}
+                    style={{ height: "5em", backgroundColor: "black" }}
                 />
                 <br />
                 <textarea
@@ -76,7 +76,7 @@ function ContactForm() {
                     value={toSend.message}
                     onChange={handleChange}
                     required
-                    style={{ width: "60em", height: "5em", resize: "none", fontFamily: "calibri", backgroundColor: "black" }}
+                    style={{  height: "5em", resize: "none", fontFamily: "calibri", backgroundColor: "black" }}
                 />
                 <br />
                 <button className="button" onClick={refreshPage}>Reload</button>

@@ -1,8 +1,12 @@
 import React from "react";
 import ContactForm from "../components/ContactForm"
-const Contact = () => {
+import Sidebar from "../components/Sidebar";
+const Contact = ({isOpen, toggle}) => {
     return (
         <>
+        <div className='sidebar'>
+                <Sidebar isopen={isOpen} toggle={toggle} />
+            </div>
         <ContactForm />
         </>
     )

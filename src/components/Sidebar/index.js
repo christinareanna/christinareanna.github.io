@@ -6,6 +6,7 @@ import {
   CloseIcon,
   SidebarWrapper,
   SidebarMenu,
+  SidebarItem,
   // SidebarLink,
 } from "./SidebarElements";
 import { FaBars } from 'react-icons/fa'
@@ -18,7 +19,7 @@ import { MobileIcon } from "../Navbar/NavbarElements";
 const Sidebar = () => {
   const [isSidebarShowing, setIsSidebarShowing] = useState(false)
   const toggle = () => setIsSidebarShowing(!isSidebarShowing)
-  const hide = () => setIsSidebarShowing(!isSidebarShowing)
+  // const hide = () => setIsSidebarShowing(!isSidebarShowing)
 
 
   function NavIcon() {
@@ -39,14 +40,18 @@ const Sidebar = () => {
       <SidebarWrapper>
         <SidebarMenu style={{ padding: "10em" }}>
           {/* <NavLogo to="/" onMouseDown={hide}>Christina Reanna</NavLogo> */}
-
-
-          <Link to="about" onMouseDown={hide} style={{ color: "#FF1493", fontSize: "44px", padding: "1em 0", margin: "0", textDecoration: "none" }}>About</Link>
           {/* <div onMouseDown={hide} onClick={() => window.location.replace("/#about")}>
             <span>Go to about</span>
           </div> */}
-          <Link to="blogs" onMouseDown={hide} style={{ color: "#FF1493", fontSize: "44px", padding: "3em 0", textDecoration: "none" }}>Blogs</Link>
-          <Link to="contact" onMouseDown={hide} style={{ color: "#FF1493", fontSize: "44px", padding: "5em 0", textDecoration: "none" }}>Contact</Link>
+          <SidebarItem id="blogs" style={{ width: "100%", margin: "3em 0", }}>
+            <Link to="/blogs" onClick={toggle} style={{ color: "#FF1493", fontSize: "44px", textDecoration: "none" }}>Blogs</Link>
+          </SidebarItem>
+          <SidebarItem id="home" style={{ width: "100%", margin: "3em 0", }}>
+            <Link to="/" onClick={toggle} style={{ color: "#FF1493", fontSize: "44px", margin: "0", textDecoration: "none" }}>Home</Link>
+          </SidebarItem>
+          <SidebarItem id="contact" style={{ width: "100%", margin: "3em 0", }}>
+            <Link to="/contact" onClick={toggle} style={{ color: "#FF1493", fontSize: "44px", textDecoration: "none" }}>Contact</Link>
+          </SidebarItem>
         </SidebarMenu>
       </SidebarWrapper>
     ) : null
