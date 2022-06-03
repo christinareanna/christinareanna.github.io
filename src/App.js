@@ -9,7 +9,7 @@ import ParticleBackground from "./ParticleBackground";
 // import instagram from "./instagram.png"
 // import facebook from "./facebook.png"
 // import javascript from "./javascript.png"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Layout from "./pages/Layout";
 import Blogs from "./pages/Blogs";
@@ -28,7 +28,7 @@ function App() {
         <Router>
           <Navbar/>
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route path="/" exact element={<Home />} />
               {/* <Route element={<Home />} /> */}
               <Route path="/blogs" element={<Blogs />} />
               <Route path="/contact" element={<Contact />} />
