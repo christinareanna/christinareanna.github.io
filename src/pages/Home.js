@@ -16,7 +16,6 @@ const Home = () => {
     //     <div>404 not found.</div>
     // )
 
-
     return (
         <>
             <div className='sidebar'>
