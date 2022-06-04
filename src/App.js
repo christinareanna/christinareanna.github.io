@@ -9,7 +9,7 @@ import ParticleBackground from "./ParticleBackground";
 // import instagram from "./instagram.png"
 // import facebook from "./facebook.png"
 // import javascript from "./javascript.png"
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Layout from "./pages/Layout";
 import Blogs from "./pages/Blogs";
