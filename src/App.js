@@ -26,13 +26,13 @@ function App() {
     <div className="App">
       <div className="foreground">
         <Router>
-          <Navbar/>
+          <Navbar />
           <Routes>
-            <Route path="/" exact element={<Home />} />
-              {/* <Route element={<Home />} /> */}
-              <Route path="/blogs" element={<Blogs />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<NoPage />} />
+            <Route exact path="/" element={<Home />} />
+            {/* <Route element={<Home />} /> */}
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NoPage />} />
           </Routes>
         </Router>
 
