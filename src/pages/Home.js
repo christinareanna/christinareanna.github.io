@@ -25,8 +25,8 @@ const Home = () => {
             <hr style={{ border: "none" }} />
             <p className='title'>Proficient in...</p>
             <p className='about-me'>
-                <AiOutlineGithub size={30}/>
-                <FaReact size={30}/></p>
+                <AiOutlineGithub size={30} />
+                <FaReact size={30} /></p>
             {/* <Navbar toggle={toggle} /> */}
         </>
     )
