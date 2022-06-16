@@ -2,6 +2,7 @@
     text-align: center;
     justify-content: center;
     height: 100%;
+    /* position:relative; */
     /* margin: 0 200px; */
     /* max-width: 100%; */
     width: 100%;
@@ -72,7 +73,7 @@ textarea::placeholder {
     cursor: pointer;
     /* display: flex; */
     font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 100%;
+    font-size: 18px;
     font-weight: 700;
     line-height: 24px;
     margin: 5px 5px;
@@ -96,3 +97,10 @@ textarea::placeholder {
 .button:focus {
     box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
 }
+
+/* @media screen and (max-width: 768px) {
+
+    .contact-form {
+        width: auto;
+    }
+} */

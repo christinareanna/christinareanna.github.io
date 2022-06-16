@@ -9,7 +9,6 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -25,7 +24,6 @@ justify-content: space-between;
 height: 80px;
 z-index: 1;
 width: 100%;
-padding: 0 24px;
 max-width: 1100px;
 `
 
@@ -61,17 +59,57 @@ display: flex;
 align-items: center;
 list-style: none;
 text-align: center;
-margin-right: 22px;
+margin: 0;
+padding: 0;
 
 
 @media screen and (max-width: 768px) {
-    display: none;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+@media screen and (max-width: 425px) {
+    height: 60px;
+    width: 100%;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 375px) {
+    height: 60px;
+    width: 100%;
+    font-size: 6px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 320px) {
+    height: 60px;
+    width: 100%;
+    font-size: 4px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 `
 
 export const NavItem = styled.li`
 height: 80px;
-letter-spacing: 5px;
 margin-top: 50px;
 `
 

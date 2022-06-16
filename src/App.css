@@ -7,6 +7,7 @@
   /* text-shadow:1px 1px 10px #fff, 1px 1px 1px aqua; */
 }
 
+
 @keyframes slideRight {
   from {
     transform: translate(-100%, 0);
@@ -32,7 +33,7 @@
 }
 
 .title {
-  font-size: 28px;
+  font-size: 24px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
   width: auto;
@@ -44,6 +45,7 @@
 
 .about-me {
   background-color: hotpink;
+  font-size: 12px;
   padding: 3em;
   margin: 3em;
 }
@@ -56,7 +58,7 @@
 }
 
 .blog-title {
-  font-size: 28px;
+  font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
   width: auto;
@@ -67,7 +69,7 @@
 }
 
 .blog {
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
   width: auto;
@@ -79,19 +81,19 @@
 
 .home {
   color: hotpink;
-  font-size: 3em;
+  font-size: 4em;
   padding: 20px;
 }
 
 .contact {
   color: hotpink;
-  font-size: 3em;
+  font-size: 4em;
   padding: 20px;
 }
 
 .blogs {
   color: hotpink;
-  font-size: 3em;
+  font-size: 4em;
   padding: 20px;
 }
 
@@ -140,14 +142,14 @@ hr {
     width: 100%;
   }
 
-  .sidebar {
+  /* .sidebar {
     display: none;
   }
 
   .photo5 {
     width: 400px;
     margin: 40px;
-  }
+  } */
 }
 
 @media screen and (max-width: 2560px) {
@@ -156,14 +158,14 @@ hr {
     width: 100%;
   }
 
-  .sidebar {
+  /* .sidebar {
     display: none;
   }
 
   .photo5 {
     width: 400px;
     margin: 40px;
-  }
+  } */
 }
 
 @media screen and (max-width: 375px) {
@@ -172,7 +174,7 @@ hr {
     width: 100%;
     /* overflow-x: hidden; */
   }
-
+/* 
   .sidebar {
     width: 100%;
     display: inline;
@@ -181,7 +183,7 @@ hr {
   .photo5 {
     width: 400px;
     margin: 40px;
-  }
+  } */
 }
 
 
@@ -192,7 +194,7 @@ hr {
     overflow-x: hidden;
   }
 
-  .sidebar {
+  /* .sidebar {
     width: 100%;
     display: grid;
     overflow-x: hidden;
@@ -205,17 +207,17 @@ hr {
 
   .icon {
     width: 200px;
-  }
+  } */
 }
 
-/* @media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
 
   .foreground {
     max-width: 100%;
     overflow-x: hidden;
   }
 
-  .sidebar {
+  /* .sidebar {
     width: auto;
     display: inline;
     overflow-x: hidden;
@@ -228,8 +230,8 @@ hr {
 
   .icon {
     width: 200px;
-  }
-} */
+  } */
+}
 
 @media screen and (max-width: 960px) {
 
@@ -271,11 +273,11 @@ hr {
     max-width: 100%;
   }
 
-  .sidebar {
+  /* .sidebar {
     display: grid;
     overflow-x: hidden;
     max-width: 100%;
-  }
+  } */
 
   .photo5 {
     width: 200px;

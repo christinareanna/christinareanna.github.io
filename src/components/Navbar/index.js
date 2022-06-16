@@ -44,8 +44,8 @@
 
 
 import React from "react";
-import { Outlet, Link, NavLink } from "react-router-dom";
-import { FaBars, FaHome, FaSearch, FaPen } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaHome, FaSearch, FaPen } from "react-icons/fa";
 import { Nav, NavbarContainer, NavMenu, NavItem } from "./NavbarElements";
 
 
@@ -79,7 +79,7 @@ const Navbar = () => {
             </div>
             <div id="desc" style={{
                 fontFamily: "calibri",
-                fontSize: "2em",
+                fontSize: "3em",
                 // padding: "1em",
                 color: "white",
                 animation: "slideIn 2s ease-in-out"

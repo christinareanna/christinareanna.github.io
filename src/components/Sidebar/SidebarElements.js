@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 
 export const SidebarContainer = styled.aside`

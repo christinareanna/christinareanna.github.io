@@ -1,12 +1,14 @@
 import React from 'react';
-import Sidebar from '../components/Sidebar';
+// import Sidebar from '../components/Sidebar';
+import Navbar from '../components/Navbar';
 
 const Blogs = ({ isOpen, toggle }) => {
     return (
         <>
-            <div className='sidebar'>
+            {/* <div className='sidebar'>
                 <Sidebar isopen={isOpen} toggle={toggle} />
-            </div>
+            </div> */}
+            <Navbar />
             <h3 className='blogs'>Blogs</h3>
             <hr style={{ border: "none" }} />
             <div className='blog-container'>

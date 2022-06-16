@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { send } from 'emailjs-com';
 import "./ContactForm.css";
+// import Navbar from './Navbar';
 
 function ContactForm() {
     const [toSend, setToSend] = useState({
@@ -35,9 +36,10 @@ function ContactForm() {
     };
 
 
-    // this is ugly as fuck bitch what the fuck were you doing lol
+
     return (
         <>
+        {/* <Navbar/> */}
             <div className='contact-form'>
                 <form onSubmit={onSubmit}>
                     <input

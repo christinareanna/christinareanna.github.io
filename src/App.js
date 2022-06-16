@@ -11,14 +11,15 @@ import ParticleBackground from "./ParticleBackground";
 // import javascript from "./javascript.png"
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Layout from "./pages/Layout";
+// import Layout from "./pages/Layout";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 // import ContactForm from "./components/ContactForm";
 // import thinkful from "./thinkful.png"
 // import accenture from "./accenture.png"
-import Navbar from "./components/Navbar"
+// import Navbar from "./components/Navbar";
+
 
 // added the nav bar
 function App() {
@@ -26,7 +27,7 @@ function App() {
     <div className="App">
       <div className="foreground">
         <Router>
-          <Navbar />
+          {/* <Navbar /> */}
           <Routes>
             <Route exact path="/" element={<Home />} />
             {/* <Route element={<Home />} /> */}

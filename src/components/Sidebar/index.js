@@ -9,7 +9,7 @@ import {
   SidebarItem,
   // SidebarLink,
 } from "./SidebarElements";
-import { FaBars } from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa';
 import { MobileIcon } from "../Navbar/NavbarElements";
 
 // {/* Link instead of a href */ }
