@@ -10,6 +10,7 @@ function ContactForm() {
         message: '',
         reply_to: '',
     });
+    
 
     function refreshPage() {
         window.location.reload(false);
@@ -24,10 +25,11 @@ function ContactForm() {
             'user_wUz7J2jzmE2TlAVKfiEz5'
         )
             .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
+                console.log('Success!', response.status, response.text);
+                alert('Thank you for your message! I will be in touch as soon as possible.')
             })
             .catch((err) => {
-                console.log('FAILED...', err);
+                console.log('Failed.', err);
             });
     };
 
@@ -55,7 +57,7 @@ function ContactForm() {
                     <input
                         type='text'
                         name='to_name'
-                        placeholder='Christina'
+                        placeholder='Subject'
                         value={toSend.to_name}
                         onChange={handleChange}
                         required

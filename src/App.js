@@ -18,7 +18,7 @@ import NoPage from "./pages/NoPage";
 // import ContactForm from "./components/ContactForm";
 // import thinkful from "./thinkful.png"
 // import accenture from "./accenture.png"
-// import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar";
 
 
 // added the nav bar
@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <div className="foreground">
         <Router>
-          {/* <Navbar /> */}
+          <Navbar />
           <Routes>
             <Route exact path="/" element={<Home />} />
             {/* <Route element={<Home />} /> */}

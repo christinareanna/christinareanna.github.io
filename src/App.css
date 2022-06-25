@@ -4,7 +4,6 @@
 
 #target {
   background-color: black;
-  /* text-shadow:1px 1px 10px #fff, 1px 1px 1px aqua; */
 }
 
 
@@ -38,16 +37,16 @@
   color: white;
   width: auto;
   text-align: center;
-  padding: 1em;
-  margin: 3em;
+  /* padding: 0;
+  margin: 50px; */
   background-color: hotpink;
 }
 
 .about-me {
   background-color: hotpink;
   font-size: 12px;
-  padding: 3em;
-  margin: 3em;
+  /* padding: 3em;
+  margin: 5em; */
 }
 
 .blog-container {
@@ -107,14 +106,8 @@ hr {
 
 .foreground {
   z-index: 99;
-  /* background-color: rgba(187, 218, 218, 0.8); */
   width: 100%;
-  /* max-width: 1000px; */
-  /* left: 50%; */
-  /* transform: translate(-50%, 0); */
   position: absolute;
-  /* border-radius: 40vh; */
-  /* margin-top: 300px; */
 }
 
 .background {
@@ -125,16 +118,6 @@ hr {
   height: 100%;
 }
 
-.photo5 {
-  width: 30%;
-  height: 30%;
-  /* float: left; */
-  margin: 10px;
-  /* border-radius: 40vh; */
-  text-align: center;
-  border: 2px black solid;
-  box-shadow: 0 5px 10px rgb(63, 37, 37);
-}
 
 @media screen and (max-width: 1024px) {
 
@@ -142,14 +125,9 @@ hr {
     width: 100%;
   }
 
-  /* .sidebar {
+  .sidebar {
     display: none;
   }
-
-  .photo5 {
-    width: 400px;
-    margin: 40px;
-  } */
 }
 
 @media screen and (max-width: 2560px) {
@@ -158,32 +136,21 @@ hr {
     width: 100%;
   }
 
-  /* .sidebar {
+  .sidebar {
     display: none;
   }
-
-  .photo5 {
-    width: 400px;
-    margin: 40px;
-  } */
 }
 
 @media screen and (max-width: 375px) {
 
   .foreground {
     width: 100%;
-    /* overflow-x: hidden; */
   }
-/* 
+
   .sidebar {
     width: 100%;
     display: inline;
   }
-
-  .photo5 {
-    width: 400px;
-    margin: 40px;
-  } */
 }
 
 
@@ -194,20 +161,25 @@ hr {
     overflow-x: hidden;
   }
 
-  /* .sidebar {
+  .sidebar {
     width: 100%;
     display: grid;
     overflow-x: hidden;
   }
 
-  .photo5 {
-    width: 200px;
-    margin-top: 40px;
+  .blogs {
+    font-size: 30px;
   }
 
-  .icon {
-    width: 200px;
-  } */
+  .blog-title {
+    padding: 20px;
+    margin: 40px;
+  }
+
+  .blog {
+    padding: 20px;
+    margin: 40px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -217,31 +189,17 @@ hr {
     overflow-x: hidden;
   }
 
-  /* .sidebar {
+  .sidebar {
     width: auto;
     display: inline;
     overflow-x: hidden;
   }
-
-  .photo5 {
-    width: 200px;
-    margin-top: 40px;
-  }
-
-  .icon {
-    width: 200px;
-  } */
 }
 
 @media screen and (max-width: 960px) {
 
   .sidebar {
     display: none;
-  }
-
-  .photo5 {
-    width: 400px;
-    margin: 40px;
   }
 }
 
@@ -273,19 +231,10 @@ hr {
     max-width: 100%;
   }
 
-  /* .sidebar {
+  .sidebar {
     display: grid;
     overflow-x: hidden;
     max-width: 100%;
-  } */
-
-  .photo5 {
-    width: 200px;
-    margin-top: 40px;
-  }
-
-  .icon {
-    width: 200px;
   }
 }
 
@@ -300,15 +249,6 @@ hr {
     overflow-x: hidden;
     width: auto;
   }
-
-  .photo5 {
-    width: 200px;
-    margin-top: 40px;
-  }
-
-  .icon {
-    width: 200px;
-  }
 }
 
 @media screen and (max-width: 425px) {
@@ -319,7 +259,7 @@ hr {
 
   .sidebar {
     width: auto;
-    display: block;
+    display: grid;
     overflow-x: hidden;
   }
 
@@ -339,39 +279,3 @@ header {
   text-align: center;
   font-size: 32px;
 }
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-/* .App-link {
-  color: #61dafb;
-} */
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-} */
