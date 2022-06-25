@@ -1,55 +1,33 @@
-import { useState } from 'react';
-import { send } from 'emailjs-com';
+import React from 'react';
+import {Link} from 'react-router-dom';
 import "./ContactForm.css";
-// import Navbar from './Navbar';
+import { useForm, ValidationError } from '@formspree/react';
 
 function ContactForm() {
-    const [toSend, setToSend] = useState({
-        from_name: '',
-        to_name: '',
-        message: '',
-        reply_to: '',
-    });
-    
-
-    function refreshPage() {
-        window.location.reload(false);
-    }
-
-    const onSubmit = (e) => {
-        e.preventDefault();
-        send(
-            'service_rc4kzxr',
-            'template_og474ne',
-            toSend,
-            'user_wUz7J2jzmE2TlAVKfiEz5'
+    const [state, handleSubmit] = useForm("mbjweayv");
+    if (state.succeeded) {
+        return (
+            <>
+                <p id="sent-message">Thanks for messaging! I'll get back to you shortly!</p>
+                <Link to="/"><button className="button">Go Home</button></Link>
+            </>
         )
-            .then((response) => {
-                console.log('Success!', response.status, response.text);
-                alert('Thank you for your message! I will be in touch as soon as possible.')
-            })
-            .catch((err) => {
-                console.log('Failed.', err);
-            });
-    };
-
-    const handleChange = (e) => {
-        setToSend({ ...toSend, [e.target.name]: e.target.value });
-    };
-
+    }
 
 
     return (
         <>
-        {/* <Navbar/> */}
             <div className='contact-form'>
-                <form onSubmit={onSubmit}>
+                <form onSubmit={handleSubmit}>
+                    <ValidationError
+                        prefix="Email"
+                        field="Email"
+                        errors={state.errors}
+                    />
                     <input
                         type='text'
                         name='from_name'
-                        placeholder='Your name'
-                        value={toSend.from_name}
-                        onChange={handleChange}
+                        placeholder='Required'
                         required
                         style={{ height: "5em", backgroundColor: "black" }}
                     />
@@ -57,9 +35,7 @@ function ContactForm() {
                     <input
                         type='text'
                         name='to_name'
-                        placeholder='Subject'
-                        value={toSend.to_name}
-                        onChange={handleChange}
+                        placeholder='Required'
                         required
                         style={{ height: "5em", backgroundColor: "black" }}
                     />
@@ -67,9 +43,7 @@ function ContactForm() {
                     <input
                         type='text'
                         name='reply_to'
-                        placeholder='Your email'
-                        value={toSend.reply_to}
-                        onChange={handleChange}
+                        placeholder='Required'
                         required
                         style={{ height: "5em", backgroundColor: "black" }}
                     />
@@ -77,15 +51,11 @@ function ContactForm() {
                     <textarea
                         type='text'
                         name='message'
-                        placeholder='Message'
-                        value={toSend.message}
-                        onChange={handleChange}
                         required
                         style={{ height: "5em", resize: "none", fontFamily: "calibri", backgroundColor: "black" }}
                     />
                     <br />
-                    <button className="button" onClick={refreshPage}>Reload</button>
-                    <button className="button" type='submit' onClick={onSubmit}>Submit</button>
+                    <button className="button" type='submit' disabled={state.submitting}>Submit</button>
                 </form>
             </div>
         </>
