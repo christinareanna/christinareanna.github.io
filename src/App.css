@@ -37,17 +37,16 @@
   color: white;
   width: auto;
   text-align: center;
-  /* padding: 0;
-  margin: 50px; */
-  background-color: hotpink;
 }
 
-.about-me {
-  background-color: hotpink;
+.container {
+  /* background-color: hotpink; */
   font-size: 12px;
-  /* padding: 3em;
-  margin: 5em; */
+  color: hotpink;
+  /* padding: 3em; */
+  padding: 10px;
 }
+
 
 .blog-container {
   width: 100%;
@@ -97,7 +96,7 @@
 }
 
 hr {
-  width: 100px;
+  width: 400px;
   margin-right: auto;
   margin-left: auto;
   background-color: aqua;

@@ -56,6 +56,7 @@ function ContactForm() {
                     />
                     <br />
                     <button className="button" type='submit' disabled={state.submitting}>Submit</button>
+                    {/* <button className="button" type='submit' disabled={state.submitting}>Cancel</button> */}
                 </form>
             </div>
         </>
