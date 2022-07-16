@@ -44,15 +44,19 @@ const Home = () => {
                         One of three columns
                     </div>
                 </div> */}
-            <div className='container'>
+            <div className='container-fluid'>
                 <div className='row'>
-                    <div className='col-sm'>
-                        <AiOutlineGithub className="icon" size={40} />
-                        <AiOutlineHtml5 className="icon" size={40} />
-                        <FaReact className="icon" size={40} />
-                        <FaGit className="icon" size={40} />
-                        <FaJs className="icon" size={40} />
-                        <FaCss3 className="icon" size={40} />
+                    <div className='col'>
+                        <AiOutlineGithub className="icon" size={70} />
+                        <AiOutlineHtml5 className="icon" size={70} />
+                        <FaReact className="icon" size={70} />
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col'>
+                        <FaGit className="icon" size={70} />
+                        <FaJs className="icon" size={70} />
+                        <FaCss3 className="icon" size={70} />
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 #target {
   background-color: black;
 }
@@ -31,6 +32,7 @@
   }
 }
 
+
 .title {
   font-size: 24px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -39,12 +41,20 @@
   text-align: center;
 }
 
-.container {
+.container-fluid {
   /* background-color: hotpink; */
   font-size: 12px;
-  color: hotpink;
-  /* padding: 3em; */
-  padding: 10px;
+  color: white;
+  /* width: auto; */
+  padding: auto;
+}
+
+
+.icon {
+  border-radius: 100px;
+  padding: 30px;
+  margin: 30px;
+  background-color:rgb(111, 8, 69);
 }
 
 
@@ -62,7 +72,7 @@
   width: auto;
   text-align: center;
   padding: 1em;
-  background-color: hotpink;
+  background-color: rgb(111, 8, 69);
   margin: 3em;
 }
 
@@ -73,7 +83,7 @@
   width: auto;
   text-align: center;
   padding: 1em;
-  background-color: hotpink;
+  background-color: rgb(111, 8, 69);
   margin: 3em;
 }
 
@@ -140,7 +150,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
 
   .foreground {
     width: 100%;
@@ -149,6 +159,24 @@ hr {
   .sidebar {
     width: 100%;
     display: inline;
+  }
+} */
+
+@media screen and (max-width: 375px) {
+
+  .foreground {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    width: auto;
+    display: inline;
+    overflow-x: hidden;
+  }
+
+  .icon {
+    padding: 20px;
   }
 }
 
@@ -181,19 +209,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 375px) {
 
-  .foreground {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .sidebar {
-    width: auto;
-    display: inline;
-    overflow-x: hidden;
-  }
-}
 
 @media screen and (max-width: 960px) {
 
@@ -217,10 +233,6 @@ hr {
   .photo5 {
     width: 200px;
     margin-top: 40px;
-  }
-
-  .icon {
-    width: 200px;
   }
 }
 
@@ -262,14 +274,34 @@ hr {
     overflow-x: hidden;
   }
 
-  .photo5 {
-    width: 200px;
-    margin-top: 40px;
+  .icon {
+    width: 20px;
+    height: 20px;
+    background-color:rgb(111, 8, 69);
+  }
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+  .foreground {
+    font-size: 8px;
+  }
+
+  .sidebar {
+    width: auto;
+    display: grid;
+    overflow-x: hidden;
   }
 
   .icon {
-    width: 200px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color:rgb(111, 8, 69);
   }
+
 }
 
 header {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaHome, FaSearch, FaPen } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 import { Nav, NavbarContainer, NavMenu, NavItem } from "./NavbarElements";
 
 
@@ -11,13 +11,13 @@ const Navbar = () => {
                 <NavbarContainer>
                     <NavMenu style={{ fontFamily: "calibri", width: "100%", maxWidth: "100%", justifyContent: "center" }}>
                         <NavItem id="blogs" style={{ width: "100%" }}>
-                            <Link to="/blogs" style={{ fontSize: "2em", color: "aqua", width: "100%", textDecoration: "none" }}>Blogs <FaSearch /></Link>
+                            <Link to="/blogs" style={{ fontSize: "2em", color: "aqua", width: "100%", textDecoration: "none" }}>Blogs</Link>
                         </NavItem>
                         <NavItem id="home" style={{ width: "100%" }}>
                             <Link to="/" style={{ fontSize: "2em", color: "aqua", width: "100%", textDecoration: "none" }}><FaHome /></Link>
                         </NavItem>
                         <NavItem id="contact" style={{ width: "100%" }}>
-                            <Link to="/contact" style={{ fontSize: "2em", color: "aqua", width: "100%", textDecoration: "none" }}>Contact <FaPen /></Link>
+                            <Link to="/contact" style={{ fontSize: "2em", color: "aqua", width: "100%", textDecoration: "none" }}>Contact</Link>
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>
@@ -36,6 +36,7 @@ const Navbar = () => {
                 fontFamily: "calibri",
                 textAlign: "center",
                 fontSize: "3em",
+                padding: "10px",
                 color: "white",
                 animation: "slideIn 2s ease-in-out"
             }}>
