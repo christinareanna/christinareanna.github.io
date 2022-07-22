@@ -19,7 +19,7 @@ input {
     color: hotpink;
     width: 60%;
     padding: 0;
-    border-color: hotpink;
+    border-color: #F55887;
 }
 
 input::placeholder {
@@ -36,7 +36,7 @@ textarea {
     overflow-y: hidden;
     overflow-x: hidden;
     padding: 0;
-    border-color: hotpink;
+    border-color: #F55887;
 }
 
 textarea::placeholder {

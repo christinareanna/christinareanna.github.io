@@ -15,6 +15,7 @@ function ContactForm() {
     }
 
 
+    // idk why this didn't work when i tested it so come back and figure it out
     return (
         <>
             <div className='contact-form'>

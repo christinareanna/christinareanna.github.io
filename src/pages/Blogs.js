@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 // import Navbar from '../components/Navbar';
 
+// this will be automated so i don't have to type it in here every dang time :-)
 const Blogs = ({ isOpen, toggle }) => {
     return (
         <>
