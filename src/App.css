@@ -200,8 +200,26 @@ hr {
     overflow-x: hidden;
   }
 
+  #target {
+    font-size: 30px;
+  }
+
+  #desc {
+    font-size: 25px;
+    width: auto;
+    padding: 15px;
+  }
+
+  img {
+    width: 250px;
+  }
+
   .icon {
-    padding: 20px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    color: black;
+    background-color: palevioletred;
   }
 }
 
@@ -255,9 +273,26 @@ hr {
     display: inline;
   }
 
-  .photo5 {
-    width: 200px;
-    margin-top: 40px;
+  #target {
+    font-size: 30px;
+  }
+
+  #desc {
+    font-size: 25px;
+    width: auto;
+    padding: 15px;
+  }
+
+  img {
+    width: 250px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    color: black;
+    background-color: palevioletred;
   }
 }
 
@@ -271,6 +306,28 @@ hr {
     display: grid;
     overflow-x: hidden;
     max-width: 100%;
+  }
+
+  #target {
+    font-size: 30px;
+  }
+
+  #desc {
+    font-size: 25px;
+    width: auto;
+    padding: 15px;
+  }
+
+  img {
+    width: 250px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    color: black;
+    background-color: palevioletred;
   }
 }
 
@@ -299,10 +356,26 @@ hr {
     overflow-x: hidden;
   }
 
+  #target {
+    font-size: 30px;
+  }
+
+  #desc {
+    font-size: 25px;
+    width: auto;
+    padding: 15px;
+  }
+
+  img {
+    width: 250px;
+  }
+
   .icon {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(111, 8, 69);
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    color: black;
+    background-color: palevioletred;
   }
 
 }
@@ -314,6 +387,13 @@ hr {
     font-size: 8px;
   }
 
+
+  .sidebar {
+    width: auto;
+    display: grid;
+    overflow-x: hidden;
+  }
+
   #target {
     font-size: 30px;
   }
@@ -322,12 +402,6 @@ hr {
     font-size: 25px;
     width: auto;
     padding: 15px;
-  }
-
-  .sidebar {
-    width: auto;
-    display: grid;
-    overflow-x: hidden;
   }
 
   img {
