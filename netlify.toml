@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "/NoPage"
-  status = 404
