@@ -31,7 +31,6 @@ input::placeholder {
 textarea {
     font-size: 16px;
     color: hotpink;
-    background-color: white;
     width: 60%;
     overflow-y: hidden;
     overflow-x: hidden;

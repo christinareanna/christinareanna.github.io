@@ -10,15 +10,15 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavMenu style={{ fontFamily: "calibri", width: "100%", paddingTop: "20px", maxWidth: "100%", justifyContent: "center" }}>
-                        <NavItem id="blogs" style={{ width: "100%" }}>
-                            <Link to="/blogs" style={{ fontSize: "2em", color: "black", border: "2px solid aqua", width: "100%", borderRadius: "60%", padding: "20px", backgroundColor: "aqua", textDecoration: "none" }}>Blogs</Link>
+                    <NavMenu style={{ fontFamily: "calibri", width: "100%", maxWidth: "100%", justifyContent: "center" }}>
+                        <NavItem id="blogs" style={{ width: "50px", padding: "100px" }}>
+                            <Link to="/blogs" style={{ color: "aqua", width: "100%", textDecoration: "none" }}><div style={{display: "flex", justifyContent: "center"}}><span style={{fontSize: "2em"}}>Blogs</span></div></Link>
                         </NavItem>
-                        <NavItem id="home" style={{ width: "100%" }}>
-                            <Link to="/" style={{ fontSize: "2em", color: "black", border: "2px solid aqua", borderRadius: "60%", backgroundColor: "aqua", padding: "20px", width: "100%", textDecoration: "none" }}><FaHome /></Link>
+                        <NavItem id="home" style={{ width: "50px", padding: "100px" }}>
+                            <Link to="/" style={{ color: "aqua", width: "100%", textDecoration: "none" }}><div style={{display: "flex", justifyContent: "center"}}><span><FaHome size={35}/></span></div></Link>
                         </NavItem>
-                        <NavItem id="contact" style={{ width: "100%" }}>
-                            <Link to="/contact" style={{ fontSize: "2em", color: "black", border: "2px solid aqua", width: "100%", borderRadius: "60%", padding: "20px", backgroundColor: "aqua", textDecoration: "none" }}>Contact</Link>
+                        <NavItem id="contact" style={{ width: "50px", padding: "100px" }}>
+                            <Link to="/contact" style={{ color: "aqua", width: "100%", textDecoration: "none" }}><div style={{display: "flex", justifyContent: "center"}}><span style={{fontSize: "2em"}}>Contact</span></div></Link>
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>
