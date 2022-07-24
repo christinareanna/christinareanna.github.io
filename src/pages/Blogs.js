@@ -13,14 +13,13 @@ const Blogs = ({ isOpen, toggle }) => {
             <h3 className='blogs'>Blogs</h3>
             <hr style={{ border: "none" }} />
             <div className='blog-container'>
-                <p className='blog-title'><i>How I made my site - 06/03/22</i></p>
-                <p className='blog'>Hi there. Welcome to my personal page!
-                    This is my first blog post, so I'd like to explain how I've created this site.
-                    I use JavaScript, React, and some vanilla HTML/CSS.
-                    The background is a particles background and I had a lot of fun editing
-                    it to my liking! </p>
-                <hr style={{ border: "none" }} />
+                <p className='blog-title'><i>My First Blog</i></p>
+                <p className='blog'>Greetings, earthling. I hope you are doing well. I'm really proud of what
+                I have been creating lately. I am learning a lot about CSS that I never knew before. I feel like I'm 
+                getting better at it, but I still don't know how to do a lot of the fancier stuff. One day, there will be more than just these three 
+                pages. Toodles for now.</p>
             </div>
+            <hr style={{ border: "none" }} />
         </>
     );
 };

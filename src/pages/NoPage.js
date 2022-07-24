@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const NoPage = () => {
     return (
         <>
-            <img src={Pikachu} alt="surprised pikachu face because nothing is here lol" />
+            <img class="pikachu" src={Pikachu} alt="surprised pikachu face because nothing is here lol" />
             <h2 style={{ color: "white" }}>OH NO NOTHING IS HERE WHAT HAVE YOU DONE?!?</h2>
             <Link to="/"><button className="button">Go Home</button></Link>
         </>

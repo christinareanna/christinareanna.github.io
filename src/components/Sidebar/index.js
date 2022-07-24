@@ -43,13 +43,13 @@ const Sidebar = () => {
           {/* <div onMouseDown={hide} onClick={() => window.location.replace("/#about")}>
             <span>Go to about</span>
           </div> */}
-          <SidebarItem id="blogs" style={{ width: "100%", margin: "3em 0", }}>
+          <SidebarItem aria-label="View Blogs" id="blogs" style={{ width: "100%", margin: "3em 0", }}>
             <Link to="/blogs" onClick={toggle} style={{ color: "#F55887", fontSize: "44px", textDecoration: "none" }}>Blogs</Link>
           </SidebarItem>
-          <SidebarItem id="home" style={{ width: "100%", margin: "3em 0", }}>
+          <SidebarItem aria-label="Go to homepage" id="home" style={{ width: "100%", margin: "3em 0", }}>
             <Link to="/" onClick={toggle} style={{ color: "#F55887", fontSize: "44px", textDecoration: "none" }}>Home</Link>
           </SidebarItem>
-          <SidebarItem id="contact" style={{ width: "100%", margin: "3em 0", }}>
+          <SidebarItem aria-label="View Contact Form" id="contact" style={{ width: "100%", margin: "3em 0", }}>
             <Link to="/contact" onClick={toggle} style={{ color: "#F55887", fontSize: "44px", textDecoration: "none" }}>Contact</Link>
           </SidebarItem>
         </SidebarMenu>

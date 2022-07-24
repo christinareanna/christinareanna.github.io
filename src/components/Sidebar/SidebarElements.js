@@ -11,11 +11,11 @@ export const SidebarContainer = styled.aside`
   align-items: center;
   top: 0;
   left: 0;
-  transition: 0.3s ease-in-out;
   `;
 
 export const CloseIcon = styled(FaTimes)`
   color: #fff;
+  transition: 0.3s;
 `;
 
 export const Icon = styled.div`
@@ -28,8 +28,10 @@ export const Icon = styled.div`
   outline: none;
 `;
 
+
 export const SidebarWrapper = styled.div`
   background-color: black;
+  transition: opacity 0.75s, visibility 0.75s, height 0.75s;
 `
 export const SidebarItem = styled.li`
   letter-spacing: 5px;

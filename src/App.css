@@ -58,11 +58,28 @@
   background-color: aqua;
 } */
 
-img {
+.pikachu {
   width: 500px;
   height: auto;
   border-radius: 50%;
   border: 10px solid aqua;
+}
+
+.avatar {
+  width: 500px;
+  height: auto;
+  border-radius: 50%;
+  border: 10px solid aqua;
+}
+
+.thinkful {
+  background-color: white;
+  margin: 30px 0;
+  /* padding: 3px 0; */
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid black;
 }
 
 .container-fluid {
@@ -83,33 +100,70 @@ img {
 }
 
 
-.blog-container {
+.about-container {
   width: 100%;
   text-align: center;
   justify-content: center;
-  padding: 3em 0;
+}
+
+.about-title {
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  width: auto;
+  text-align: center;
+  padding: 2em;
+  background-color: #F55887;
+  margin: 4em 20em;
+}
+
+.about-me {
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  width: auto;
+  text-align: center;
+  padding: 2em;
+  background-color: #F55887;
+  margin: 4em 20em;
+}
+
+.blog-container {
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 30px 0;
+  margin: 0px;
 }
 
 .blog-title {
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
   width: auto;
   text-align: center;
-  padding: 1em;
+  padding: 2em;
+  margin: 1em 20em;
   background-color: #F55887;
-  margin: 3em;
 }
 
 .blog {
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
   width: auto;
   text-align: center;
-  padding: 1em;
+  padding: 2em;
   background-color: #F55887;
-  margin: 3em;
+  margin: 4em 20em;
+}
+
+.blogs {
+  color: #F55887;
+  font-size: 4em;
+  padding: 20px;
+  margin: 20px;
 }
 
 .home {
@@ -121,12 +175,7 @@ img {
 .contact {
   color: #F55887;
   font-size: 4em;
-  padding: 20px;
-}
-
-.blogs {
-  color: #F55887;
-  font-size: 4em;
+  margin: 20px;
   padding: 20px;
 }
 
@@ -152,6 +201,161 @@ hr {
   height: 100%;
 }
 
+@media screen and (max-width: 2560px) {
+
+  .foreground {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .icon {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    color: black;
+    background-color: palevioletred;
+  }
+
+  .about-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 40px 50px;
+    margin: 30px 15px;
+  }
+
+  .about-title {
+    width: 100%;
+    font-size: 50px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
+  }
+
+  .about-me {
+    text-align: center;
+    font-size: 40px;
+    padding: 70px;
+    margin: 0;
+  }
+
+
+  .blog-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .blog-title {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
+  }
+
+  .blog {
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .avatar {
+    width: 350px;
+    margin-top: 40px;
+    border: 2px solid aqua;
+  }
+
+  .thinkful {
+    border-radius: 0%;
+    text-align: center;
+    justify-content: center;
+    width: 600px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+
+  .foreground {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .about-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .about-title {
+    width: 100%;
+    font-size: 30px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
+  }
+
+  .about-me {
+    font-size: 30px;
+    padding: 70px;
+    margin: 0;
+  }
+
+
+  .blog-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .blog-title {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
+  }
+
+  .blog {
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .avatar {
+    width: 250px;
+    margin-top: 40px;
+    border: 2px solid aqua;
+  }
+
+  .thinkful {
+    border-radius: 0%;
+    text-align: center;
+    width: 300px;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -162,9 +366,54 @@ hr {
   .sidebar {
     display: none;
   }
+
+  .about-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .about-title {
+    width: 100%;
+    font-size: 32px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
+  }
+
+  .about-me {
+    font-size: 30px;
+    padding: 50px 40px;
+    margin: 0;
+  }
+
+
+  .blog-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .blog-title {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
+  }
+
+  .blog {
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+  }
 }
 
-@media screen and (max-width: 2560px) {
+/* @media screen and (max-width: 2560px) {
 
   .foreground {
     width: 100%;
@@ -173,7 +422,7 @@ hr {
   .sidebar {
     display: none;
   }
-}
+} */
 
 /* @media screen and (max-width: 375px) {
 
@@ -195,9 +444,14 @@ hr {
   }
 
   .sidebar {
-    width: auto;
-    display: inline;
+    display: grid;
     overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  hr {
+    padding: 0 10px;
+    width: 40px;
   }
 
   #target {
@@ -210,46 +464,151 @@ hr {
     padding: 15px;
   }
 
-  img {
-    width: 250px;
+
+  .about-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .about-title {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
+  }
+
+  .about-me {
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
   }
 
   .icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     margin: 5px;
     color: black;
     background-color: palevioletred;
   }
-}
 
+  .thinkful {
+    border-radius: 0%;
+    width: 200px;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
 
 @media screen and (max-width: 320px) {
 
   .foreground {
-    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
   }
 
   .sidebar {
-    width: 100%;
     display: grid;
     overflow-x: hidden;
+    max-width: 100%;
   }
 
-  .blogs {
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    color: black;
+    background-color: palevioletred;
+  }
+
+  hr {
+    padding: 0 10px;
+    width: 40px;
+  }
+
+  .contact {
+    margin: 0;
+    padding: 0%;
+  }
+
+  #target {
     font-size: 30px;
   }
 
-  .blog-title {
+  #desc {
+    font-size: 25px;
+    width: auto;
+    padding: 15px;
+  }
+
+
+  .about-container {
+    width: 100%;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .about-title {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
+  }
+
+  .about-me {
+    font-size: 20px;
     padding: 20px;
-    margin: 40px;
+    margin: 0;
+  }
+
+
+  .blog-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .blog-title {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
   }
 
   .blog {
+    font-size: 20px;
     padding: 20px;
-    margin: 40px;
+    margin: 0;
   }
+
+  .avatar {
+    width: 250px;
+    margin-top: 40px;
+    border: 2px solid aqua;
+  }
+
+  .thinkful {
+    border-radius: 0%;
+    width: 250px;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .contact-form {
+    padding: 0%;
+  }
+
 }
 
 
@@ -258,6 +617,51 @@ hr {
 
   .sidebar {
     display: none;
+  }
+
+  .about-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .about-title {
+    width: 100%;
+    font-size: 32px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
+  }
+
+  .about-me {
+    font-size: 25px;
+    padding: 50px 40px;
+    margin: 0;
+  }
+
+
+  .blog-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .blog-title {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
+  }
+
+  .blog {
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
   }
 }
 
@@ -283,7 +687,7 @@ hr {
     padding: 15px;
   }
 
-  img {
+  .avatar {
     width: 250px;
   }
 
@@ -300,12 +704,18 @@ hr {
 
   .foreground {
     max-width: 100%;
+    overflow-x: hidden;
   }
 
   .sidebar {
     display: grid;
     overflow-x: hidden;
     max-width: 100%;
+  }
+
+  hr {
+    padding: 0 10px;
+    width: 40px;
   }
 
   #target {
@@ -318,8 +728,65 @@ hr {
     padding: 15px;
   }
 
-  img {
+
+  .about-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .about-title {
+    width: 100%;
+    font-size: 32px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
+  }
+
+  .about-me {
+    font-size: 25px;
+    padding: 50px 40px;
+    margin: 0;
+  }
+
+
+  .blog-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .blog-title {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
+  }
+
+  .blog {
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .avatar {
     width: 250px;
+    margin-top: 40px;
+    border: 2px solid aqua;
+  }
+
+  .thinkful {
+    border-radius: 0%;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .icon {
@@ -348,74 +815,114 @@ hr {
 
   .foreground {
     max-width: 100%;
-  }
-
-  .sidebar {
-    width: auto;
-    display: grid;
     overflow-x: hidden;
   }
 
-  #target {
-    font-size: 30px;
+  .sidebar {
+    display: grid;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
-  #desc {
-    font-size: 25px;
+  hr {
+    margin: 20px 50px;
+    text-align: center;
+    justify-content: center;
     width: auto;
-    padding: 15px;
   }
 
-  img {
-    width: 250px;
+  .home-div {
+    padding: 10px 0;
   }
 
   .icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     margin: 5px;
     color: black;
     background-color: palevioletred;
   }
 
-}
-
-
-@media screen and (max-width: 320px) {
-
-  .foreground {
-    font-size: 8px;
-  }
-
-
-  .sidebar {
-    width: auto;
-    display: grid;
-    overflow-x: hidden;
-  }
-
   #target {
-    font-size: 30px;
+    font-size: 25px;
+    padding: 0%;
   }
 
   #desc {
-    font-size: 25px;
+    font-size: 20px;
     width: auto;
     padding: 15px;
   }
 
-  img {
-    width: 250px;
+  .contact {
+    color: #F55887;
+    margin: 10px;
+    padding: 10px;
   }
 
-  .icon {
-    width: 30px;
-    height: 30px;
-    margin: 5px;
+  .about-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .about-title {
+    width: 100%;
+    font-size: 20px;
     color: black;
-    background-color: palevioletred;
+    padding: 3px 0;
+    margin: 3px 0;
   }
 
+  .about-me {
+    font-size: 15px;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .blog-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 15px 15px;
+    margin: 30px 15px;
+  }
+
+  .blog-title {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    padding: 3px 0;
+    margin: 3px 0;
+  }
+
+  .blog {
+    font-size: 15px;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .blogs {
+    padding: 10px;
+    /* margin: 10px; */
+  }
+
+
+  .avatar {
+    width: 200px;
+    margin: 15px;
+    border: 2px solid aqua;
+  }
+
+  .thinkful {
+    border-radius: 0%;
+    width: 200px;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }
 
 header {

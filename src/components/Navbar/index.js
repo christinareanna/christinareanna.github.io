@@ -11,13 +11,13 @@ const Navbar = () => {
             <Nav>
                 <NavbarContainer>
                     <NavMenu style={{ fontFamily: "calibri", width: "100%", maxWidth: "100%", justifyContent: "center" }}>
-                        <NavItem id="blogs" style={{ width: "100%", padding: "0 100px" }}>
+                        <NavItem id="blogs" style={{ width: "100%", margin: "100px" }}>
                             <Link to="/blogs" style={{ color: "aqua", textDecoration: "none" }}><div style={{display: "flex", justifyContent: "center"}}><span style={{fontSize: "2em"}}>Blogs</span></div></Link>
                         </NavItem>
-                        <NavItem id="home" style={{ width: "100%",  padding: "0 100px" }}>
+                        <NavItem id="home" style={{ width: "100%",  margin: "100px" }}>
                             <Link to="/" style={{ color: "aqua", textDecoration: "none" }}><div style={{display: "flex", justifyContent: "center" }}><span><FaHome size={35}/></span></div></Link>
                         </NavItem>
-                        <NavItem id="contact" style={{ width: "100%", padding: "0 100px" }}>
+                        <NavItem id="contact" style={{ width: "100%", margin: "100px" }}>
                             <Link to="/contact" style={{ color: "aqua", textDecoration: "none" }}><div style={{display: "flex", justifyContent: "center"}}><span style={{fontSize: "2em"}}>Contact</span></div></Link>
                         </NavItem>
                     </NavMenu>
