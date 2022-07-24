@@ -33,7 +33,7 @@ cursor: pointer;
 font-size: 1.5rem;
 display: flex;
 align-items: center;
-margin-left: 24px
+margin-left: 24px;
 font-weight: bold;
 text-decoration: none;
 `
@@ -54,6 +54,7 @@ display: none;
 
 export const NavMenu = styled.ul`
 display: flex;
+height: "200px";
 align-items: center;
 list-style: none;
 text-align: center;
@@ -65,6 +66,6 @@ padding: 0;
 `
 
 export const NavItem = styled.li`
-height: 80px;
-margin-top: 50px;
+margin-top: 20px;
+height: "200px";
 `
