@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
-// import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom';
 
 
 export const SidebarContainer = styled.aside`
@@ -34,8 +34,9 @@ export const SidebarWrapper = styled.div`
   transition: opacity 0.75s, visibility 0.75s, height 0.75s;
 `
 export const SidebarItem = styled.li`
-  letter-spacing: 5px;
-  margin-top: 50px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 `
 
 export const SidebarMenu = styled.ul`
@@ -45,6 +46,7 @@ export const SidebarMenu = styled.ul`
     text-align: center;
     padding: 0;
 
+
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat(6, 60px);
     }
@@ -52,7 +54,6 @@ export const SidebarMenu = styled.ul`
 
 // export const SidebarLink = styled(Link)`
 //     font-size: 1.5rem;
-//     text-decoration: none;
 //     list-style: none;
 //     transition: 0.2s ease-in-out;
 //     text-decoration: none;
@@ -64,4 +65,3 @@ export const SidebarMenu = styled.ul`
 //         color: black;
 //     }
 // `
-

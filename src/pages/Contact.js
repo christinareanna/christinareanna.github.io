@@ -15,7 +15,7 @@ const Contact = ({ isOpen, toggle }) => {
             <div className='sidebar'>
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div>
-            <h3 className="contact">Contact</h3>
+            <h1 className="contact">Contact</h1>
             <hr style={{ border: "none" }} />
             <ContactForm />
         </>

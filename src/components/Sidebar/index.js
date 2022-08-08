@@ -39,18 +39,17 @@ const Sidebar = () => {
     return isSidebarShowing ? (
       <SidebarWrapper>
         <SidebarMenu>
-          {/* <NavLogo to="/" onMouseDown={hide}>Christina Reanna</NavLogo> */}
-          {/* <div onMouseDown={hide} onClick={() => window.location.replace("/#about")}>
-            <span>Go to about</span>
-          </div> */}
-          <SidebarItem aria-label="View Blogs" id="blogs" style={{ width: "100%", margin: "3em 0", }}>
-            <Link to="/blogs" onClick={toggle} style={{ color: "#F55887", fontSize: "44px", textDecoration: "none" }}>Blogs</Link>
+          <SidebarItem aria-label="View Projects" id="projects">
+            <Link to="/projects" className="link" onClick={toggle} style={{ color: "#F55887", fontSize: "30px", textDecoration: "none" }}>Projects</Link>
           </SidebarItem>
-          <SidebarItem aria-label="Go to homepage" id="home" style={{ width: "100%", margin: "3em 0", }}>
-            <Link to="/" onClick={toggle} style={{ color: "#F55887", fontSize: "44px", textDecoration: "none" }}>Home</Link>
+          <SidebarItem aria-label="View Blogs" id="blogs">
+            <Link to="/blogs" className="link" onClick={toggle} style={{ color: "#F55887", fontSize: "30px", textDecoration: "none" }}>Blogs</Link>
           </SidebarItem>
-          <SidebarItem aria-label="View Contact Form" id="contact" style={{ width: "100%", margin: "3em 0", }}>
-            <Link to="/contact" onClick={toggle} style={{ color: "#F55887", fontSize: "44px", textDecoration: "none" }}>Contact</Link>
+          <SidebarItem aria-label="View Contact Form" id="contact">
+            <Link to="/contact" className="link" onClick={toggle} style={{ color: "#F55887", fontSize: "30px", textDecoration: "none" }}>Contact</Link>
+          </SidebarItem>
+          <SidebarItem aria-label="Go to homepage" id="home">
+            <Link to="/" className="link" onClick={toggle} style={{ color: "#F55887", fontSize: "30px", textDecoration: "none" }}>Home</Link>
           </SidebarItem>
         </SidebarMenu>
       </SidebarWrapper>

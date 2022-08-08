@@ -54,10 +54,6 @@
   text-align: center;
 }
 
-/* .img-div {
-  background-color: aqua;
-} */
-
 .pikachu {
   width: 500px;
   height: auto;
@@ -75,7 +71,6 @@
 .thinkful {
   background-color: white;
   margin: 30px 0;
-  /* padding: 3px 0; */
   width: 400px;
   height: auto;
   border-radius: 50%;
@@ -83,11 +78,10 @@
 }
 
 .container-fluid {
-  /* background-color: hotpink; */
   font-size: 12px;
+  width: auto;
   color: white;
-  /* width: auto; */
-  padding: auto;
+  padding: 0;
 }
 
 
@@ -101,9 +95,12 @@
 
 
 .about-container {
-  width: 100%;
+  height: 100%;
   text-align: center;
   justify-content: center;
+  border-radius: 10px;
+  padding: 30px 0;
+  margin: 0px;
 }
 
 .about-title {
@@ -159,6 +156,9 @@
   margin: 4em 20em;
 }
 
+
+/* come back to change all sizes to the same either px or em*/
+
 .blogs {
   color: #F55887;
   font-size: 4em;
@@ -168,7 +168,7 @@
 
 .home {
   color: #F55887;
-  font-size: 4em;
+  font-size: 30px;
   /* padding: 20px; */
 }
 
@@ -177,6 +177,11 @@
   font-size: 4em;
   margin: 20px;
   padding: 20px;
+}
+
+.projects {
+  font-size: 30px;
+  color: #F55887;
 }
 
 hr {
@@ -200,6 +205,7 @@ hr {
   width: 100%;
   height: 100%;
 }
+
 
 @media screen and (max-width: 2560px) {
 
@@ -227,8 +233,8 @@ hr {
     width: auto;
     height: auto;
     background-color: #F55887;
-    padding: 40px 50px;
-    margin: 30px 15px;
+    padding: 40px 70px;
+    margin: 30px 400px;
   }
 
   .about-title {
@@ -241,9 +247,9 @@ hr {
 
   .about-me {
     text-align: center;
-    font-size: 40px;
-    padding: 70px;
-    margin: 0;
+    font-size: 30px;
+    padding: 100px;
+    margin: 20px;
   }
 
 
@@ -251,22 +257,23 @@ hr {
     width: auto;
     height: auto;
     background-color: #F55887;
-    padding: 15px 15px;
-    margin: 30px 15px;
+    padding: 40px 70px;
+    margin: 30px 400px;
   }
 
   .blog-title {
     width: 100%;
-    font-size: 20px;
+    font-size: 50px;
     color: black;
     padding: 3px 0;
     margin: 3px 0;
   }
 
   .blog {
-    font-size: 20px;
-    padding: 20px;
-    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    padding: 100px;
+    margin: 20px;
   }
 
   .avatar {
@@ -276,12 +283,37 @@ hr {
   }
 
   .thinkful {
-    border-radius: 0%;
+    border-radius: 100%;
     text-align: center;
     justify-content: center;
-    width: 600px;
+    width: 300px;
+    padding: 0;
+    /* margin-top: 0; */
+  }
+
+  .reservation {
+    border-radius: 0%;
+    text-align: center;
+    width: 900px;
+    height: 100%;
     padding-bottom: 0;
     margin-bottom: 0;
+  }
+
+  .blogs {
+    font-size: 50px;
+  }
+
+  .home {
+    font-size: 50px;
+  }
+
+  .projects {
+    font-size: 50px;
+  }
+
+  .contact {
+    font-size: 50px;
   }
 }
 
@@ -300,8 +332,8 @@ hr {
     width: auto;
     height: auto;
     background-color: #F55887;
-    padding: 15px 15px;
-    margin: 30px 15px;
+    padding: 30px;
+    margin: 50px;
   }
 
   .about-title {
@@ -340,6 +372,50 @@ hr {
     padding: 20px;
     margin: 0;
   }
+
+  .blogs {
+    font-size: 40px;
+  }
+
+  .home {
+    font-size: 40px;
+  }
+
+  .projects {
+    font-size: 40px;
+  }
+
+  .contact {
+    font-size: 40px;
+  }
+
+  .reservation {
+    border-radius: 0%;
+    text-align: center;
+    width: 800px;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+
+  /* .sober-container {
+    width: auto;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+  }
+
+  .sober {
+    width: 50px;
+    margin: 100px;
+    height: auto;
+    color: aqua;
+    border: 300px aqua solid;
+    border-radius: 100%;
+    text-align: center;
+    justify-content: center;
+  } */
 
   .avatar {
     width: 250px;
@@ -389,6 +465,33 @@ hr {
     margin: 0;
   }
 
+  .reservation {
+    border-radius: 0%;
+    text-align: center;
+    width: 800px;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  /* .sober-container {
+    width: auto;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+  }
+
+  .sober {
+    width: 50px;
+    margin: 100px;
+    height: auto;
+    color: aqua;
+    border: 300px aqua solid;
+    border-radius: 100%;
+    text-align: center;
+    justify-content: center;
+  } */
+
 
   .blog-container {
     width: auto;
@@ -411,30 +514,19 @@ hr {
     padding: 20px;
     margin: 0;
   }
+
+  .blogs {
+    font-size: 50px;
+  }
+
+  .home {
+    font-size: 50px;
+  }
+
+  .projects {
+    font-size: 50px;
+  }
 }
-
-/* @media screen and (max-width: 2560px) {
-
-  .foreground {
-    width: 100%;
-  }
-
-  .sidebar {
-    display: none;
-  }
-} */
-
-/* @media screen and (max-width: 375px) {
-
-  .foreground {
-    width: 100%;
-  }
-
-  .sidebar {
-    width: 100%;
-    display: inline;
-  }
-} */
 
 @media screen and (max-width: 375px) {
 
@@ -455,7 +547,7 @@ hr {
   }
 
   #target {
-    font-size: 30px;
+    font-size: 38px;
   }
 
   #desc {
@@ -475,7 +567,7 @@ hr {
 
   .about-title {
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     padding: 3px 0;
     margin: 3px 0;
@@ -497,6 +589,19 @@ hr {
 
   .thinkful {
     border-radius: 0%;
+    width: 200px;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .reservation {
+    border-radius: 0%;
+    text-align: center;
     width: 200px;
     height: 100%;
     padding-bottom: 0;
@@ -533,10 +638,11 @@ hr {
   .contact {
     margin: 0;
     padding: 0%;
+    font-size: 25px;
   }
 
   #target {
-    font-size: 30px;
+    font-size: 38px;
   }
 
   #desc {
@@ -556,7 +662,7 @@ hr {
 
   .about-title {
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     padding: 3px 0;
     margin: 3px 0;
@@ -591,6 +697,11 @@ hr {
     margin: 0;
   }
 
+
+  .blogs {
+    font-size: 25px;
+  }
+
   .avatar {
     width: 250px;
     margin-top: 40px;
@@ -607,6 +718,24 @@ hr {
 
   .contact-form {
     padding: 0%;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .home {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .reservation {
+    border-radius: 0%;
+    text-align: center;
+    width: 100px;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
 }
@@ -663,6 +792,43 @@ hr {
     padding: 20px;
     margin: 0;
   }
+
+  /* .sober-container {
+    width: auto;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+  }
+
+  .sober {
+    width: 50px;
+    margin: 0;
+    height: auto;
+    color: aqua;
+    border: 50px aqua solid;
+    border-radius: 100%;
+    text-align: center;
+    justify-content: center;
+  } */
+
+
+  /* .sober-container {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 30px;
+  }
+
+  .sober {
+    width: 100%;
+    height: 100%;
+    color: aqua;
+    border: 100px aqua solid;
+    border-radius: 100%;
+    text-align: center;
+    justify-content: center;
+  } */
 }
 
 @media screen and (max-width: 414px) {
@@ -678,7 +844,7 @@ hr {
   }
 
   #target {
-    font-size: 30px;
+    font-size: 38px;
   }
 
   #desc {
@@ -719,11 +885,11 @@ hr {
   }
 
   #target {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   #desc {
-    font-size: 25px;
+    font-size: 30px;
     width: auto;
     padding: 15px;
   }
@@ -789,6 +955,15 @@ hr {
     margin-bottom: 0;
   }
 
+  .reservation {
+    border-radius: 0%;
+    text-align: center;
+    width: 700px;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
   .icon {
     width: 30px;
     height: 30px;
@@ -808,6 +983,15 @@ hr {
   .sidebar {
     overflow-x: hidden;
     width: auto;
+  }
+
+  .reservation {
+    border-radius: 0%;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -836,20 +1020,20 @@ hr {
   }
 
   .icon {
-    width: 20px;
-    height: 20px;
-    margin: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
     color: black;
     background-color: palevioletred;
   }
 
   #target {
-    font-size: 25px;
+    font-size: 30px;
     padding: 0%;
   }
 
   #desc {
-    font-size: 20px;
+    font-size: 22px;
     width: auto;
     padding: 15px;
   }
@@ -870,7 +1054,7 @@ hr {
 
   .about-title {
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     padding: 3px 0;
     margin: 3px 0;
@@ -882,13 +1066,6 @@ hr {
     margin: 0;
   }
 
-  .blog-container {
-    width: auto;
-    height: auto;
-    background-color: #F55887;
-    padding: 15px 15px;
-    margin: 30px 15px;
-  }
 
   .blog-title {
     width: 100%;
@@ -896,6 +1073,14 @@ hr {
     color: black;
     padding: 3px 0;
     margin: 3px 0;
+  }
+
+  .blog-container {
+    width: auto;
+    height: auto;
+    background-color: #F55887;
+    padding: 30px;
+    margin: 30px;
   }
 
   .blog {
@@ -906,9 +1091,21 @@ hr {
 
   .blogs {
     padding: 10px;
+    font-size: 30px;
     /* margin: 10px; */
   }
 
+  .home {
+    font-size: 30px;
+  }
+
+  .contact {
+    font-size: 30px;
+  }
+
+  .projects {
+    font-size: 30px;
+  }
 
   .avatar {
     width: 200px;
@@ -922,6 +1119,23 @@ hr {
     height: 100%;
     padding-bottom: 0;
     margin-bottom: 0;
+  }
+
+  .container-fluid {
+    padding: 0%;
+  }
+
+  .reservation {
+    border-radius: 0%;
+    text-align: center;
+    width: 200px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 22px;
   }
 }
 

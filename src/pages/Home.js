@@ -21,9 +21,9 @@ const Home = () => {
             <div className='img-div'>
                 <img class="avatar" src={Avatar} alt="" />
             </div>
-            <h3 className='home'>About me</h3>
+            <h1 className='home'>About me</h1>
             <hr />
-            <h1 className='title'>Knowledgeable in...</h1>
+            <p className='title'>Knowledgeable in...</p>
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col'>
@@ -42,16 +42,18 @@ const Home = () => {
                 <hr />
             </div>
             <div className='about-container'>
-                <p className='about-title'><i>Welcome to my personal site!</i></p>
-                <p className='about-me'>Thank you for stopping by. This website is part of my portfolio as I explore and learn more about JavaScript, HTML/CSS, 
-                React, and various libraries. In 2021, I injured myself at my previous job at the airport. I spent a lot of time on light duty and would bring
-                my laptop so I can take free courses to learn how to code. Eventually, I put two and two together and decided on a software engineering bootcamp called Thinkful. I quit my job, 
-                enrolled into school, packed my bags, and moved back home to Chicago. It was the perfect time for a move since I felt like five years was 
-                time for a change. I have a certificate in the Software Engineering Immersion class and graduated in February 2022.
-                    <img class="thinkful" src={Thinkful} alt="thinkful"></img>
+                <h1 className='about-title'>Welcome to my personal site!</h1>
+                <p className='about-me'>Thank you for stopping by. This website is part of my portfolio as I explore and learn more about JavaScript, HTML/CSS,
+                    React, and various libraries. In 2021, I injured myself at my previous job at the airport. I spent a lot of time on light duty and would bring
+                    my laptop so I can take free courses to learn how to code. Eventually, I put two and two together and decided on a software engineering bootcamp called Thinkful.
+                    I quit my job, enrolled into school, packed my bags, and moved back home to Chicago. It was the perfect time for a move since I felt like spending five
+                    years in Seattle was well spent and it was time for a change. I have a certificate in the Software Engineering Immersion class and graduated in February 2022.
+                    I've been an apprentice at Accenture in Chicago since March 2022 and loving the journey I'm on. My blogs will soon be automated using a CMS (Content Management System) 
+                    and I'll be adding/editing my projects section to include more links and live demos of them. Stay tuned!
                 </p>
+                <span><img className="thinkful" src={Thinkful} alt="thinkful"></img></span>
             </div>
-            <hr/>
+            <hr />
         </div>
     )
 }

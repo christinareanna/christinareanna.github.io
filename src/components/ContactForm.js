@@ -27,7 +27,7 @@ function ContactForm() {
                     <input
                         type='text'
                         name='from_name'
-                        placeholder='Required'
+                        placeholder='Your Name'
                         required
                         style={{ height: "5em", backgroundColor: "black" }}
                     />
@@ -35,7 +35,7 @@ function ContactForm() {
                     <input
                         type='text'
                         name='to_name'
-                        placeholder='Required'
+                        placeholder='Christina'
                         required
                         style={{ height: "5em", backgroundColor: "black" }}
                     />
@@ -43,7 +43,7 @@ function ContactForm() {
                     <input
                         type='text'
                         name='reply_to'
-                        placeholder='Required'
+                        placeholder='Your Email'
                         required
                         style={{ height: "5em", backgroundColor: "black" }}
                     />
@@ -51,6 +51,7 @@ function ContactForm() {
                     <textarea
                         type='text'
                         name='message'
+                        placeholder='Message'
                         required
                         style={{ height: "5em", resize: "none", fontFamily: "calibri", backgroundColor: "black" }}
                     />

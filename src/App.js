@@ -6,7 +6,7 @@ import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import Navbar from "./components/Navbar";
-
+import Projects from "./pages/Projects";
 
 // added the nav bar
 function App() {
@@ -18,6 +18,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/blogs" element={<Blogs />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
