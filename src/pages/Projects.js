@@ -1,9 +1,9 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar';
-import ReservationDashboard from "../ReservationDashboard.png";
-import NewReservation from "../NewReservation.png";
-import NewTable from "../NewTable.png";
-import Search from "../Search.png";
+// import ReservationDashboard from "../ReservationDashboard.png";
+// import NewReservation from "../NewReservation.png";
+// import NewTable from "../NewTable.png";
+// import Search from "../Search.png";
 import { AiOutlineGithub } from 'react-icons/ai';
 
 
