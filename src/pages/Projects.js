@@ -23,10 +23,11 @@ const Projects = ({ isOpen, toggle }) => {
                 <h1 className='blog-title'>Thinkful Bootcamp Final Project</h1>
                 <div className='project-link'><a href='https://github.com/christinareanna/final-capstone-project-thinkful' rel='noreferrer' target='_blank' aria-label='Github'><AiOutlineGithub className="icon" size={70} /></a></div>
                 <div className='project-pictures'>
-                    <span><img className='reservation' src={ReservationDashboard} alt='reservation dashboard'></img></span>
+                    {/* TODO- Come back to fix the images and import them again :) */}
+                    {/* <span><img className='reservation' src={ReservationDashboard} alt='reservation dashboard'></img></span>
                     <span><img className='reservation' src={NewReservation} alt='reservation'></img></span>
                     <span><img className='reservation' src={NewTable} alt='table'></img></span>
-                    <span><img className='reservation' src={Search} alt='search'></img></span>
+                    <span><img className='reservation' src={Search} alt='search'></img></span> */}
                 </div>
             </div>
             <hr style={{ border: "none" }} />
