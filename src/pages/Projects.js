@@ -2,8 +2,8 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 import ReservationDashboard from "../ReservationDashboard.png";
 import NewReservation from "../NewReservation.png";
-import NewTable from "../NewTable.png";
-import Search from "../Search.png";
+// import NewTable from "../NewTable.png";
+// import Search from "../Search.png";
 import { AiOutlineGithub } from 'react-icons/ai';
 import { SiHeroku } from 'react-icons/si'
 
@@ -28,8 +28,8 @@ const Projects = ({ isOpen, toggle }) => {
                     {/* TODO- Come back to fix the images and import them again :) */}
                     <div><img className='reservation' src={ReservationDashboard} alt='reservation' width={500} height={300}></img></div>
                     <div><img className='reservation' src={NewReservation} alt='reservation' width={500} height={300}></img></div>
-                    <div><img className='reservation' src={NewTable} alt='table' width={500} height={300}></img></div>
-                    <div><img className='reservation' src={Search} alt='search' width={500} height={300}></img></div>
+                    {/* <div><img className='reservation' src={NewTable} alt='table' width={500} height={300}></img></div>
+                    <div><img className='reservation' src={Search} alt='search' width={500} height={300}></img></div> */}
                 </div>
             </div>
             <hr style={{ border: "none" }} />
