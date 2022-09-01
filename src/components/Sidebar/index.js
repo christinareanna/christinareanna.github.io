@@ -40,16 +40,16 @@ const Sidebar = () => {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarItem aria-label="View Projects" id="projects">
-            <Link to="/projects" className="link" onClick={toggle} style={{ color: "#F55887", fontSize: "30px", textDecoration: "none" }}>Projects</Link>
+            <Link to="/projects" className="link" onClick={toggle} style={{ color: "#ffb6c1", fontSize: "30px", textDecoration: "none" }}>Projects</Link>
           </SidebarItem>
           <SidebarItem aria-label="View Blogs" id="blogs">
-            <Link to="/blogs" className="link" onClick={toggle} style={{ color: "#F55887", fontSize: "30px", textDecoration: "none" }}>Blogs</Link>
+            <Link to="/blogs" className="link" onClick={toggle} style={{ color: "#ffb6c1", fontSize: "30px", textDecoration: "none" }}>Blogs</Link>
           </SidebarItem>
           <SidebarItem aria-label="View Contact Form" id="contact">
-            <Link to="/contact" className="link" onClick={toggle} style={{ color: "#F55887", fontSize: "30px", textDecoration: "none" }}>Contact</Link>
+            <Link to="/contact" className="link" onClick={toggle} style={{ color: "#ffb6c1", fontSize: "30px", textDecoration: "none" }}>Contact</Link>
           </SidebarItem>
           <SidebarItem aria-label="Go to homepage" id="home">
-            <Link to="/" className="link" onClick={toggle} style={{ color: "#F55887", fontSize: "30px", textDecoration: "none" }}>Home</Link>
+            <Link to="/" className="link" onClick={toggle} style={{ color: "#ffb6c1", fontSize: "30px", textDecoration: "none" }}>Home</Link>
           </SidebarItem>
         </SidebarMenu>
       </SidebarWrapper>

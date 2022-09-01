@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Avatar from "../avatar.jpg"
+import newHero from "../newhero.jpg"
 import Thinkful from "../thinkfulimg.png"
 import Sidebar from '../components/Sidebar'
 import { AiOutlineGithub, AiOutlineHtml5 } from 'react-icons/ai';
@@ -19,7 +19,7 @@ const Home = () => {
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div>
             <div className='img-div'>
-                <img class="avatar" src={Avatar} alt="" />
+                <img class="avatar" src={newHero} alt="" />
             </div>
             <h1 className='home'>About me</h1>
             <hr />

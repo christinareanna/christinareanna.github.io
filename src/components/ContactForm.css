@@ -8,7 +8,7 @@ Form {
     height: 100%;
     text-align: center;
     justify-content: center;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 5px 0;
     margin: 0px;
 }
@@ -16,10 +16,10 @@ Form {
 input {
     justify-content: center;
     font-size: 16px;
-    color: hotpink;
+    color: white;
     width: 60%;
     padding: 0;
-    border-color: #F55887;
+    border: 2px #ffb6c1 solid;
 }
 
 input::placeholder {
@@ -30,12 +30,12 @@ input::placeholder {
 
 textarea {
     font-size: 16px;
-    color: hotpink;
+    color: white;
     width: 60%;
     overflow-y: hidden;
     overflow-x: hidden;
     padding: 0;
-    border-color: #F55887;
+    border: 2px #ffb6c1 solid;
 }
 
 textarea::placeholder {
@@ -49,7 +49,7 @@ textarea::placeholder {
 .button {
     appearance: button;
     background-color: black;
-    border: 1 solid hotpink;
+    border: 1 solid white;
     border-radius: .5rem;
     box-sizing: border-box;
     color: white;

@@ -9,7 +9,7 @@
   font-size: 70px;
   text-align: center;
   padding-top: 80px;
-  color: #F55887;
+  color: #addfad;
   animation: slideRight 2s ease-in-out;
 }
 
@@ -90,7 +90,7 @@
   padding: 30px;
   margin: 30px;
   color: black;
-  background-color: palevioletred;
+  background-color: #ffb6c1;
 }
 
 
@@ -110,7 +110,7 @@
   width: auto;
   text-align: center;
   padding: 2em;
-  background-color: #F55887;
+  background-color: #addfad;
   margin: 4em 20em;
 }
 
@@ -121,7 +121,7 @@
   width: auto;
   text-align: center;
   padding: 2em;
-  background-color: #F55887;
+  background-color: #addfad;
   margin: 4em 20em;
 }
 
@@ -142,7 +142,7 @@
   text-align: center;
   padding: 2em;
   margin: 1em 20em;
-  background-color: #F55887;
+  background-color: #addfad;
 }
 
 .blog {
@@ -152,7 +152,7 @@
   width: auto;
   text-align: center;
   padding: 2em;
-  background-color: #F55887;
+  background-color: #addfad;
   margin: 4em 20em;
 }
 
@@ -160,20 +160,20 @@
 /* come back to change all sizes to the same either px or em*/
 
 .blogs {
-  color: #F55887;
+  color: #addfad;
   font-size: 4em;
   padding: 20px;
   margin: 20px;
 }
 
 .home {
-  color: #F55887;
+  color: #addfad;
   font-size: 30px;
   /* padding: 20px; */
 }
 
 .contact {
-  color: #F55887;
+  color: #addfad;
   font-size: 4em;
   margin: 20px;
   padding: 20px;
@@ -181,7 +181,7 @@
 
 .projects {
   font-size: 30px;
-  color: #F55887;
+  color: #addfad;
 }
 
 hr {
@@ -226,13 +226,13 @@ hr {
     height: 100px;
     margin: 50px;
     color: black;
-    background-color: palevioletred;
+    background-color: #ffb6c1;
   }
 
   .about-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 40px 70px;
     margin: 30px 400px;
   }
@@ -256,7 +256,7 @@ hr {
   .blog-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 40px 70px;
     margin: 30px 400px;
   }
@@ -331,7 +331,7 @@ hr {
   .about-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 30px;
     margin: 50px;
   }
@@ -354,7 +354,7 @@ hr {
   .blog-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 15px 15px;
     margin: 30px 15px;
   }
@@ -446,7 +446,7 @@ hr {
   .about-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 15px 15px;
     margin: 30px 15px;
   }
@@ -496,7 +496,7 @@ hr {
   .blog-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 15px 15px;
     margin: 30px 15px;
   }
@@ -560,7 +560,7 @@ hr {
   .about-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 15px 15px;
     margin: 30px 15px;
   }
@@ -584,7 +584,7 @@ hr {
     height: 20px;
     margin: 5px;
     color: black;
-    background-color: palevioletred;
+    background-color: #ffb6c1;
   }
 
   .thinkful {
@@ -627,7 +627,7 @@ hr {
     height: 20px;
     margin: 5px;
     color: black;
-    background-color: palevioletred;
+    background-color: #ffb6c1;
   }
 
   hr {
@@ -655,7 +655,7 @@ hr {
   .about-container {
     width: 100%;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 15px 15px;
     margin: 30px 15px;
   }
@@ -678,7 +678,7 @@ hr {
   .blog-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 15px 15px;
     margin: 30px 15px;
   }
@@ -751,7 +751,7 @@ hr {
   .about-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 15px 15px;
     margin: 30px 15px;
   }
@@ -774,7 +774,7 @@ hr {
   .blog-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 15px 15px;
     margin: 30px 15px;
   }
@@ -862,7 +862,7 @@ hr {
     height: 30px;
     margin: 5px;
     color: black;
-    background-color: palevioletred;
+    background-color: #ffb6c1;
   }
 }
 
@@ -898,7 +898,7 @@ hr {
   .about-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 15px 15px;
     margin: 30px 15px;
   }
@@ -921,7 +921,7 @@ hr {
   .blog-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 15px 15px;
     margin: 30px 15px;
   }
@@ -969,7 +969,7 @@ hr {
     height: 30px;
     margin: 5px;
     color: black;
-    background-color: palevioletred;
+    background-color: #ffb6c1;
   }
 }
 
@@ -1024,7 +1024,7 @@ hr {
     height: 30px;
     margin: 2px;
     color: black;
-    background-color: palevioletred;
+    background-color: #ffb6c1;
   }
 
   #target {
@@ -1039,7 +1039,7 @@ hr {
   }
 
   .contact {
-    color: #F55887;
+    color: #addfad;
     margin: 10px;
     padding: 10px;
   }
@@ -1047,7 +1047,7 @@ hr {
   .about-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 15px 15px;
     margin: 30px 15px;
   }
@@ -1078,7 +1078,7 @@ hr {
   .blog-container {
     width: auto;
     height: auto;
-    background-color: #F55887;
+    background-color: #addfad;
     padding: 30px;
     margin: 30px;
   }
