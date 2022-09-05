@@ -45,7 +45,7 @@ export const SidebarMenu = styled.ul`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
-    padding: 12rem 0;
+    padding: 14rem 0;
 
 
 
@@ -54,7 +54,7 @@ export const SidebarMenu = styled.ul`
     }
 
     @media screen and (min-width: 768px) {
-      padding: 12rem 0;
+      padding: 14rem 0;
     }
 `
 

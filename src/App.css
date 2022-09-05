@@ -78,7 +78,7 @@
   font-family: calibri;
   font-size: clamp(1rem, .5rem + 5vw, 5rem);
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   color: #addfad;
   animation: slideRight 2s ease-in-out;
 }
@@ -101,7 +101,7 @@
   font-family: calibri;
   text-align: center;
   font-size: clamp(.6rem, .5rem + 5vw, 2rem);
-  padding: 2rem;
+  padding: 0 2rem;
   color: white;
   animation: slideIn 2s ease-in-out;
 }
