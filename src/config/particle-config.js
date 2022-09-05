@@ -2,28 +2,28 @@ const particlesConfig =
 {
     particles: {
         number: {
-            value: 218,
+            value: 118,
             density: {
                 enable: true,
                 value_area: 946.9771699587272
             }
         },
         color: {
-            value: "#ffffff"
+            value: "#BEBEBE"
         },
         shape: {
             type: "circle",
             stroke: {
-                width: 3,
-                color: "#ffffff"
+                width: 2,
+                color: "#BEBEBE"
             },
             polygon: {
-                nb_sides: 6
+                nb_sides: 3
             },
             image: {
                 src: "img/github.svg",
-                width: 100,
-                height: 100
+                width: 80,
+                height: 80
             }
         },
         opacity: {
@@ -37,12 +37,12 @@ const particlesConfig =
             }
         },
         size: {
-            value: 2,
+            value: 1,
             random: true,
             anim: {
                 enable: false,
                 speed: 4,
-                size_min: 0.3,
+                size_min: 0.1,
                 sync: false
             }
         },
@@ -50,7 +50,7 @@ const particlesConfig =
             enable: false,
             distance: 150,
             color: "#ffffff",
-            opacity: 0.4,
+            opacity: 0.1,
             width: 1
         },
         move: {
@@ -97,10 +97,10 @@ const particlesConfig =
             },
             repulse: {
                 distance: 400,
-                duration: 0.4
+                duration: 0.2
             },
             push: {
-                particles_nb: 4
+                particles_nb: 2
             },
             remove: {
                 particles_nb: 2

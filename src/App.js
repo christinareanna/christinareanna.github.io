@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import Navbar from "./components/Navbar";
 import Projects from "./pages/Projects";
+import { Footer } from "./components/Footer";
 
 // added the nav bar
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="*" element={<NoPage />} />
           </Routes>
         </Router>
+      <Footer/>
       </div>
       <div className="background">
         <ParticleBackground />

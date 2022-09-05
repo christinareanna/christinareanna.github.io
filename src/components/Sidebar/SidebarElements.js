@@ -11,6 +11,7 @@ export const SidebarContainer = styled.aside`
   align-items: center;
   top: 0;
   left: 0;
+  background-color: black;
   `;
 
 export const CloseIcon = styled(FaTimes)`
@@ -44,11 +45,16 @@ export const SidebarMenu = styled.ul`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
-    padding: 0;
+    padding: 12rem 0;
+
 
 
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat(6, 60px);
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 12rem 0;
     }
 `
 
@@ -58,7 +64,7 @@ export const SidebarMenu = styled.ul`
 //     transition: 0.2s ease-in-out;
 //     text-decoration: none;
 //     color: #FF1493;
-//     margin-top: 200px;
+//     margin: 6rem 0;
 //     cursor: pointer;
 
 //     &:hover {

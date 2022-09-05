@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "./ContactForm.css";
 import { useForm, ValidationError } from '@formspree/react';
 
@@ -26,37 +26,33 @@ function ContactForm() {
                     />
                     <input
                         type='text'
+                        class='input'
                         name='from_name'
-                        placeholder='Your Name'
+                        placeholder='Full Name'
                         required
-                        style={{ height: "5em", backgroundColor: "black" }}
+                        // style={{ height: "5em", backgroundColor: "black" }}
                     />
                     <br />
                     <input
                         type='text'
-                        name='to_name'
-                        placeholder='Christina'
-                        required
-                        style={{ height: "5em", backgroundColor: "black" }}
-                    />
-                    <br />
-                    <input
-                        type='text'
+                        class='input'
                         name='reply_to'
                         placeholder='Your Email'
                         required
-                        style={{ height: "5em", backgroundColor: "black" }}
+                        // style={{ height: "5em", backgroundColor: "black" }}
                     />
                     <br />
                     <textarea
                         type='text'
+                        class='input'
                         name='message'
                         placeholder='Message'
                         required
-                        style={{ height: "5em", resize: "none", fontFamily: "calibri", backgroundColor: "black" }}
+                        // style={{ height: "5em", resize: "none", fontFamily: "arial", backgroundColor: "black" }}
                     />
                     <br />
                     <button className="button" type='submit' disabled={state.submitting}>Submit</button>
+                    {/* <Link to="/"><button className="button">Home</button></Link> */}
                     {/* <button className="button" type='submit' disabled={state.submitting}>Cancel</button> */}
                 </form>
             </div>

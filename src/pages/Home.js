@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import newHero from "../newhero.jpg"
-import Thinkful from "../thinkfulimg.png"
+// import Thinkful from "../thinkfulimg.png"
 import Sidebar from '../components/Sidebar'
 import { AiOutlineGithub, AiOutlineHtml5 } from 'react-icons/ai';
 import { FaReact, FaGit, FaJs, FaCss3 } from 'react-icons/fa';
-
 
 
 const Home = () => {
@@ -14,17 +13,23 @@ const Home = () => {
     };
 
     return (
-        <div className='home-div'>
+        <div className='container-fluid'>
             <div className='sidebar'>
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div>
-            <div className='img-div'>
+            <div>
+            <div id="target">
+                Christina Reanna Knapp
+            </div>
+            <div id="desc">
+                Product Engineering Associate at Accenture.
+            </div>
                 <img class="avatar" src={newHero} alt="" />
             </div>
             <h1 className='home'>About me</h1>
             <hr />
-            <p className='title'>Knowledgeable in...</p>
-            <div className='container-fluid'>
+            <h2>Knowledgeable in...</h2>
+            <div>
                 <div className='row'>
                     <div className='col'>
                         <AiOutlineGithub className="icon" size={70} />
@@ -41,17 +46,16 @@ const Home = () => {
                 </div>
                 <hr />
             </div>
-            <div className='about-container'>
-                <h1 className='about-title'>Welcome to my personal site!</h1>
-                <p className='about-me'>Thank you for stopping by. This website is part of my portfolio as I explore and learn more about JavaScript, HTML/CSS,
-                    React, and various libraries. In 2021, I injured myself at my previous job at the airport. I spent a lot of time on light duty and would bring
-                    my laptop so I can take free courses to learn how to code. Eventually, I put two and two together and decided on a software engineering bootcamp called Thinkful.
-                    I quit my job, enrolled into school, packed my bags, and moved back home to Chicago. It was the perfect time for a move since I felt like spending five
-                    years in Seattle was well spent and it was time for a change. I have a certificate in the Software Engineering Immersion class and graduated in February 2022.
-                    I've been an apprentice at Accenture in Chicago since March 2022 and loving the journey I'm on. My blogs will soon be automated using a CMS (Content Management System) 
-                    and I'll be adding/editing my projects section to include more links and live demos of them. Stay tuned!
-                </p>
-                <span><img className="thinkful" src={Thinkful} alt="thinkful"></img></span>
+            <div className='global-container'>
+                <p className='global'>I started learning HTML & CSS when I was a very small, young human who had no idea the complexity that lied beneath.
+                    I've had an interest in web design for many years and decided to join a coding bootcamp called Thinkful in September 2021. I graduated in February 2022
+                    and started at Accenture in March 2022.</p>
+                {/* <span><img className="thinkful" src={Thinkful} alt="thinkful"></img></span> */}
+                <hr />
+                <p className='global'>I feel like I've lived many lives, but that could be because I did retail for many years. I desperately wanted a change in my life and
+                    did some soul searching and came to the conclusion that at the core of my being, I am an artist.
+                    I decided that web design, specifically front-end, was where my passion really was. I could finally combine everything I love into one beautiful package.
+                    Feel free to tag along on the journey of me screaming at my computer and then successfully doing the things and stuff.</p>
             </div>
             <hr />
         </div>

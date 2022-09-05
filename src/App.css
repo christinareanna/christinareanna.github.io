@@ -1,14 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(7, 0, 211, 1) 100%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lime;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
 .App {
   text-align: center;
 }
 
+.foreground {
+  z-index: 99;
+  width: 100%;
+  position: absolute;
+  overflow-x: hidden;
+}
 
-#target {
+.background {
+  z-index: -1;
+  position: fixed;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  color: white;
+  font-size: clamp(.8rem, 1vw, .9rem);
+  margin: 4rem 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* header {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 32px;
+} */
+
+
+/* #target {
   background-color: black;
+  min-height: 100px;
+  min-width: 100px;
   font-family: calibri;
   font-size: 70px;
   text-align: center;
   padding-top: 80px;
+  color: #addfad;
+  animation: slideRight 2s ease-in-out;
+} */
+
+#target {
+  background-color: black;
+  min-height: 30px;
+  min-width: 60%;
+  font-family: calibri;
+  font-size: clamp(1rem, .5rem + 5vw, 5rem);
+  text-align: center;
+  padding: 2rem 0;
   color: #addfad;
   animation: slideRight 2s ease-in-out;
 }
@@ -26,10 +96,12 @@
 
 #desc {
   background-color: black;
+  min-width: 30%;
+  min-height: 80px;
   font-family: calibri;
   text-align: center;
-  font-size: 50px;
-  padding: 60px;
+  font-size: clamp(.6rem, .5rem + 5vw, 2rem);
+  padding: 2rem;
   color: white;
   animation: slideIn 2s ease-in-out;
 }
@@ -44,85 +116,129 @@
   }
 }
 
+body {
+  font-size: clamp(16px, 4vw, 22px);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 
-.title {
-  font-size: 24px;
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-  font-family: Centrano2;
+h1, h2 {
+  /* font-size: clamp(1rem, 5vw, 2rem); */
+  font-size: clamp(.5rem, .5rem + 5vw, 2rem);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: white;
-  width: auto;
   text-align: center;
 }
 
+/* .img-div {
+  min-width: 30rem;
+} */
+
 .pikachu {
-  width: 500px;
+  max-width: 40%;
   height: auto;
-  border-radius: 50%;
-  border: 10px solid aqua;
-}
-
-.avatar {
-  width: 500px;
-  height: auto;
-  border-radius: 50%;
-  border: 10px solid aqua;
-}
-
-.thinkful {
-  background-color: white;
-  margin: 30px 0;
-  width: 400px;
-  height: auto;
-  border-radius: 50%;
+  align-items: center;
   border: 2px solid black;
 }
 
-.container-fluid {
+.avatar {
+  max-width: 40%;
+  height: auto;
+  align-items: center;
+  border: 2px solid black;
+}
+
+/* .thinkful {
+  margin: 0 auto;
+  min-width: 50px;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #addfad;
+} */
+
+.thinkful {
+  max-width: 40%;
+  border: 2px solid white;
+}
+
+/* .container-fluid {
   font-size: 12px;
-  width: auto;
   color: white;
   padding: 0;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+} */
+
+.container-fluid {
+  /* padding: 0 2em; */
+  /* min-width: 30rem; */
+  margin: 0 auto;
 }
 
 
 .icon {
-  border-radius: 100px;
-  padding: 30px;
-  margin: 30px;
+  border-radius: 100%;
+  max-width: 70%;
+  padding: 5px;
+  margin: 10px;
   color: black;
   background-color: #ffb6c1;
 }
 
 
-.about-container {
-  height: 100%;
+.global-container {
+  /* font-size: clamp(1rem, 5vw, 5rem); */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* color: black; */
+  min-width: 60%;
   text-align: center;
-  justify-content: center;
-  border-radius: 10px;
-  padding: 30px 0;
-  margin: 0px;
+  padding: 1rem;
+  /* background-color: #addfad; */
+  margin: 2rem;
 }
 
-.about-title {
-  font-size: 25px;
+
+.global {
+  /* font-size: clamp(.5rem, 5vw, 2rem); */
+  /* font-size: clamp(16px, 4vw, 22px); */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: black;
-  width: auto;
+  color: #addfad;
+  max-width: 100%;
   text-align: center;
-  padding: 2em;
-  background-color: #addfad;
-  margin: 4em 20em;
+  padding: 1rem;
+  /* background-color: #addfad; */
+  /* margin: 2rem; */
 }
 
-.about-me {
-  font-size: 25px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: black;
-  width: auto;
-  text-align: center;
-  padding: 2em;
-  background-color: #addfad;
-  margin: 4em 20em;
+.home {
+  color: #addfad;
+  max-width: 200rem;
+  /* font-size: 30px; */
+  /* padding: 20px; */
+}
+
+/* .contact {
+  color: #addfad;
+  font-size: 4em;
+  margin: 20px;
+  padding: 20px;
+} */
+
+.projects {
+  font-size: 30px;
+  color: #addfad;
+}
+
+hr {
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: aqua;
+  border: #000000;
+  height: 10px;
 }
 
 .blog-container {
@@ -135,42 +251,94 @@
 }
 
 .blog-title {
-  font-size: 25px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
-  width: auto;
+  min-width: 60%;
   text-align: center;
-  padding: 2em;
-  margin: 1em 20em;
+  padding: 1rem;
   background-color: #addfad;
+  margin: 2rem;
 }
+
+.project-title {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  min-width: 60%;
+  text-align: center;
+}
+
+.project-container {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  min-width: 60%;
+  text-align: center;
+  padding: 1rem;
+  background-color: #addfad;
+  margin: 2rem;
+}
+
+.reservation {
+  max-width: 80%;
+  height: auto;
+  align-items: center;
+  border: 2px solid black;
+}
+
 
 .blog {
-  font-size: 25px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: black;
-  width: auto;
+  max-width: 100%;
   text-align: center;
-  padding: 2em;
+  padding: 1rem;
   background-color: #addfad;
-  margin: 4em 20em;
+  margin: 2rem;
 }
 
+.blogs {
+  color: #df717e;
+  font-size: 30px;
+}
+
+.contact {
+  color: #df717e;
+  font-size: 30px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.projects {
+  font-size: 30px;
+  color: #df717e;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .foreground {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    display: grid;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+}
+
+/* .sidebar {
+  max-width: 768px;
+} */
 
 /* come back to change all sizes to the same either px or em*/
 
-.blogs {
-  color: #addfad;
-  font-size: 4em;
-  padding: 20px;
-  margin: 20px;
-}
 
-.home {
+/*.home {
   color: #addfad;
-  font-size: 30px;
-  /* padding: 20px; */
-}
+  font-size: 30px; */
+/* padding: 20px; */
+/* }
 
 .contact {
   color: #addfad;
@@ -289,7 +457,7 @@ hr {
     width: 300px;
     padding: 0;
     /* margin-top: 0; */
-  }
+/* }
 
   .reservation {
     border-radius: 0%;
@@ -396,10 +564,9 @@ hr {
     height: 100%;
     padding-bottom: 0;
     margin-bottom: 0;
-  }
+  } */
 
-
-  /* .sober-container {
+/* .sober-container {
     width: auto;
     padding: 30px;
     margin: 30px;
@@ -417,7 +584,7 @@ hr {
     justify-content: center;
   } */
 
-  .avatar {
+/* .avatar {
     width: 250px;
     margin-top: 40px;
     border: 2px solid aqua;
@@ -472,9 +639,9 @@ hr {
     height: 100%;
     padding-bottom: 0;
     margin-bottom: 0;
-  }
+  } */
 
-  /* .sober-container {
+/* .sober-container {
     width: auto;
     padding: 30px;
     margin: 30px;
@@ -493,7 +660,7 @@ hr {
   } */
 
 
-  .blog-container {
+/* .blog-container {
     width: auto;
     height: auto;
     background-color: #addfad;
@@ -792,43 +959,6 @@ hr {
     padding: 20px;
     margin: 0;
   }
-
-  /* .sober-container {
-    width: auto;
-    padding: 30px;
-    margin: 30px;
-    text-align: center;
-  }
-
-  .sober {
-    width: 50px;
-    margin: 0;
-    height: auto;
-    color: aqua;
-    border: 50px aqua solid;
-    border-radius: 100%;
-    text-align: center;
-    justify-content: center;
-  } */
-
-
-  /* .sober-container {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    margin: 30px;
-    padding: 30px;
-  }
-
-  .sober {
-    width: 100%;
-    height: 100%;
-    color: aqua;
-    border: 100px aqua solid;
-    border-radius: 100%;
-    text-align: center;
-    justify-content: center;
-  } */
 }
 
 @media screen and (max-width: 414px) {
@@ -1092,7 +1222,6 @@ hr {
   .blogs {
     padding: 10px;
     font-size: 30px;
-    /* margin: 10px; */
   }
 
   .home {
@@ -1137,11 +1266,4 @@ hr {
   .title {
     font-size: 22px;
   }
-}
-
-header {
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
-  font-size: 32px;
-}
+} */
