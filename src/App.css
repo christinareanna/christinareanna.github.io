@@ -135,6 +135,14 @@ h1, h2 {
   min-width: 30rem;
 } */
 
+.link {
+  text-align: center;
+  text-decoration: none;
+  color: #df717e;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
 .pikachu {
   max-width: 40%;
   height: auto;

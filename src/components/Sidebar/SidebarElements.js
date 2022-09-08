@@ -12,7 +12,7 @@ export const SidebarContainer = styled.aside`
   top: 0;
   left: 0;
   background-color: black;
-  `;
+`;
 
 export const CloseIcon = styled(FaTimes)`
   color: #fff;
@@ -38,25 +38,31 @@ export const SidebarItem = styled.li`
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
 `
 
 export const SidebarMenu = styled.ul`
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 80px);
+    grid-template-rows: repeat(4, 18vh);
     text-align: center;
-    padding: 14rem 0;
+    
 
 
 
-    @media screen and (max-width: 480px) {
-        grid-template-rows: repeat(6, 60px);
-    }
-
-    @media screen and (min-width: 768px) {
-      padding: 14rem 0;
+    @media screen and (max-width: 768px) {
+        grid-template-rows: repeat(4, 22vh);
+        font-size: 38px;
+        justify-content: center;
+        padding: 6vh 0;
+        margin: 0;
     }
 `
+
+//padding: 14rem 0;
+// @media screen and (min-width: 768px) {
+//  padding: 14rem 0;
+//}
 
 // export const SidebarLink = styled(Link)`
 //     font-size: 1.5rem;
