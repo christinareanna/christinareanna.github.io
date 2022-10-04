@@ -51,7 +51,7 @@ function ContactForm() {
                         // style={{ height: "5em", resize: "none", fontFamily: "arial", backgroundColor: "black" }}
                     />
                     <br />
-                    <button className="button" type='submit' disabled={state.submitting}>Submit</button>
+                    <button className="contact-button" type='submit' disabled={state.submitting}>Submit</button>
                     {/* <Link to="/"><button className="button">Home</button></Link> */}
                     {/* <button className="button" type='submit' disabled={state.submitting}>Cancel</button> */}
                 </form>

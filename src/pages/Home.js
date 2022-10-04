@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import newHero from "../newhero.jpg"
 // import Thinkful from "../thinkfulimg.png"
 import Sidebar from '../components/Sidebar'
-import { AiOutlineGithub, AiOutlineHtml5 } from 'react-icons/ai';
+import { AiOutlineHtml5, AiOutlineCaretRight, AiOutlineCaretDown } from 'react-icons/ai';
 import { FaReact, FaGit, FaJs, FaCss3 } from 'react-icons/fa';
-
+import confused from "../thinking.png";
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -12,36 +12,67 @@ const Home = () => {
         setIsOpen(!isOpen)
     };
 
+    // let [addText, setAddText] = useState(true);
+    // const handleChange = () => {
+    //     return setAddText(!addText);
+    // };
+
+
+    function ChangeIcon() {
+        return isOpen ? (
+            <>
+                <button className="readmore-btn" onClick={toggle}>Read More <AiOutlineCaretDown /></button>
+                <div className='global-container'>
+                    <img src={confused} alt="very confuzzled emoji" />
+                    <p className='paragraph-explain'>
+                        I know what you're thinking. Christina! I don't know what these icons mean! That's okay.
+                        Basically, I'm very interested in front-end development and adding functionality to websites.
+                        From left to right, we have HTML, React, git, JavaScript, and CSS. With all of these combined,
+                        it makes me feel like I'm playing on a playground. HTML is code to structure web pages and its content.
+                        React is a JavaScript framework, which lets developers create user interfaces quickly
+                        (My favorite framework). Git is a free and open source software that helps with tracking any changes in
+                        files and is used to collaborate on projects, no matter the size of the project, quickly and efficiently.
+                        JavaScript is a programming language that works alongside HTML and CSS, that helps with the functionality
+                        of elements on a page. Lastly, CSS is Cascading Style Sheets and it helps with how you want to style elements
+                        on a page and the way they are displayed.
+                    </p>
+                </div>
+            </>
+        ) : (
+            <button className="readmore-btn" onClick={toggle}>Read More <AiOutlineCaretRight /></button>
+        )
+    }
+
+
+
     return (
         <div className='container-fluid'>
             <div className='sidebar'>
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div>
             <div>
-            <div id="target">
-                Christina Reanna Knapp
-            </div>
-            <div id="desc">
-                Product Engineering Associate at Accenture.
-            </div>
+                <div id="target">
+                    Christina Reanna Knapp
+                </div>
+                <div id="desc">
+                    Product Engineering Associate at Accenture.
+                </div>
                 <img class="avatar" src={newHero} alt="" />
             </div>
             <h1 className='home'>About me</h1>
             <hr />
-            <h2>Knowledgeable in...</h2>
+            <h2>Passionate about...</h2>
             <div>
                 <div className='row'>
                     <div className='col'>
-                        <AiOutlineGithub className="icon" size={70} />
-                        <AiOutlineHtml5 className="icon" size={70} />
-                        <FaReact className="icon" size={70} />
+                        <AiOutlineHtml5 className="icon" />
+                        <FaReact className="icon" />
+                        <FaGit className="icon" />
+                        <FaJs className="icon" />
+                        <FaCss3 className="icon" />
                     </div>
-                </div>
-                <div className='row'>
-                    <div className='col'>
-                        <FaGit className="icon" size={70} />
-                        <FaJs className="icon" size={70} />
-                        <FaCss3 className="icon" size={70} />
+                    <div className='read-more'>
+                        <ChangeIcon />
                     </div>
                 </div>
                 <hr />

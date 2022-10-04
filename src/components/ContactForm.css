@@ -61,10 +61,10 @@ input::placeholder {
     width: 100%;
 }
 
-button {
+.contact-button {
+    background: #e08e8e;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     width: 50%;
-    background: #e08e8e;
     border-radius: 5px;
     border: 0;
     cursor: pointer;
@@ -77,7 +77,7 @@ button {
     font-weight: 700;
 }
 
-button:hover {
+.contact-button:hover {
     background: #e08e8e;
 }
 
@@ -157,7 +157,7 @@ textarea::placeholder {
         width: 100%;
     }
 
-    .button {
+    .contact-button {
         padding: 8px;
         margin: 8px;
         color: black;

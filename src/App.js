@@ -24,7 +24,7 @@ function App() {
             <Route path="*" element={<NoPage />} />
           </Routes>
         </Router>
-      <Footer/>
+        <Footer />
       </div>
       <div className="background">
         <ParticleBackground />

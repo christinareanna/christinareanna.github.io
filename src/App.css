@@ -11,7 +11,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(7, 0, 211, 1) 100%);
+  background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(7, 0, 211, 1) 100%);
 }
 
 /* Handle */
@@ -47,29 +47,9 @@
 .footer {
   color: white;
   font-size: clamp(.8rem, 1vw, .9rem);
-  margin: 4rem 0;
+  margin: 10px 30px;
   font-family: 'Times New Roman', Times, serif;
 }
-
-/* header {
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
-  font-size: 32px;
-} */
-
-
-/* #target {
-  background-color: black;
-  min-height: 100px;
-  min-width: 100px;
-  font-family: calibri;
-  font-size: 70px;
-  text-align: center;
-  padding-top: 80px;
-  color: #addfad;
-  animation: slideRight 2s ease-in-out;
-} */
 
 #target {
   background-color: black;
@@ -126,7 +106,7 @@ body {
 h1, h2 {
   /* font-size: clamp(1rem, 5vw, 2rem); */
   font-size: clamp(.5rem, .5rem + 5vw, 2rem);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Helvetica', sans-serif;
   color: white;
   text-align: center;
 }
@@ -143,15 +123,26 @@ h1, h2 {
   padding: 5rem 0;
 }
 
-.pikachu {
+/* .pikachu {
   max-width: 40%;
+  height: auto;
+  align-items: center;
+  border: 2px solid black;
+} */
+
+.pikachu {
+  width: 100%;
+  padding: 10px;
+  max-width: 400px;
   height: auto;
   align-items: center;
   border: 2px solid black;
 }
 
 .avatar {
-  max-width: 40%;
+  width: 100%;
+  padding: 10px;
+  max-width: 400px;
   height: auto;
   align-items: center;
   border: 2px solid black;
@@ -165,11 +156,11 @@ h1, h2 {
   border-radius: 50%;
   border: 2px solid #addfad;
 } */
-
+/* 
 .thinkful {
   max-width: 40%;
   border: 2px solid white;
-}
+} */
 
 /* .container-fluid {
   font-size: 12px;
@@ -189,23 +180,40 @@ h1, h2 {
 
 .icon {
   border-radius: 100%;
-  max-width: 70%;
+  /* max-width: 100%; */
+  font-size: 70px;
   padding: 5px;
   margin: 10px;
   color: black;
   background-color: #ffb6c1;
 }
 
+.footer-icon {
+  border-radius: 100%;
+  font-size: 70px;
+  padding: 5px;
+  margin: 10px;
+  color: black;
+  background-color: #addfad;
+}
+
 
 .global-container {
   /* font-size: clamp(1rem, 5vw, 5rem); */
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* background-color: grey; */
   /* color: black; */
-  min-width: 60%;
+  /* min-width: 60%; */
+  background: rgb(0, 99, 173, 0.3);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
-  padding: 1rem;
+  padding: 0.8rem;
+  font-size: clamp(.5rem, .2rem + 5vw, 2rem);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  /* margin: 2rem; */
   /* background-color: #addfad; */
-  margin: 2rem;
 }
 
 
@@ -222,11 +230,52 @@ h1, h2 {
 }
 
 .home {
-  color: #addfad;
+  color: #df717e;
   max-width: 200rem;
   /* font-size: 30px; */
   /* padding: 20px; */
 }
+
+.read-more {
+  color: white;
+}
+
+.passion-explain {
+  background: rgb(0, 99, 173, 0.3);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: clamp(.4rem, .2rem + 5vw, 1.5rem);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.paragraph-explain {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #addfad;
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* the icon isn't centered within the button and i don't have time so come back to wrestle with it */
+.readmore-btn {
+  color: black;
+  background-color: #e08e8e;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 200px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-size: clamp(.3rem, .2rem + 5vw, 1.2rem);
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+
 
 /* .contact {
   color: #addfad;
@@ -335,943 +384,24 @@ hr {
   }
 }
 
-/* .sidebar {
-  max-width: 768px;
-} */
-
-/* come back to change all sizes to the same either px or em*/
-
-
-/*.home {
-  color: #addfad;
-  font-size: 30px; */
-/* padding: 20px; */
-/* }
-
-.contact {
-  color: #addfad;
-  font-size: 4em;
-  margin: 20px;
-  padding: 20px;
-}
-
-.projects {
-  font-size: 30px;
-  color: #addfad;
-}
-
-hr {
-  width: 400px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: aqua;
-  height: 10px;
-}
-
-.foreground {
-  z-index: 99;
-  width: 100%;
-  position: absolute;
-}
-
-.background {
-  z-index: -1;
-  position: fixed;
-  background-color: #000000;
-  width: 100%;
-  height: 100%;
-}
-
-
-@media screen and (max-width: 2560px) {
-
-  .foreground {
-    width: 100%;
-  }
-
-  .sidebar {
-    display: none;
-  }
-
-  .title {
-    font-size: 40px;
-  }
-
-  .icon {
-    width: 100px;
-    height: 100px;
-    margin: 50px;
-    color: black;
-    background-color: #ffb6c1;
-  }
-
-  .about-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 40px 70px;
-    margin: 30px 400px;
-  }
-
-  .about-title {
-    width: 100%;
-    font-size: 50px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .about-me {
-    text-align: center;
-    font-size: 30px;
-    padding: 100px;
-    margin: 20px;
-  }
-
-
-  .blog-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 40px 70px;
-    margin: 30px 400px;
-  }
-
-  .blog-title {
-    width: 100%;
-    font-size: 50px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .blog {
-    text-align: center;
-    font-size: 30px;
-    padding: 100px;
-    margin: 20px;
-  }
-
-  .avatar {
-    width: 350px;
-    margin-top: 40px;
-    border: 2px solid aqua;
-  }
-
-  .thinkful {
-    border-radius: 100%;
-    text-align: center;
-    justify-content: center;
-    width: 300px;
-    padding: 0;
-    /* margin-top: 0; */
-/* }
-
-  .reservation {
-    border-radius: 0%;
-    text-align: center;
-    width: 900px;
-    height: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .blogs {
-    font-size: 50px;
-  }
-
-  .home {
-    font-size: 50px;
-  }
-
-  .projects {
-    font-size: 50px;
-  }
-
-  .contact {
-    font-size: 50px;
-  }
-}
-
-
-@media screen and (max-width: 1440px) {
-
-  .foreground {
-    width: 100%;
-  }
-
-  .sidebar {
-    display: none;
-  }
-
-  .about-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 30px;
-    margin: 50px;
-  }
-
-  .about-title {
-    width: 100%;
-    font-size: 30px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .about-me {
-    font-size: 30px;
-    padding: 70px;
-    margin: 0;
-  }
-
-
-  .blog-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 15px 15px;
-    margin: 30px 15px;
-  }
-
-  .blog-title {
-    width: 100%;
-    font-size: 20px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .blog {
-    font-size: 20px;
-    padding: 20px;
-    margin: 0;
-  }
-
-  .blogs {
-    font-size: 40px;
-  }
-
-  .home {
-    font-size: 40px;
-  }
-
-  .projects {
-    font-size: 40px;
-  }
-
-  .contact {
-    font-size: 40px;
-  }
-
-  .reservation {
-    border-radius: 0%;
-    text-align: center;
-    width: 800px;
-    height: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  } */
-
-/* .sober-container {
-    width: auto;
-    padding: 30px;
-    margin: 30px;
-    text-align: center;
-  }
-
-  .sober {
-    width: 50px;
-    margin: 100px;
-    height: auto;
-    color: aqua;
-    border: 300px aqua solid;
-    border-radius: 100%;
-    text-align: center;
-    justify-content: center;
-  } */
-
-/* .avatar {
-    width: 250px;
-    margin-top: 40px;
-    border: 2px solid aqua;
-  }
-
-  .thinkful {
-    border-radius: 0%;
-    text-align: center;
-    width: 300px;
-    height: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-
-  .foreground {
-    width: 100%;
-  }
-
-  .sidebar {
-    display: none;
-  }
-
-  .about-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 15px 15px;
-    margin: 30px 15px;
-  }
-
-  .about-title {
-    width: 100%;
-    font-size: 32px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .about-me {
-    font-size: 30px;
-    padding: 50px 40px;
-    margin: 0;
-  }
-
-  .reservation {
-    border-radius: 0%;
-    text-align: center;
-    width: 700px;
-    height: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  } */
-
-/* .sober-container {
-    width: auto;
-    padding: 30px;
-    margin: 30px;
-    text-align: center;
-  }
-
-  .sober {
-    width: 50px;
-    margin: 100px;
-    height: auto;
-    color: aqua;
-    border: 300px aqua solid;
-    border-radius: 100%;
-    text-align: center;
-    justify-content: center;
-  } */
-
-
-/* .blog-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 15px 15px;
-    margin: 30px 15px;
-  }
-
-  .blog-title {
-    width: 100%;
-    font-size: 20px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .blog {
-    font-size: 20px;
-    padding: 20px;
-    margin: 0;
-  }
-
-  .blogs {
-    font-size: 50px;
-  }
-
-  .home {
-    font-size: 50px;
-  }
-
-  .projects {
-    font-size: 50px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-
-  .foreground {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .sidebar {
-    display: grid;
-    overflow-x: hidden;
-    max-width: 100%;
-  }
-
-  hr {
-    padding: 0 10px;
-    width: 40px;
-  }
-
-  #target {
-    font-size: 38px;
-  }
-
-  #desc {
-    font-size: 25px;
-    width: auto;
-    padding: 15px;
-  }
-
-
-  .about-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 15px 15px;
-    margin: 30px 15px;
-  }
-
-  .about-title {
-    width: 100%;
-    font-size: 16px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .about-me {
-    font-size: 20px;
-    padding: 20px;
-    margin: 0;
-  }
-
-  .icon {
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-    color: black;
-    background-color: #ffb6c1;
-  }
-
-  .thinkful {
-    border-radius: 0%;
-    width: 200px;
-    height: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .title {
-    font-size: 20px;
-  }
-
-  .reservation {
-    border-radius: 0%;
-    text-align: center;
-    width: 200px;
-    height: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 320px) {
-
-  .foreground {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .sidebar {
-    display: grid;
-    overflow-x: hidden;
-    max-width: 100%;
-  }
-
-  .icon {
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-    color: black;
-    background-color: #ffb6c1;
-  }
-
-  hr {
-    padding: 0 10px;
-    width: 40px;
-  }
-
-  .contact {
-    margin: 0;
-    padding: 0%;
-    font-size: 25px;
-  }
-
-  #target {
-    font-size: 38px;
-  }
-
-  #desc {
-    font-size: 25px;
-    width: auto;
-    padding: 15px;
-  }
-
-
-  .about-container {
-    width: 100%;
-    height: auto;
-    background-color: #addfad;
-    padding: 15px 15px;
-    margin: 30px 15px;
-  }
-
-  .about-title {
-    width: 100%;
-    font-size: 16px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .about-me {
-    font-size: 20px;
-    padding: 20px;
-    margin: 0;
-  }
-
-
-  .blog-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 15px 15px;
-    margin: 30px 15px;
-  }
-
-  .blog-title {
-    width: 100%;
-    font-size: 20px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .blog {
-    font-size: 20px;
-    padding: 20px;
-    margin: 0;
-  }
-
-
-  .blogs {
-    font-size: 25px;
-  }
-
-  .avatar {
-    width: 250px;
-    margin-top: 40px;
-    border: 2px solid aqua;
-  }
-
-  .thinkful {
-    border-radius: 0%;
-    width: 250px;
-    height: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .contact-form {
-    padding: 0%;
-  }
-
-  .title {
-    font-size: 25px;
-  }
-
-  .home {
-    font-size: 28px;
-    text-align: center;
-  }
-
-  .reservation {
-    border-radius: 0%;
-    text-align: center;
-    width: 100px;
-    height: 60%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-}
-
-
-
-@media screen and (max-width: 960px) {
-
-  .sidebar {
-    display: none;
-  }
-
-  .about-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 15px 15px;
-    margin: 30px 15px;
-  }
-
-  .about-title {
-    width: 100%;
-    font-size: 32px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .about-me {
-    font-size: 25px;
-    padding: 50px 40px;
-    margin: 0;
-  }
-
-
-  .blog-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 15px 15px;
-    margin: 30px 15px;
-  }
-
-  .blog-title {
-    width: 100%;
-    font-size: 20px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .blog {
-    font-size: 20px;
-    padding: 20px;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 414px) {
-
-  .foreground {
-    max-width: 100%;
-  }
-
-  .sidebar {
-    width: auto;
-    overflow-x: hidden;
-    display: inline;
-  }
-
-  #target {
-    font-size: 38px;
-  }
-
-  #desc {
-    font-size: 25px;
-    width: auto;
-    padding: 15px;
-  }
-
-  .avatar {
-    width: 250px;
-  }
-
-  .icon {
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    color: black;
-    background-color: #ffb6c1;
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-  .foreground {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .sidebar {
-    display: grid;
-    overflow-x: hidden;
-    max-width: 100%;
-  }
-
-  hr {
-    padding: 0 10px;
-    width: 40px;
-  }
-
-  #target {
-    font-size: 50px;
-  }
-
-  #desc {
-    font-size: 30px;
-    width: auto;
-    padding: 15px;
-  }
-
-
-  .about-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 15px 15px;
-    margin: 30px 15px;
-  }
-
-  .about-title {
-    width: 100%;
-    font-size: 32px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .about-me {
-    font-size: 25px;
-    padding: 50px 40px;
-    margin: 0;
-  }
-
-
-  .blog-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 15px 15px;
-    margin: 30px 15px;
-  }
-
-  .blog-title {
-    width: 100%;
-    font-size: 20px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .blog {
-    font-size: 20px;
-    padding: 20px;
-    margin: 0;
-  }
-
-  .avatar {
-    width: 250px;
-    margin-top: 40px;
-    border: 2px solid aqua;
-  }
-
-  .thinkful {
-    border-radius: 0%;
-    text-align: center;
-    width: 250px;
-    height: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .reservation {
-    border-radius: 0%;
-    text-align: center;
-    width: 700px;
-    height: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .icon {
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    color: black;
-    background-color: #ffb6c1;
-  }
-}
-
-
-@media screen and (max-width: 480px) {
-
-  .foreground {
-    max-width: 100%;
-  }
-
-  .sidebar {
-    overflow-x: hidden;
-    width: auto;
-  }
-
-  .reservation {
-    border-radius: 0%;
-    text-align: center;
-    width: 250px;
-    height: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-}
-
 @media screen and (max-width: 425px) {
-
-  .foreground {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .sidebar {
-    display: grid;
-    overflow-x: hidden;
-    max-width: 100%;
-  }
-
-  hr {
-    margin: 20px 50px;
-    text-align: center;
-    justify-content: center;
-    width: auto;
-  }
-
-  .home-div {
-    padding: 10px 0;
-  }
-
   .icon {
-    width: 30px;
-    height: 30px;
-    margin: 2px;
-    color: black;
-    background-color: #ffb6c1;
+    font-size: 40px;
   }
 
-  #target {
-    font-size: 30px;
-    padding: 0%;
+  .footer-icon {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .icon {
+    font-size: 70px;
+    margin: 40px;
   }
 
-  #desc {
-    font-size: 22px;
-    width: auto;
-    padding: 15px;
+  .footer-icon {
+    font-size: 70px;
+    margin: 20px;
   }
-
-  .contact {
-    color: #addfad;
-    margin: 10px;
-    padding: 10px;
-  }
-
-  .about-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 15px 15px;
-    margin: 30px 15px;
-  }
-
-  .about-title {
-    width: 100%;
-    font-size: 16px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .about-me {
-    font-size: 15px;
-    padding: 10px;
-    margin: 0;
-  }
-
-
-  .blog-title {
-    width: 100%;
-    font-size: 20px;
-    color: black;
-    padding: 3px 0;
-    margin: 3px 0;
-  }
-
-  .blog-container {
-    width: auto;
-    height: auto;
-    background-color: #addfad;
-    padding: 30px;
-    margin: 30px;
-  }
-
-  .blog {
-    font-size: 15px;
-    padding: 10px;
-    margin: 0;
-  }
-
-  .blogs {
-    padding: 10px;
-    font-size: 30px;
-  }
-
-  .home {
-    font-size: 30px;
-  }
-
-  .contact {
-    font-size: 30px;
-  }
-
-  .projects {
-    font-size: 30px;
-  }
-
-  .avatar {
-    width: 200px;
-    margin: 15px;
-    border: 2px solid aqua;
-  }
-
-  .thinkful {
-    border-radius: 0%;
-    width: 200px;
-    height: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-
-  .container-fluid {
-    padding: 0%;
-  }
-
-  .reservation {
-    border-radius: 0%;
-    text-align: center;
-    width: 200px;
-    height: 100px;
-    padding: 0;
-    margin: 0;
-  }
-
-  .title {
-    font-size: 22px;
-  }
-} */
+}
