@@ -53,10 +53,8 @@
 
 #target {
   background-color: black;
-  font-family: calibri;
   min-height: 30px;
   min-width: 60%;
-  font-family: calibri;
   font-size: clamp(1rem, .5rem + 5vw, 5rem);
   text-align: center;
   padding: 1rem 0;
@@ -77,10 +75,8 @@
 
 #desc {
   background-color: black;
-  font-family: calibri;
   min-width: 30%;
   min-height: 80px;
-  font-family: calibri;
   text-align: center;
   font-size: clamp(.6rem, .5rem + 5vw, 2rem);
   padding: 0 2rem;
