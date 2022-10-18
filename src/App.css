@@ -179,17 +179,14 @@ h1, h2 {
 
 
 .icon {
-  border-radius: 100%;
-  /* max-width: 100%; */
   font-size: 70px;
-  padding: 5px;
+  /* padding: 10px; */
   margin: 10px;
   color: black;
   background-color: #ffb6c1;
 }
 
 .footer-icon {
-  border-radius: 100%;
   font-size: 70px;
   padding: 5px;
   margin: 10px;
@@ -265,6 +262,22 @@ h1, h2 {
 
 /* the icon isn't centered within the button and i don't have time so come back to wrestle with it */
 .readmore-btn {
+  color: black;
+  background-color: #e08e8e;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 200px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-size: clamp(.3rem, .2rem + 5vw, 1.2rem);
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+
+.button {
   color: black;
   background-color: #e08e8e;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
