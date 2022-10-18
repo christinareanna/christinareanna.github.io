@@ -14,13 +14,19 @@ const Blogs = ({ isOpen, toggle }) => {
             <hr style={{ border: "none" }} />
 
             <div className='global-container'>
+                <h1 className='global-title'>The Big 100</h1>
+                <p className='global'>I hit the big 100 today! It feels incredible to wake up refreshed and full of energy. I've even met a lot 
+                of other people in the sober community and they are awesome. Sobriety has become my new normal and I'm happy to say that
+                I'm seeing only improvements in myself now.</p>
+            </div>
+            <hr style={{ border: "none" }} />
+
+            <div className='global-container'>
                 <h1 className='global-title'>Two Months Sober</h1>
                 <p className='global'>Today is Labor Day and I'm still choosing sobriety at the BBQ today! It's been a relatively smooth
                 sailing process. The thing with being sober from alcohol and stopping smoking cigarettes at the same time is
-                trying to find ways to deal with stress. Unfortunately, I'm very much still addicted to nicotine and use my e-cigarette in a pinch,
-                but the hard part was stopping cigarettes. I've resorted to punching my pillow when I get angry instead of turning to going to getting
-                a 12 pack and a pack of cigarettes. This milestone means a lot to me because two months ago, I hit complete and utter rock bottom. The good news 
-                about hitting rock bottom is the only way to go is up.</p>
+                trying to find ways to deal with stress. My focus has become exercising and eating healthy and that has been helping a lot. Allowing myself 
+                the ability to rest is also crucial in maintaining stress.</p>
             </div>
             <hr style={{ border: "none" }} />
 
