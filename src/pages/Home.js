@@ -29,8 +29,8 @@ const Home = () => {
                         Basically, I'm very interested in front-end development and adding functionality to websites.
                         From left to right, we have HTML, React, git, JavaScript, and CSS. With all of these combined,
                         it makes me feel like I'm playing on a playground. HTML is code to structure web pages and its content.
-                        React is a JavaScript framework, which lets developers create user interfaces quickly
-                        (My favorite framework). Git is a free and open source software that helps with tracking any changes in
+                        React is a JavaScript library, which lets developers create user interfaces quickly. 
+                        Git is a free and open source software that helps with tracking any changes in
                         files and is used to collaborate on projects, no matter the size of the project, quickly and efficiently.
                         JavaScript is a programming language that works alongside HTML and CSS, that helps with the functionality
                         of elements on a page. Lastly, CSS is Cascading Style Sheets and it helps with how you want to style elements
