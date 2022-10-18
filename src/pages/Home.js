@@ -12,11 +12,6 @@ const Home = () => {
         setIsOpen(!isOpen)
     };
 
-    // let [addText, setAddText] = useState(true);
-    // const handleChange = () => {
-    //     return setAddText(!addText);
-    // };
-
 
     function ChangeIcon() {
         return isOpen ? (
