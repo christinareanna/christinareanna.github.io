@@ -229,6 +229,10 @@ h1, h2 {
   /* margin: 2rem; */
 }
 
+.global-paragraph { 
+  color: white;
+}
+
 .home {
   color: #df717e;
   max-width: 200rem;
