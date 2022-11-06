@@ -52,8 +52,8 @@ const Projects = ({ isOpen, toggle }) => {
             <div className='global-container'>
                 <h1 className='global-title'>Pause</h1>
                 <p className='global-paragraph'>The beginning stages of my design for a service application for service workers called Pause.</p>
-                <div className='global'><a href='https://github.com/christinareanna/serviceapplandingpage' rel='noreferrer' target='_blank' aria-label='Github'><AiOutlineGithub className="icon" size={70} /></a></div>
-                {/* <a href="https://christina-pomodoro-timer.netlify.app/" rel='noreferrer' target='_blank'><SiNetlify className="icon" size={70} /></a></div> */}
+                <div className='global'><a href='https://github.com/christinareanna/serviceapplandingpage' rel='noreferrer' target='_blank' aria-label='Github'><AiOutlineGithub className="icon" size={70} /></a>
+                <a href="https://pause-service-site.netlify.app/" rel='noreferrer' target='_blank'><SiNetlify className="icon" size={70} /></a></div>
                 <div className='project-pictures'>
                     {/* TODO- Come back to fix the images and import them again :) */}
                     <div><img className='reservation' src={LandingPage} alt='timer'></img></div>
