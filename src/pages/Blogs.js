@@ -14,6 +14,14 @@ const Blogs = ({ isOpen, toggle }) => {
             <hr style={{ border: "none" }} />
 
             <div className='global-container'>
+                <h1 className='global-title'>Six Months</h1>
+                <p className='global'>I'll hit 6 months sober on 1/5/2023. This year is my first sober Christmas and I'm drinking Athletic Brewing Co. Run Wild IPA with my sister and her boyfriend who are also sober.
+                It's nice to be in an environment where I'm not the only sober person.'</p>
+            </div>  
+
+            <hr style={{ border: "none" }} />
+
+            <div className='global-container'>
                 <h1 className='global-title'>The Big 100</h1>
                 <p className='global'>I hit the big 100 today! It feels incredible to wake up refreshed and full of energy. I've even met a lot 
                 of other people in the sober community and they are awesome. Sobriety has become my new normal and I'm happy to say that
