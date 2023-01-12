@@ -39,9 +39,9 @@ const Sidebar = () => {
           <SidebarItem aria-label="View Projects" id="projects">
             <Link to="/projects" className="link" onClick={toggle}>Projects</Link>
           </SidebarItem>
-          <SidebarItem aria-label="View Blogs" id="blogs">
+          {/* <SidebarItem aria-label="View Blogs" id="blogs">
             <Link to="/blogs" className="link" onClick={toggle}>Blogs</Link>
-          </SidebarItem>
+          </SidebarItem> */}
           <SidebarItem aria-label="View Contact Form" id="contact">
             <Link to="/contact" className="link" onClick={toggle}>Contact</Link>
           </SidebarItem>

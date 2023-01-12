@@ -2,7 +2,7 @@ import "./App.css";
 import ParticleBackground from "./ParticleBackground";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
+// import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import Navbar from "./components/Navbar";
@@ -18,7 +18,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/blogs" element={<Blogs />} />
+            {/* <Route path="/blogs" element={<Blogs />} /> */}
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NoPage />} />
