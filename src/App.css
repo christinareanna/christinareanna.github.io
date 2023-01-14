@@ -95,13 +95,13 @@ h1, h2 {
   min-width: 30rem;
 } */
 
-/* .link {
+.link {
   text-align: center;
   text-decoration: none;
-  color: #df717e;
+  color: black;
   justify-content: center;
   padding: 5rem 0;
-} */
+}
 
 /* .pikachu {
   max-width: 40%;

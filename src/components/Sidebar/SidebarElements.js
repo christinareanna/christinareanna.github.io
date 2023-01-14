@@ -11,11 +11,11 @@ export const SidebarContainer = styled.aside`
   align-items: center;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: beige;
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: #fff;
+  color: black;
   transition: 0.3s;
 `;
 
@@ -27,11 +27,12 @@ export const Icon = styled.div`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
+  color: black;
 `;
 
 
 export const SidebarWrapper = styled.div`
-  background-color: black;
+  background-color: beige;
   transition: opacity 0.75s, visibility 0.75s, height 0.75s;
 `
 export const SidebarItem = styled.li`
@@ -39,6 +40,8 @@ export const SidebarItem = styled.li`
   padding: 0;
   width: 100%;
   height: 100%;
+  color: black;
+  text-decoration: none;
 `
 
 export const SidebarMenu = styled.ul`
@@ -56,6 +59,8 @@ export const SidebarMenu = styled.ul`
         justify-content: center;
         padding: 6vh 0;
         margin: 0;
+        color: black;
+        text-decoration: none;
     }
 `
 
