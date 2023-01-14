@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import Navbar from "./components/Navbar";
-import Projects from "./pages/Projects";
+// import Projects from "./pages/Projects";
 import { Poetry } from "./pages/Poems";
 import { Footer } from "./components/Footer";
 
