@@ -5,18 +5,10 @@ import Sidebar from "../components/Sidebar";
 const Contact = ({ isOpen, toggle }) => {
     return (
         <>
-            {/* <div className='sidebar'>
-                <Sidebar isopen={isOpen} toggle={toggle} />
-            </div> */}
-            {/* <Navbar />
-            <h3 className="contact">Contact</h3>
-            <hr style={{ border: "none" }} />
-            <ContactForm /> */}
             <div className='sidebar'>
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div>
-            <h1 className="contact">Contact</h1>
-            <hr style={{ border: "none" }} />
+            <h1 className="heading">Contact</h1>
             <ContactForm />
         </>
     )

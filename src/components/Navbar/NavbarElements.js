@@ -1,6 +1,5 @@
 // style components
-import styled from 'styled-components'
-import { NavLink as Link } from 'react-router-dom'
+import styled from 'styled-components';
 
 export const Nav = styled.nav`
     background: #000;
@@ -19,23 +18,14 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
 display: flex;
 justify-content: space-between;
-height: 80px;
+height: 6rem;
+background-color: beige;
 z-index: 1;
 width: 100%;
-padding: 0 24px;
-max-width: 2100px;
+max-width: 100%;
 `
 
-export const NavLogo = styled(Link)`
-color: white;
-justify-self: flex-start;
-cursor: pointer;
-font-size: 1.5rem;
-display: flex;
-align-items: center;
-font-weight: bold;
-text-decoration: none;
-`
+
 
 export const MobileIcon = styled.div`
 display: none;
@@ -52,13 +42,23 @@ display: none;
 `
 
 export const NavMenu = styled.ul`
+text-decoration: none;
 display: flex;
-height: "200px";
+height: 6em;
 align-items: center;
 list-style: none;
 text-align: center;
 margin: 0;
 padding: 0;
+font-family: monospace; 
+font-size: 1rem;
+background-color: beige;
+width: 100%;
+max-width: 100%;
+color: white;
+justify-content: center;
+
+
 @media screen and (max-width: 768px) {
     display: none;
 }
@@ -66,5 +66,6 @@ padding: 0;
 
 export const NavItem = styled.li`
 margin-top: 20px;
-height: "200px";
+text-decoration: none;
+width: 100%; 
 `

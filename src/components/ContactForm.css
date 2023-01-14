@@ -42,7 +42,7 @@ Form {
     border-radius: 5px;
     line-height: 22px;
     background-color: transparent;
-    border: 2px solid #df717e;
+    border: 2px solid black;
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
@@ -62,7 +62,7 @@ input::placeholder {
 }
 
 .contact-button {
-    background: #e08e8e;
+    background: rgba(0, 0, 0, 0.239);
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     width: 50%;
     border-radius: 5px;
@@ -78,7 +78,7 @@ input::placeholder {
 }
 
 .contact-button:hover {
-    background: #e08e8e;
+    background: black;
 }
 
 /* textarea {

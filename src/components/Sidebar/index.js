@@ -36,8 +36,8 @@ const Sidebar = () => {
     return isSidebarShowing ? (
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarItem aria-label="View Projects" id="projects">
-            <Link to="/projects" className="link" onClick={toggle}>Projects</Link>
+          <SidebarItem aria-label="View Poetry" id="poetry">
+            <Link to="/poetry" className="link" onClick={toggle}>Poetry</Link>
           </SidebarItem>
           {/* <SidebarItem aria-label="View Blogs" id="blogs">
             <Link to="/blogs" className="link" onClick={toggle}>Blogs</Link>
