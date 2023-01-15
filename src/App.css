@@ -128,39 +128,13 @@ h1, h2 {
   border-radius: 100%;
 }
 
-/* .thinkful {
-  margin: 0 auto;
-  min-width: 50px;
-  max-width: 400px;
-  height: auto;
-  border-radius: 50%;
-  border: 2px solid #addfad;
-} */
-/* 
-.thinkful {
-  max-width: 40%;
-  border: 2px solid white;
-} */
-
-/* .container-fluid {
-  font-size: 12px;
-  color: white;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  align-items: center;
-} */
-
 .container-fluid {
-  /* padding: 0 2em; */
-  /* min-width: 30rem; */
   margin: 0 auto;
 }
 
 .icon {
-  font-size: 70px;
-  /* padding: 10px; */
-  margin: 10px;
+  font-size: 60px;
+  margin: 15px;
   color: black;
   background-color: #ffb6c1;
 }
@@ -253,10 +227,6 @@ h1, h2 {
 
 
 .global-container {
-  /* font-size: clamp(1rem, 5vw, 5rem); */
-  /* background-color: grey; */
-  /* color: black; */
-  /* min-width: 60%; */
   background: rgb(152, 181, 182);
   text-align: center;
   padding: 0.8rem;
@@ -265,50 +235,13 @@ h1, h2 {
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
-  /* margin: 2rem; */
-  /* background-color: #addfad; */
 }
 
-
-.global {
-  /* font-size: clamp(.5rem, 5vw, 2rem); */
-  /* font-size: clamp(16px, 4vw, 22px); */
-  color: black;
-  max-width: 100%;
-  text-align: center;
-  padding: 1rem;
-  /* background-color: #addfad; */
-  /* margin: 2rem; */
-}
-
-.global-paragraph { 
-  color: black;
-}
 
 .home {
   color: #df717e;
   max-width: 200rem;
-  /* font-size: 30px; */
-  /* padding: 20px; */
 }
-
-
-/* .passion-explain {
-  background: rgb(0, 99, 173, 0.3);
-  text-align: center;
-  font-size: clamp(.4rem, .2rem + 5vw, 1.5rem);
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-}
-
-.paragraph-explain {
-  color: #addfad;
-  max-width: 100%;
-  padding: 20px;
-  text-align: center;
-} */
 
 
 .button {
@@ -327,13 +260,6 @@ h1, h2 {
 }
 
 
-/* .contact {
-  color: #addfad;
-  font-size: 4em;
-  margin: 20px;
-  padding: 20px;
-} */
-
 .projects {
   font-size: 30px;
   color: #addfad;
@@ -347,45 +273,6 @@ hr {
   height: 8px;
 }
 
-/* .blog-container {
-  height: 100%;
-  text-align: center;
-  justify-content: center;
-  border-radius: 10px;
-  padding: 30px 0;
-  margin: 0px;
-}
-
-.blog-title {
-  color: black;
-  min-width: 60%;
-  text-align: center;
-  padding: 1rem;
-  background-color: #addfad;
-  margin: 2rem;
-}
-
-.project-title {
-  color: black;
-  min-width: 60%;
-  text-align: center;
-}
-
-.project-container {
-  color: black;
-  min-width: 60%;
-  text-align: center;
-  padding: 1rem;
-  background-color: #addfad;
-  margin: 2rem;
-}
-
-.reservation {
-  max-width: 80%;
-  height: auto;
-  align-items: center;
-  border: 2px solid black;
-} */
 
 .col div {
   display: inline;
@@ -434,11 +321,15 @@ hr {
 
 @media screen and (max-width: 425px) {
   .icon {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .footer-icon {
-    font-size: 40px;
+    font-size: 50px;
+  }
+
+  .card-text {
+    margin: 2rem;
   }
 }
 
