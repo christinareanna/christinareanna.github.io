@@ -55,7 +55,6 @@ font-size: 1rem;
 background-color: beige;
 width: 100%;
 max-width: 100%;
-color: white;
 justify-content: center;
 
 

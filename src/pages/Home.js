@@ -31,23 +31,20 @@ const Home = () => {
             <div>
                 <div className='row'>
                     <div className='col'>
-                        <AiOutlineHtml5 className="icon" />
-                        <FaReact className="icon" />
-                        <FaGit className="icon" />
-                        <FaJs className="icon" />
-                        <FaCss3 className="icon" />
+                        <div class="tooltip top"><AiOutlineHtml5 className="icon" /></div>
+                        <div class="tooltip top2"><FaReact className="icon" /></div>
+                        <div class="tooltip top3"><FaGit className="icon" /></div>
+                        <div class="tooltip top4"><FaJs className="icon" /></div>
+                        <div class="tooltip top5"><FaCss3 className="icon" /></div>
                     </div>
-                    {/* <div className='read-more'>
-                        <ChangeIcon />
-                    </div> */}
                 </div>
                 <h2 className='home-title'>Currently learning...</h2>
                 <div>
                     <div className='row'>
                         <div className='col'>
-                            <FaPython className='icon' />
-                            <SiMysql className='icon' />
-                            <FaAws className='icon' />
+                            <div class="tooltip top6"><FaPython className='icon' /></div>
+                            <div class="tooltip top7"><SiMysql className='icon' /></div>
+                            <div class="tooltip top8"><FaAws className='icon' /></div>
                         </div>
                     </div>
                 </div>

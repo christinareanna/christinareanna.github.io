@@ -25,7 +25,7 @@ export const Poetry = ({ isOpen, toggle }) => {
                         <br />
                         For the quintessential concocted survival
                         <br />
-                        Love is a painting with rigget brush strokes
+                        Love is a painting with rigged brush strokes
                         <br />
                         And if I'm not the one holding that brush
                         <br />

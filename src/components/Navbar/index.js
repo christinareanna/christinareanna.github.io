@@ -14,34 +14,30 @@ justify-content: center;
 align-items: center;
 font-weight: bold;
 text-decoration: none;
+&:hover {
+    color: #ffb6c1;
+}
 `
 
 const Navbar = () => {
     
     return (
-        // come back to make styling global
         <>
             <Nav>
                 <NavbarContainer>
                     <NavMenu>
                         <NavItem id="Poetry">
-                            <StyledLink to="/poetry">Poetry</StyledLink>
+                            <StyledLink to="/poetry"><span className="nav-link">Poetry</span></StyledLink>
                         </NavItem>
                         <NavItem id="home">
-                            <StyledLink to="/">Home</StyledLink>
+                            <StyledLink to="/"><span className="nav-link">Home</span></StyledLink>
                         </NavItem>
                         <NavItem id="contact">
-                            <StyledLink to="/contact">Contact</StyledLink>
+                            <StyledLink to="/contact"><span className="nav-link">Contact</span></StyledLink>
                         </NavItem>
                     </NavMenu>
                 </NavbarContainer>
             </Nav>
-            {/* <div id="target">
-                Christina Reanna Knapp
-            </div>
-            <div id="desc">
-                Product Engineering Associate at Accenture.
-            </div> */}
         </>
     )
 };

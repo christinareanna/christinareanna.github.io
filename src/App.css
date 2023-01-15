@@ -157,13 +157,90 @@ h1, h2 {
   margin: 0 auto;
 }
 
-
 .icon {
   font-size: 70px;
   /* padding: 10px; */
   margin: 10px;
   color: black;
   background-color: #ffb6c1;
+}
+
+.tooltip {
+  border-radius: 10px;
+  padding: 5px 10px;
+  position: relative;
+  margin: 10px;
+  text-align: center;
+}
+
+.tooltip::after {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  display: none;
+  padding: 10px 15px;
+  position: absolute;
+  text-align: center;
+  z-index: 999;
+}
+
+.tooltip.top::after {
+  content: 'HTML';
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-10% - 10px));
+}
+
+.tooltip.top2::after {
+  content: 'React';
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-10% - 10px));
+}
+.tooltip.top3::after {
+  content: 'Git';
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-10% - 10px));
+}
+.tooltip.top4::after {
+  content: 'JavaScript';
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-10% - 10px));
+}
+
+.tooltip.top5::after {
+  content: 'CSS';
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-10% - 10px));
+}
+
+.tooltip.top6::after {
+  content: 'Python';
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-10% - 10px));
+}
+
+.tooltip.top7::after {
+  content: 'MySQL';
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-10% - 10px));
+}
+
+.tooltip.top8::after {
+  content: 'Amazon Web Services';
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-10% - 10px));
+}
+
+
+.tooltip:hover::after {
+  display: block;
 }
 
 .footer-icon {
@@ -310,6 +387,9 @@ hr {
   border: 2px solid black;
 } */
 
+.col div {
+  display: inline;
+}
 
 .blog {
   color: black;
