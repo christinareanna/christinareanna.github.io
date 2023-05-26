@@ -1,0 +1,30 @@
+.dark {
+    background-color: #000;
+    color: #FF6161;
+}
+
+.light {
+    background-color: #fff;
+    color: #333;
+}
+
+.light button {
+    background-color: black;
+    font-size: clamp(1em, 5px, 2em);
+    color: white;
+    padding: 0.3em;
+    cursor: pointer;
+    font-family: 'Century Gothic', 'AppleGothic', sans-serif;
+    border: none;
+    width: 6em;
+}
+
+.dark button {
+    background-color: #fdc8c8;
+    font-size: clamp(1em, 5px, 2em);
+    color: black;
+    padding: 0.3em;
+    cursor: pointer;
+    font-family: 'Century Gothic', 'AppleGothic', sans-serif;
+    border: none;
+}

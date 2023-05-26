@@ -1,13 +1,14 @@
 import React from "react";
-import Pikachu from "../surprisedpikachu.jpeg";
+import Pikachu from "../images/surprisedpikachu.jpeg";
 import { Link } from "react-router-dom";
 
 
 const NoPage = () => {
     return (
         <>
+        <div>
             <img className="pikachu" src={Pikachu} alt="surprised pikachu face because nothing is here lol" />
-            <h2 style={{ color: "black" }}>OH NO NOTHING IS HERE WHAT HAVE YOU DONE?!?</h2>
+        </div>
             <Link to="/"><button className="button">Go Home</button></Link>
         </>
     )

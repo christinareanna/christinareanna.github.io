@@ -6,38 +6,20 @@
 
 .App {
   text-align: center;
-  font-family: monospace;
-}
-
-.foreground {
-  z-index: 99;
-  width: 100%;
-  position: absolute;
-  overflow-x: hidden;
-}
-
-.background {
-  z-index: -1;
-  position: fixed;
-  background-color: beige;
-  width: 100%;
-  height: 100%;
+  font-family: 'Century Gothic', 'AppleGothic', sans-serif;
 }
 
 .footer {
-  color: beige;
   font-size: clamp(.8rem, 1vw, .9rem);
   margin: 10px 30px;
 }
 
 #target {
-  background-color: beige;
   min-height: 30px;
   min-width: 60%;
   font-size: clamp(1rem, .5rem + 5vw, 5rem);
   text-align: center;
   padding: 1rem 0;
-  color: black;
   animation: slideRight 2s ease-in-out;
 }
 
@@ -53,13 +35,11 @@
 }
 
 #desc {
-  background-color: beige;
-  min-width: 30%;
-  min-height: 80px;
+  min-width: 3em;
+  min-height: 3em;
   text-align: center;
   font-size: clamp(.6rem, .5rem + 5vw, 2rem);
   padding: 0 2rem;
-  color: black;
   animation: slideIn 2s ease-in-out;
 }
 
@@ -81,34 +61,18 @@ body {
 }
 
 h1, h2 {
-  /* font-size: clamp(1rem, 5vw, 2rem); */
   font-size: clamp(.5rem, .5rem + 5vw, 2rem);
-  color: black;
   text-align: center;
 }
 
-.home-title {
-  color: black;
-}
-
-/* .img-div {
-  min-width: 30rem;
-} */
 
 .link {
   text-align: center;
   text-decoration: none;
-  color: black;
   justify-content: center;
   padding: 5rem 0;
+  color: #957E84;
 }
-
-/* .pikachu {
-  max-width: 40%;
-  height: auto;
-  align-items: center;
-  border: 2px solid black;
-} */
 
 .pikachu {
   width: 100%;
@@ -116,7 +80,6 @@ h1, h2 {
   max-width: 400px;
   height: auto;
   align-items: center;
-  border: 2px solid black;
 }
 
 .avatar {
@@ -125,7 +88,18 @@ h1, h2 {
   max-width: 400px;
   height: auto;
   align-items: center;
-  border-radius: 100%;
+}
+
+.card {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-text {
+  text-align: center;
+  margin: 0 10em;
+  padding: 0;
 }
 
 .container-fluid {
@@ -135,8 +109,8 @@ h1, h2 {
 .icon {
   font-size: 60px;
   margin: 15px;
-  color: black;
-  background-color: #ffb6c1;
+  border-color: #FF6161;
+  border: 2px solid;
 }
 
 .tooltip {
@@ -148,9 +122,7 @@ h1, h2 {
 }
 
 .tooltip::after {
-  background-color: white;
   border-radius: 10px;
-  color: black;
   display: none;
   padding: 10px 15px;
   position: absolute;
@@ -171,12 +143,14 @@ h1, h2 {
   left: 50%;
   transform: translate(-50%, calc(-10% - 10px));
 }
+
 .tooltip.top3::after {
   content: 'Git';
   top: 0;
   left: 50%;
   transform: translate(-50%, calc(-10% - 10px));
 }
+
 .tooltip.top4::after {
   content: 'JavaScript';
   top: 0;
@@ -221,13 +195,12 @@ h1, h2 {
   font-size: 70px;
   padding: 5px;
   margin: 10px;
-  color: black;
-  background-color: #addfad;
+  color: #000;
+  border: 2px solid #000;
 }
 
 
 .global-container {
-  background: rgb(152, 181, 182);
   text-align: center;
   padding: 0.8rem;
   font-size: clamp(.5rem, .2rem + 5vw, 2rem);
@@ -239,15 +212,12 @@ h1, h2 {
 
 
 .home {
-  color: #df717e;
   max-width: 200rem;
 }
 
 
 .button {
-  color: black;
-  background-color: rgba(0, 0, 0, 0.239);
-  width: 200px;
+  width: 6em;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
@@ -262,7 +232,6 @@ h1, h2 {
 
 .projects {
   font-size: 30px;
-  color: #addfad;
 }
 
 hr {
@@ -278,31 +247,12 @@ hr {
   display: inline;
 }
 
-.blog {
-  color: black;
-  max-width: 100%;
-  text-align: center;
-  padding: 1rem;
-  background-color: #addfad;
-  margin: 2rem;
-}
-
-.blogs {
-  color: #df717e;
-  font-size: 30px;
-}
-
 .contact {
-  color: #df717e;
   font-size: 30px;
   margin: 20px;
   padding: 20px;
 }
 
-.projects {
-  font-size: 30px;
-  color: #df717e;
-}
 
 
 @media screen and (max-width: 768px) {
@@ -317,6 +267,10 @@ hr {
     overflow-x: hidden;
     max-width: 100%;
   }
+
+  .card-text {
+    margin: 0 2em;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -329,7 +283,7 @@ hr {
   }
 
   .card-text {
-    margin: 2rem;
+    margin: 0 2em;
   }
 }
 

@@ -9,8 +9,8 @@ export const Poetry = ({ isOpen, toggle }) => {
             </div>
             {/* <Navbar /> */}
             <h1 className='heading'>Poetry</h1>
-            <h3 style={{margin: "2rem"}}>Just a teaser of some of my poems.</h3>
-            <div class="card text-bg-secondary" style={{margin: "2rem"}}>
+            <h3 style={{ margin: "2rem" }}>Just a teaser of some of my poems.</h3>
+            <div class="card text-bg-secondary" style={{ margin: "2rem" }}>
                 <div class="card-header">White Space</div>
                 <div class="card-body text-center text-center">
                     <h5 class="card-title">01.13.2023</h5>
@@ -50,7 +50,7 @@ export const Poetry = ({ isOpen, toggle }) => {
                 </div>
             </div>
             <hr />
-            <div class="card text-bg-secondary" style={{margin: "2rem"}}>
+            <div class="card text-bg-secondary" style={{ margin: "2rem" }}>
                 <div class="card-header">The Undoing</div>
                 <div class="card-body text-center">
                     <h5 class="card-title">03.08.2021</h5>
@@ -74,40 +74,6 @@ export const Poetry = ({ isOpen, toggle }) => {
                         Now I can untangle my own
                         <br />
                         Because of you
-                    </p>
-                </div>
-            </div>
-            <hr />
-            <div class="card text-bg-secondary" style={{margin: "2rem"}}>
-                <div class="card-header">Who Are We</div>
-                <div class="card-body text-center">
-                    <h5 class="card-title">09.04.2017</h5>
-                    <p class="card-text">
-                        A wanderer in the lands familiar
-                        <br />
-                        Longing for a presence unsure I've felt before
-                        <br />
-                        A glimmer in the light that I pass
-                        <br />
-                        A reflection of a young boy with a candy bar
-                        <br />
-                        Makes me ponder the existence of us
-                        <br />
-                        We as the species that roam so free
-                        <br />
-                        Yet so scared and jaded of the pain we feel
-                        <br />
-                        The fears so high you need a ladder to climb
-                        <br />
-                        To pick those fears off of the stem
-                        <br />
-                        Would leave just the petals
-                        <br />
-                        But I can't decide what's worse
-                        <br />
-                        The plant no longer being whole
-                        <br />
-                        Or our souls not maintaining love anymore
                     </p>
                 </div>
             </div>

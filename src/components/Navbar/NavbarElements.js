@@ -2,7 +2,6 @@
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-    background: #000;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -19,7 +18,6 @@ export const NavbarContainer = styled.div`
 display: flex;
 justify-content: space-between;
 height: 6rem;
-background-color: beige;
 z-index: 1;
 width: 100%;
 max-width: 100%;
@@ -37,7 +35,6 @@ display: none;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: black;
 }
 `
 
@@ -50,9 +47,7 @@ list-style: none;
 text-align: center;
 margin: 0;
 padding: 0;
-font-family: monospace; 
 font-size: 1rem;
-background-color: beige;
 width: 100%;
 max-width: 100%;
 justify-content: center;
@@ -66,5 +61,5 @@ justify-content: center;
 export const NavItem = styled.li`
 margin-top: 20px;
 text-decoration: none;
-width: 100%; 
+width: 100%;
 `

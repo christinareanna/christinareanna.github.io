@@ -41,7 +41,7 @@ Form {
     font-size: 18px;
     border-radius: 5px;
     line-height: 22px;
-    background-color: transparent;
+    background-color: white;
     border: 2px solid black;
     transition: all 0.3s;
     padding: 13px;
@@ -64,7 +64,7 @@ input::placeholder {
 .contact-button {
     background: #ffb6c1;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    width: 50%;
+    width: 6em;
     border-radius: 5px;
     border: 0;
     cursor: pointer;

@@ -4,23 +4,21 @@ import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import { Nav, NavbarContainer, NavMenu, NavItem } from "./NavbarElements";
 
+
 const StyledLink = styled(Link)`
-color: grey;
 justify-self: flex-start;
 cursor: pointer;
 font-size: 2rem;
+color: #957E84;
 display: flex;
 justify-content: center;
 align-items: center;
 font-weight: bold;
 text-decoration: none;
-&:hover {
-    color: #ffb6c1;
-}
 `
 
 const Navbar = () => {
-    
+
     return (
         <>
             <Nav>

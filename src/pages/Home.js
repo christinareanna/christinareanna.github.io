@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import newHero from "../newheroimg.jpeg"
+import portrait from "../images/portrait.jpeg"
 // import Thinkful from "../thinkfulimg.png"
 import Sidebar from '../components/Sidebar'
 import { AiOutlineHtml5 } from 'react-icons/ai';
@@ -23,9 +23,9 @@ const Home = () => {
                     Christina Reanna Knapp
                 </div>
                 <div id="desc">
-                    Product Engineering Associate at Accenture.
+                    Analyst at Accenture
                 </div>
-                <img class="avatar" src={newHero} alt="me" />
+                <img class="avatar" src={portrait} alt="me" />
             </div>
             <h2 className='home-title'>Passionate about...</h2>
             <div>
@@ -49,10 +49,17 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div class="card text-white bg-secondary mb-3">
-                <div class="card-header">About Me</div>
+            <div class="card text-white bg-secondary">
+                <h2 class="card-header">About Me</h2>
                 <div class="card-body">
-                    <p class="card-text">27, non-binary software engineer and poet residing in Chicago.</p>
+                    <p class="card-text">Hi! Thanks for stopping by. My name is Christina and I currently 
+                    reside in Chicago. I'm currently an analyst at Accenture. 
+                    I graduated from a software engineering bootcamp called Thinkful in February 2022.                     
+                    I started as an apprentice in March 2022, and got promoted to analyst in March 2023.
+                    I do a variety of different projects at my job, including user experience research,
+                    technical writing, and front-end development with a focus on accessibility.
+                    In my spare time, I enjoy cooking, going for walks, writing, expanding my knowledge, and doing improv on the weekends.
+                    I am always learning as I go, and I love receiving feedback on how I can improve on things.</p>
                 </div>
             </div>
         </div>
