@@ -24,3 +24,4 @@ yarn-error.log*
 client.js
 Contentful/
 Contentful/client.js
+/Contentful.client.js
