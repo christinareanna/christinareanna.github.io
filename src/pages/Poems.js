@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from '../components/Sidebar';
+import "../darkMode.css";
 
 export const Poetry = ({ isOpen, toggle }) => {
     return (
@@ -10,9 +11,9 @@ export const Poetry = ({ isOpen, toggle }) => {
             {/* <Navbar /> */}
             <h1 className='heading'>Poetry</h1>
             <h3 style={{ margin: "2rem" }}>Just a teaser of some of my poems.</h3>
-            <div class="card text-bg-secondary" style={{ margin: "2rem" }}>
+            <div class="card">
                 <div class="card-header">White Space</div>
-                <div class="card-body text-center text-center">
+                <div class="card-body text-center">
                     <h5 class="card-title">01.13.2023</h5>
                     <p class="card-text">
                         I have no more space
@@ -50,7 +51,7 @@ export const Poetry = ({ isOpen, toggle }) => {
                 </div>
             </div>
             <hr />
-            <div class="card text-bg-secondary" style={{ margin: "2rem" }}>
+            <div class="card">
                 <div class="card-header">The Undoing</div>
                 <div class="card-body text-center">
                     <h5 class="card-title">03.08.2021</h5>

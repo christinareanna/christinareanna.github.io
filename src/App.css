@@ -11,7 +11,6 @@
 
 .footer {
   font-size: clamp(.8rem, 1vw, .9rem);
-  margin: 10px 30px;
 }
 
 #target {
@@ -54,15 +53,17 @@
 }
 
 body {
-  font-size: clamp(16px, 4vw, 22px);
+  font-size: clamp(1em, 3vw, 2em);
   justify-content: center;
   text-align: center;
   align-items: center;
 }
 
+
 h1, h2 {
   font-size: clamp(.5rem, .5rem + 5vw, 2rem);
   text-align: center;
+  padding: 1em 0;
 }
 
 
@@ -98,7 +99,6 @@ h1, h2 {
 
 .card-text {
   text-align: center;
-  margin: 0 10em;
   padding: 0;
 }
 
@@ -132,56 +132,56 @@ h1, h2 {
 
 .tooltip.top::after {
   content: 'HTML';
-  top: 0;
+  top: 2;
   left: 50%;
   transform: translate(-50%, calc(-10% - 10px));
 }
 
 .tooltip.top2::after {
   content: 'React';
-  top: 0;
+  top: 2;
   left: 50%;
   transform: translate(-50%, calc(-10% - 10px));
 }
 
 .tooltip.top3::after {
   content: 'Git';
-  top: 0;
+  top: 2;
   left: 50%;
   transform: translate(-50%, calc(-10% - 10px));
 }
 
 .tooltip.top4::after {
   content: 'JavaScript';
-  top: 0;
+  top: 2;
   left: 50%;
   transform: translate(-50%, calc(-10% - 10px));
 }
 
 .tooltip.top5::after {
   content: 'CSS';
-  top: 0;
+  top: 2;
   left: 50%;
   transform: translate(-50%, calc(-10% - 10px));
 }
 
 .tooltip.top6::after {
   content: 'Python';
-  top: 0;
+  top: 2;
   left: 50%;
   transform: translate(-50%, calc(-10% - 10px));
 }
 
 .tooltip.top7::after {
-  content: 'MySQL';
-  top: 0;
+  content: 'Google Cloud';
+  top: 2;
   left: 50%;
   transform: translate(-50%, calc(-10% - 10px));
 }
 
 .tooltip.top8::after {
   content: 'Amazon Web Services';
-  top: 0;
+  top: 2;
   left: 50%;
   transform: translate(-50%, calc(-10% - 10px));
 }
@@ -234,14 +234,6 @@ h1, h2 {
   font-size: 30px;
 }
 
-hr {
-  max-width: 400px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: black;
-  height: 8px;
-}
-
 
 .col div {
   display: inline;
@@ -282,9 +274,9 @@ hr {
     font-size: 50px;
   }
 
-  .card-text {
+  /* .card-text {
     margin: 0 2em;
-  }
+  } */
 }
 
 @media screen and (min-width: 1024px) {

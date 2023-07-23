@@ -1,0 +1,50 @@
+img {
+    max-width: 250px;
+    height: 320px;
+}
+
+.container {
+    min-width: 250px;
+    max-width: 600px;
+    /* max-width: 400px; */
+    margin: auto;
+    padding: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.card-body {
+    height: 100px;
+    /* color: black; */
+}
+
+.dark button {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 24px;
+    background-color: white;
+    font-weight: 700;
+    border: 0;
+}
+
+.light button {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 24px;
+    background-color: white;
+    font-weight: 700;
+    border: 0;
+}
+
+.description {
+    padding: 0 1em;
+    text-align: left;
+}
+
+/* .card-body p {
+    margin: auto;
+    padding: auto;
+    width: 250px;
+    font-size: clamp(0.3em, 1vw, 0.8em);
+    height: 180px;
+    overflow: scroll;
+  } */

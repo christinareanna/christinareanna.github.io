@@ -3,7 +3,7 @@ import "./darkMode.css";
 // import ParticleBackground from "./ParticleBackground";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-// import Blogs from "./pages/Blogs";
+import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import Navbar from "./components/Navbar";
@@ -11,6 +11,9 @@ import Navbar from "./components/Navbar";
 import { Poetry } from "./pages/Poems";
 import { Footer } from "./components/Footer";
 import React, { useState, useEffect } from "react";
+import { FaMoon } from "react-icons/fa6"
+import { BsFillSunFill } from "react-icons/bs";
+import SinglePost from "./pages/SinglePost";
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -31,11 +34,12 @@ function App() {
     <div className="App">
       <div className={`App ${theme}`}>
         <Router>
-          <Navbar/>
-        {theme === "light" ? <button onClick={toggleTheme}>Dark Mode</button> : <button onClick={toggleTheme}>Light Mode</button>}
+          <Navbar />
+          {theme === "dark" ? <button className="theme-button" onClick={toggleTheme}><BsFillSunFill opacity="1" size={40} width="fit-content" height="fit-content" color="white" /></button> : <button className="theme-button" onClick={toggleTheme}><FaMoon size={40} width="fit-content" position="absolute" inset="0" height="fit-content" color="black" /></button>}
           <Routes>
             <Route exact path="/" element={<Home />} />
-            {/* <Route path="/blogs" element={<Blogs />} /> */}
+            <Route path="/:id" element={<SinglePost />} />
+            <Route path="/blogs" element={<Blogs />} />
             <Route path="/poetry" element={<Poetry />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NoPage />} />

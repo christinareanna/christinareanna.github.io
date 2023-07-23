@@ -2,13 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./ContactForm.css";
 import { useForm, ValidationError } from '@formspree/react';
+import "../darkMode.css";
 
 function ContactForm() {
     const [state, handleSubmit] = useForm("mbjweayv");
     if (state.succeeded) {
         return (
             <>
-                <p id="sent-message">Thanks for messaging! I'll get back to you shortly!</p>
+                <p className="sent-message" id="sent-message">Thanks for messaging! I'll get back to you shortly!</p>
                 <Link to="/"><button className="button">Go Home</button></Link>
             </>
         )

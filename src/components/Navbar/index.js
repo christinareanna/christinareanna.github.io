@@ -33,6 +33,9 @@ const Navbar = () => {
                         <NavItem id="contact">
                             <StyledLink to="/contact"><span className="nav-link">Contact</span></StyledLink>
                         </NavItem>
+                        <NavItem id="blogs">
+                            <StyledLink to="/blogs"><span className="nav-link">Blogs</span></StyledLink>
+                        </NavItem>
                     </NavMenu>
                 </NavbarContainer>
             </Nav>

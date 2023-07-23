@@ -8,10 +8,10 @@
     color: #333;
 }
 
-.light button {
-    background-color: black;
+.light .theme-button {
+    background-color: #fff;
     font-size: clamp(1em, 5px, 2em);
-    color: white;
+    color: black;
     padding: 0.3em;
     cursor: pointer;
     font-family: 'Century Gothic', 'AppleGothic', sans-serif;
@@ -19,12 +19,132 @@
     width: 6em;
 }
 
-.dark button {
-    background-color: #fdc8c8;
+.dark .theme-button {
+    background-color: black;
     font-size: clamp(1em, 5px, 2em);
-    color: black;
+    color: white;
     padding: 0.3em;
     cursor: pointer;
     font-family: 'Century Gothic', 'AppleGothic', sans-serif;
     border: none;
+}
+
+.light .contact-button {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    /* width: 6em; */
+    /* border-radius: 5px; */
+    border: 0;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    font-size: 24px;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    /* transition: all 0.3s; */
+    /* margin-top: -4px; */
+    font-weight: 700;
+}
+
+.dark .contact-button {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    /* width: 6em;
+    border-radius: 5px; */
+    border: 0;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+    background-color: white;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    /* transition: all 0.3s; */
+    /* margin-top: -4px; */
+    font-weight: 700;
+}
+
+
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .light .card {
+        height: 400px;
+        padding: 1em;
+    }
+
+    .dark .card {
+        height: 400px;
+    }
+
+    .light .footer {
+        height: 120px;
+        padding: 1em 0 0.2em 0;
+    }
+
+    .dark .footer {
+        height: 120px;
+        padding: 1em 0 0.2em 0;
+    }
+}
+
+
+.light .card {
+    background-color: white;
+    height: 750px;
+    padding: 1em;
+}
+
+.dark .card {
+    background-color: black;
+    height: 750px;
+    padding: 1em;
+}
+
+.light .sent-message {
+    color: black;
+}
+
+.dark .sent-message {
+    color: white;
+}
+
+/* #sent-message {
+    font-size: 36px;
+    color: black;
+} */
+
+.dark hr {
+    margin: 4em 0;
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    height: 8px;
+}
+
+.light hr {
+    margin: 4em 0;
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+    height: 8px;
+}
+
+.dark .card-body {
+    color: #FF6161;
+    height: 300px;
+    padding: 1em 0;
+}
+
+.light .card-body {
+    height: 200px;
+    padding: 1em 0;
+}
+
+.dark .footer-icon {
+    color: #FF6161;
+    border: 1px solid #FF6161;
+}
+
+.footer {
+    height: 200px;
+    padding: 1em 0 0.2em 0;
 }

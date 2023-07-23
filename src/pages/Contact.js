@@ -2,6 +2,7 @@ import React from "react";
 import ContactForm from "../components/ContactForm"
 import Sidebar from "../components/Sidebar";
 // import Navbar from "../components/Navbar";
+
 const Contact = ({ isOpen, toggle }) => {
     return (
         <>

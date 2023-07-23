@@ -1,0 +1,50 @@
+img {
+    width: 250px;
+    height: 320px;
+}
+
+.card {
+    min-width: 250px;
+    min-height: 300px;
+    /* max-width: 400px; */
+    margin: auto;
+    padding: auto;
+    /* border: 1px solid black; */
+    /* background-color: rgb(255, 255, 255); */
+}
+
+@media screen and (max-width: 768px) {
+    .card-body {
+        height: 400px;
+    }
+}
+
+.card-body {
+    color: black;
+}
+
+a:link {
+    text-decoration: none !important;
+}
+
+.dark h1 {
+    background-color: black;
+    color: white;
+}
+
+.dark h2 {
+    color: white;
+}
+
+.dark .container {
+    background-color: black;
+}
+
+/* .card-body p {
+    margin: auto;
+    padding: auto;
+    width: 250px;
+    font-size: clamp(0.3em, 1vw, 0.8em);
+    height: 180px;
+    overflow: scroll;
+  } */
