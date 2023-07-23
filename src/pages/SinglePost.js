@@ -15,7 +15,7 @@ const SinglePost = ({ toggle, isOpen, theme }) => {
             setPost(res.items[0].fields);
             setIsLoading(true);
         });
-    }, []);
+    }, [id]);
 
     //sidebar no open
     return (
