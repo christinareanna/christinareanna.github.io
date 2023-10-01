@@ -24,9 +24,11 @@ img {
     background-color: white;
     font-weight: 700;
     border: 0;
+    cursor: pointer;
 }
 
 .light button {
+    cursor: pointer;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     color: black;
     font-size: 24px;
@@ -35,9 +37,16 @@ img {
     border: 0;
 }
 
-.description {
-    padding: 0 1em;
+.post {
+    padding: 0;
+    font-size: 0.8em;
     text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .post {
+        padding: 0 2em;
+    }
 }
 
 /* .card-body p {

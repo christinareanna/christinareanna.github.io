@@ -59,7 +59,7 @@ const Home = ({ theme }) => {
                                 I graduated from a software engineering bootcamp called Thinkful in February 2022.
                                 I started as an apprentice in March 2022, and got promoted to analyst in March 2023.
                                 I do a variety of different projects at my job, including user experience research,
-                                technical writing, and front-end development with a focus on accessibility.
+                                technical writing, copywriting, and front-end development with a focus on accessibility.
                                 I am always learning as I go, and I love receiving feedback on how I can improve on things.</p>
                         </div>
                     </div>

@@ -32,8 +32,8 @@ const SinglePost = ({ toggle, isOpen, theme }) => {
                             alt={"..."}
                             style={{ width: "620px" }}
                         />
-                        <h3 className="h3 mt-5">Description</h3>
-                        <Markdown className="description">
+                        {/* <h3 className="h3 mt-5">Description</h3> */}
+                        <Markdown className="post">
                             {post?.postDescription}
                         </Markdown>
                     </div>
