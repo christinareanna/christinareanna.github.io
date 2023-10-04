@@ -21,7 +21,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-client.js
-Contentful/
-src/Contentful.client.js
-src/config/particle-config.js
+.env
