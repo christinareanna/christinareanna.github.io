@@ -33,7 +33,7 @@ export const SidebarWrapper = styled.div`
 `
 export const SidebarItem = styled.li`
   margin: 0;
-  padding: 0;
+  padding: 0.5em 0;
   width: 100%;
   height: 100%;
   text-decoration: none;
@@ -49,8 +49,10 @@ export const SidebarMenu = styled.ul`
 
 
     @media screen and (max-width: 768px) {
-        grid-template-rows: repeat(4, 22vh);
+        grid-template-rows: repeat(5, 12vh);
         font-size: 38px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         padding: 6vh 0;
         margin: 0;

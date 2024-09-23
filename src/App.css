@@ -22,34 +22,13 @@
   animation: slideRight 2s ease-in-out;
 }
 
-
-@keyframes slideRight {
-  from {
-    transform: translate(-100%, 0);
-  }
-
-  to {
-    transform: translate(0, 0);
-  }
-}
-
 #desc {
   min-width: 3em;
   min-height: 3em;
   text-align: center;
-  font-size: clamp(.6rem, .5rem + 5vw, 2rem);
+  font-size: clamp(.4rem, .3rem + 3vw, 2rem);
   padding: 0 2rem;
   animation: slideIn 2s ease-in-out;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translate(100%, 0);
-  }
-
-  to {
-    transform: translate(0, 0);
-  }
 }
 
 body {
@@ -71,7 +50,7 @@ h1, h2 {
   text-align: center;
   text-decoration: none;
   justify-content: center;
-  padding: 5rem 0;
+  padding: 0;
   color: #957E84;
 }
 
@@ -95,10 +74,13 @@ h1, h2 {
   text-align: center;
   justify-content: center;
   align-items: center;
+  border: 1px black solid;
 }
 
 .card-text {
   text-align: center;
+  /* font-size: clamp(0.6em, 3vw, 1.2em); */
+  font-size: 1.2rem;
   padding: 0;
 }
 
@@ -113,84 +95,6 @@ h1, h2 {
   border: 2px solid;
 }
 
-.tooltip {
-  border-radius: 10px;
-  padding: 5px 10px;
-  position: relative;
-  margin: 10px;
-  text-align: center;
-}
-
-.tooltip::after {
-  border-radius: 10px;
-  display: none;
-  padding: 10px 15px;
-  position: absolute;
-  text-align: center;
-  z-index: 999;
-}
-
-.tooltip.top::after {
-  content: 'HTML';
-  top: 2;
-  left: 50%;
-  transform: translate(-50%, calc(-10% - 10px));
-}
-
-.tooltip.top2::after {
-  content: 'React';
-  top: 2;
-  left: 50%;
-  transform: translate(-50%, calc(-10% - 10px));
-}
-
-.tooltip.top3::after {
-  content: 'Git';
-  top: 2;
-  left: 50%;
-  transform: translate(-50%, calc(-10% - 10px));
-}
-
-.tooltip.top4::after {
-  content: 'JavaScript';
-  top: 2;
-  left: 50%;
-  transform: translate(-50%, calc(-10% - 10px));
-}
-
-.tooltip.top5::after {
-  content: 'CSS';
-  top: 2;
-  left: 50%;
-  transform: translate(-50%, calc(-10% - 10px));
-}
-
-.tooltip.top6::after {
-  content: 'Python';
-  top: 2;
-  left: 50%;
-  transform: translate(-50%, calc(-10% - 10px));
-}
-
-.tooltip.top7::after {
-  content: 'Google Cloud';
-  top: 2;
-  left: 50%;
-  transform: translate(-50%, calc(-10% - 10px));
-}
-
-.tooltip.top8::after {
-  content: 'Amazon Web Services';
-  top: 2;
-  left: 50%;
-  transform: translate(-50%, calc(-10% - 10px));
-}
-
-
-.tooltip:hover::after {
-  display: block;
-}
-
 .footer-icon {
   font-size: 70px;
   padding: 5px;
@@ -203,11 +107,11 @@ h1, h2 {
 .global-container {
   text-align: center;
   padding: 0.8rem;
-  font-size: clamp(.5rem, .2rem + 5vw, 2rem);
-  -webkit-transform: scale(0.8);
+  font-size: clamp(.5rem, .2rem + 5vw, 1.2rem);
+  /* -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
-  transform: scale(0.8);
+  transform: scale(0.8); */
 }
 
 

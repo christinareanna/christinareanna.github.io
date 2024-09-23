@@ -6,6 +6,7 @@ img {
 .container {
     min-width: 250px;
     max-width: 600px;
+    border: 1px black solid;
     /* max-width: 400px; */
     margin: auto;
     padding: auto;

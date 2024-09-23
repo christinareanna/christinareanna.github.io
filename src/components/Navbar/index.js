@@ -24,18 +24,21 @@ const Navbar = () => {
             <Nav>
                 <NavbarContainer>
                     <NavMenu>
-                        <NavItem id="Poetry">
+                        {/* <NavItem id="Poetry">
                             <StyledLink to="/poetry"><span className="nav-link">Poetry</span></StyledLink>
-                        </NavItem>
+                        </NavItem> */}
                         <NavItem id="home">
                             <StyledLink to="/"><span className="nav-link">Home</span></StyledLink>
                         </NavItem>
                         <NavItem id="contact">
                             <StyledLink to="/contact"><span className="nav-link">Contact</span></StyledLink>
                         </NavItem>
-                        <NavItem id="blogs">
+                        {/* <NavItem id="blogs">
                             <StyledLink to="/blogs"><span className="nav-link">Blogs</span></StyledLink>
                         </NavItem>
+                        <NavItem id="portfolio">
+                            <StyledLink to="/portfolio"><span className="nav-link">Portfolio</span></StyledLink>
+                        </NavItem> */}
                     </NavMenu>
                 </NavbarContainer>
             </Nav>

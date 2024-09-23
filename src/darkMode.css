@@ -1,15 +1,15 @@
 .dark {
     background-color: #000;
-    color: #FF6161;
+    color: #f49e9e;
 }
 
 .light {
-    background-color: #fff;
+    background-color: beige;
     color: #333;
 }
 
 .light .theme-button {
-    background-color: #fff;
+    background-color: beige;
     font-size: clamp(1em, 5px, 2em);
     color: black;
     padding: 0.3em;
@@ -129,7 +129,7 @@
 }
 
 .dark .card-body {
-    color: #FF6161;
+    color: #f49e9e;
     height: 300px;
     padding: 1em 0;
 }
@@ -140,8 +140,8 @@
 }
 
 .dark .footer-icon {
-    color: #FF6161;
-    border: 1px solid #FF6161;
+    color: #f49e9e;
+    border: 1px solid #f49e9e;
 }
 
 .footer {
