@@ -1,0 +1,40 @@
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* .img1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px red solid;
+}
+
+.img2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 1px green solid;
+}
+
+.img3 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 1px green solid;
+}
+
+.img4 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 1px green solid;
+}
+
+.img5 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 1px green solid;
+} */
