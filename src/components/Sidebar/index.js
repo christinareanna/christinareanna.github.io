@@ -48,11 +48,11 @@ const Sidebar = () => {
           <SidebarItem aria-label="Go to homepage" id="home">
             <Link to="/" className="link" onClick={toggle}>Home</Link>
           </SidebarItem>
-          {/* <SidebarItem aria-label="Go to blogs" id="blogs">
-            <Link to="/blogs" className="link" onClick={toggle}>Blogs</Link>
-          </SidebarItem>
           <SidebarItem aria-label="Go to portfolio" id="portfolio">
             <Link to="/portfolio" className="link" onClick={toggle}>Portfolio</Link>
+          </SidebarItem>
+          {/* <SidebarItem aria-label="Go to blogs" id="blogs">
+            <Link to="/blogs" className="link" onClick={toggle}>Blogs</Link>
           </SidebarItem> */}
         </SidebarMenu>
       </SidebarWrapper>

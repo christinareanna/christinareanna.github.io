@@ -74,12 +74,12 @@
     }
 
     .light .footer {
-        height: 120px;
+        height: 100%;
         padding: 1em 0 0.2em 0;
     }
 
     .dark .footer {
-        height: 120px;
+        height: 100%;
         padding: 1em 0 0.2em 0;
     }
 }

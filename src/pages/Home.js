@@ -33,15 +33,15 @@ const Home = ({ theme }) => {
                     <div class="card-body">
                         <p class="card-text">I'm someone who...</p>
                         <p class="card-text">Prefers they/them pronouns.</p>
+                        <p class="card-text">Currently writes for a living.</p>
                         <p class="card-text">Always asks questions.</p>
-                        <p class="card-text">Went to school for software engineering.</p>
                         <p class="card-text">Cares about the user experience.</p>
                         <p class="card-text">Is sober from alcohol.</p>
                         <p class="card-text">Learns new things constantly.</p>
                         <p class="card-text">Loves their Nintendo Switch.</p>
-                        <p class="card-text">Openly talks about having ADHD and OCD.</p>
                         <p class="card-text">Cares about mental wellness.</p>
-                        <p class="card-text">And currently writes for a living.</p>
+                        <p class="card-text">Openly talks about having ADHD.</p>
+                        <p class="card-text">Went to Thinkful bootcamp for software engineering.</p>
                     </div>
                 </div>
             </div>
