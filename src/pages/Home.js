@@ -23,25 +23,22 @@ const Home = ({ theme }) => {
                     Hi, I'm Christina.
                 </div>
                 <div id="desc">
-                    A lover of the arts in Chicago.
+                    Copywriter & Front-end Developer in Chicago.
                 </div>
                 <img class="avatar" src={img_2} alt="me" />
             </div>
-                <img class="avatar" src={img_1} alt="me" />
+            <img class="avatar" src={img_1} alt="me" />
             <div className={`Home ${theme}`}>
                 <div class="card">
                     <div class="card-body">
-                        <p class="card-text">I'm someone who...</p>
-                        <p class="card-text">Prefers they/them pronouns.</p>
-                        <p class="card-text">Currently writes for a living.</p>
-                        <p class="card-text">Always asks questions.</p>
-                        <p class="card-text">Cares about the user experience.</p>
-                        <p class="card-text">Is sober from alcohol.</p>
-                        <p class="card-text">Learns new things constantly.</p>
-                        <p class="card-text">Loves their Nintendo Switch.</p>
-                        <p class="card-text">Cares about mental wellness.</p>
-                        <p class="card-text">Openly talks about having ADHD.</p>
-                        <p class="card-text">Went to Thinkful bootcamp for software engineering.</p>
+                        <h2>About Me</h2>
+                        <p className='about-me'>As an Analyst with an education in software engineering from Thinkful, my specialty
+                            is in identifying gaps and creating innovative solutions through effective collaboration and communication.
+                            Driven by a passion for improving the user experience, my approach to copywriting is centered on
+                            creating content that resonates with audiences and drives engagement. With over a year of copywriting
+                            experience, I believe in crafting messages that not only inform but also enhance the user
+                            journey—whether through intuitive design or persuasive calls to action.
+                        </p>
                     </div>
                 </div>
             </div>

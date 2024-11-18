@@ -86,13 +86,13 @@
 
 
 .light .card {
-    background-color: white;
+    /* background-color: white; */
     height: 750px;
     padding: 1em;
 }
 
 .dark .card {
-    background-color: black;
+    /* background-color: black; */
     height: 750px;
     padding: 1em;
 }

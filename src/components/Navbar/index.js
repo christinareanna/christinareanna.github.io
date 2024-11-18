@@ -24,9 +24,6 @@ const Navbar = () => {
             <Nav>
                 <NavbarContainer>
                     <NavMenu>
-                        {/* <NavItem id="Poetry">
-                            <StyledLink to="/poetry"><span className="nav-link">Poetry</span></StyledLink>
-                        </NavItem> */}
                         <NavItem id="home">
                             <StyledLink to="/"><span className="nav-link">Home</span></StyledLink>
                         </NavItem>
@@ -36,9 +33,9 @@ const Navbar = () => {
                         <NavItem id="portfolio">
                             <StyledLink to="/portfolio"><span className="nav-link">Portfolio</span></StyledLink>
                         </NavItem>
-                        {/* <NavItem id="blogs">
-                            <StyledLink to="/blogs"><span className="nav-link">Blogs</span></StyledLink>
-                        </NavItem> */}
+                        <NavItem id="projects">
+                            <StyledLink to="/projects"><span className="nav-link">Projects</span></StyledLink>
+                        </NavItem>
                     </NavMenu>
                 </NavbarContainer>
             </Nav>

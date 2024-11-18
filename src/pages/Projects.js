@@ -2,14 +2,15 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 // import ReservationDashboard from "../ReservationDashboard.png";
 // import NewReservation from "../NewReservation.png";
-import PomodoroTimer from "../Pomodoro-Timer.png";
-import PomodoroTimerBreak from "../Pomodoro-Timer-Break.png";
+import PomodoroTimer from "../images/Pomodoro-Timer.png";
+import PomodoroTimerBreak from "../images/Pomodoro-Timer-Break.png";
 // import LandingPage from "../landingpage.png";
-import ClockOutCrew from "../clockoutcrew.png";
+import ClockOutCrew from "../images/clockoutcrew.png";
 // import NewTable from "../NewTable.png";
 // import Search from "../Search.png";
 import { AiOutlineGithub } from 'react-icons/ai';
 import { SiNetlify } from 'react-icons/si'
+import "./Projects.css"
 
 
 // import Navbar from '../components/Navbar';
@@ -23,30 +24,25 @@ const Projects = ({ isOpen, toggle }) => {
             </div>
             {/* <Navbar /> */}
             <h1 className='projects'>Projects</h1>
-            <hr style={{ border: "none" }} />
             <div className='global-container'>
                 <h1 className='global-title'>Pomodoro Timer</h1>
                 <p className='global-paragraph'>A pomodoro timer that plays an audio after each focus and break session.</p>
                 <div className='global'><a href='https://github.com/christinareanna/Pomodoro-Timer' rel='noreferrer' target='_blank' aria-label='Github'><AiOutlineGithub className="icon" size={70} /></a>
-                <a href="https://christina-pomodoro-timer.netlify.app/" rel='noreferrer' target='_blank'><SiNetlify className="icon" size={70} /></a></div>
+                    <a href="https://christina-pomodoro-timer.netlify.app/" rel='noreferrer' target='_blank'><SiNetlify className="icon" size={70} /></a></div>
                 <div className='project-pictures'>
                     {/* TODO- Come back to fix the images and import them again :) */}
                     <div><img className='reservation' src={PomodoroTimer} alt='timer'></img></div>
                     <div><img className='reservation' src={PomodoroTimerBreak} alt='timer'></img></div>
                 </div>
             </div>
-            <hr style={{ border: "none" }} />
             <div className='global-container'>
                 <h1 className='global-title'>Clock Out Crew</h1>
                 <p className='global-paragraph'>The beginning stages of my design for a service application for service workers called Clock Out Crew.</p>
-                <div className='global'><a href='https://github.com/christinareanna/serviceapplandingpage' rel='noreferrer' target='_blank' aria-label='Github'><AiOutlineGithub className="icon" size={70} /></a>
-                <a href="https://pause-service-site.netlify.app/" rel='noreferrer' target='_blank'><SiNetlify className="icon" size={70} /></a></div>
+                <div className='global'><a href='https://github.com/christinareanna/serviceapplandingpage' rel='noreferrer' target='_blank' aria-label='Github'><AiOutlineGithub className="icon" size={70} /></a></div>
                 <div className='project-pictures'>
-                    {/* TODO- Come back to fix the images and import them again :) */}
                     <div><img className='reservation' src={ClockOutCrew} alt='timer'></img></div>
                 </div>
             </div>
-            <hr style={{ border: "none" }} />
         </>
     );
 };

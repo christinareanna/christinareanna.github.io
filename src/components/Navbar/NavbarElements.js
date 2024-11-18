@@ -59,7 +59,7 @@ justify-content: center;
 `
 
 export const NavItem = styled.li`
-margin-top: 20px;
+margin-top: 1rem;
 text-decoration: none;
-width: 100%;
+padding: 0 1rem;
 `

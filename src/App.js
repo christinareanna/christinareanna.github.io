@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'r
 import PasswordPopup from './PasswordPopup';
 import Portfolio from './pages/Portfolio';
 import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Blogs from './pages/Blogs';
 import Navbar from './components/Navbar'
 import { Footer } from "./components/Footer";
 import Contact from './pages/Contact';
@@ -29,6 +31,8 @@ const AppRoutes = ({ isAuthenticated, setIsPopupOpen, setIsAuthenticated }) => {
         element={isAuthenticated ? <Portfolio /> : <Navigate to="/" />} // Redirect if not authenticated
       />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/blogs" element={<Blogs/>} />
       <Route path="*" element={<NoPage />} />
     </Routes>
   );
