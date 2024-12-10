@@ -5,7 +5,7 @@ import '../darkMode.css';
 
 export const Footer = () => {
     const currentYear = (new Date().getFullYear())
-    const yearTxt = currentYear === 2022 ? "2022" : currentYear
+    const yearTxt = currentYear === 2024 ? "2024" : currentYear
 
     return (
         <footer className="footer">

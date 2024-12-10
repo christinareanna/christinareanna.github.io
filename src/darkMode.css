@@ -65,12 +65,13 @@
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
     .light .card {
-        height: 400px;
-        padding: 1em;
+        height: 100%;
+        padding: 3em;
     }
 
     .dark .card {
-        height: 400px;
+        height: 650px;
+        padding: 1em;
     }
 
     .light .footer {
@@ -87,14 +88,16 @@
 
 .light .card {
     /* background-color: white; */
-    height: 750px;
-    padding: 1em;
+    height: 30em;
+    max-width: 60%;
+    padding: 0;
 }
 
 .dark .card {
     /* background-color: black; */
-    height: 750px;
-    padding: 1em;
+    height: 30em;
+    max-width: 60%;
+    padding: 0;
 }
 
 .light .sent-message {
@@ -130,13 +133,13 @@
 
 .dark .card-body {
     color: #f49e9e;
-    height: 300px;
-    padding: 1em 0;
+    /* height: 400px; */
+    padding: 0;
 }
 
 .light .card-body {
-    height: 200px;
-    padding: 1em 0;
+    /* height: 400px; */
+    padding: 0;
 }
 
 .dark .footer-icon {
