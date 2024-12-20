@@ -46,7 +46,7 @@ const Home = ({ theme }) => {
                             <br></br>
                             Sound interesting? <ResumeLink />
                             <br></br>
-                            Password to my portfolio: NewEraOfWritingUnlocked
+                            {/* Password to my portfolio: NewEraOfWritingUnlocked */}
                         </p>
                     </div>
                 </div>

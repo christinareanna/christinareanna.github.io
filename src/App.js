@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
-import PasswordPopup from './PasswordPopup';
+// import PasswordPopup from './PasswordPopup';
 import Portfolio from './pages/Portfolio';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
 import Navbar from './components/Navbar'
-import { Footer } from "./components/Footer";
+// import { Footer } from "./components/Footer";
 import Contact from './pages/Contact';
 import NoPage from './pages/NoPage';
 import { BsFillSunFill } from 'react-icons/bs';
@@ -48,11 +48,11 @@ const App = () => {
     setIsAuthenticated(authenticated);
   }, []);
 
-  const handleValid = () => {
-    localStorage.setItem('isAuthenticated', 'true');
-    setIsAuthenticated(true);
-    setIsPopupOpen(false);
-  };
+  // const handleValid = () => {
+  //   localStorage.setItem('isAuthenticated', 'true');
+  //   setIsAuthenticated(true);
+  //   setIsPopupOpen(false);
+  // };
 
   const toggleTheme = () => {
     if (theme === 'light') {
@@ -77,7 +77,7 @@ const App = () => {
           {isPopupOpen && !isAuthenticated && (
             <>
               <div className="backdrop" onClick={() => setIsPopupOpen(false)} />
-              <PasswordPopup onClose={() => setIsPopupOpen(false)} onValid={handleValid} />
+              {/* <PasswordPopup onClose={() => setIsPopupOpen(false)} onValid={handleValid} /> */}
             </>
           )}
           <AppRoutes
@@ -85,7 +85,7 @@ const App = () => {
             setIsPopupOpen={setIsPopupOpen}
             setIsAuthenticated={setIsAuthenticated}
           />
-          <Footer />
+          {/* <Footer /> */}
         </Router>
         <div className="background" />
       </div>

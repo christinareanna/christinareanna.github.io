@@ -1,27 +1,87 @@
 .img1 {
-    height: 500px;
+    height: 700px;
 }
 
 .img2 {
-    height: 400px;
+    height: 600px;
 }
 
 .img4 {
-    height: 450px;
+    height: 550px;
 }
 
-.img5{
+.img5 {
+    height: 1000px;
+}
+
+.img6 {
+    height: 700px;
+}
+
+.img7 {
     height: 650px;
 }
 
-.img6{
-    height: 550px;
+.img8 {
+    height: 650px;
 }
 
-.img7{
-    height: 550px;
+.img9 {
+    height: 1800px;
 }
 
-.img8{
-    height: 550px;
+.img10 {
+    height: 1800px;
+}
+
+
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 3em 0;
+}
+
+.column {
+    flex: 40%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+} */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
