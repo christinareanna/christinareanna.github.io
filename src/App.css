@@ -203,6 +203,7 @@ h1, h2 {
 
   .about-me {
     text-align: left;
+    /* height: 100%; */
     font-size: clamp(.4rem, .2rem + 5vw, 1rem);
   }
 }
