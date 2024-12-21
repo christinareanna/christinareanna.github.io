@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import PasswordPopup from './PasswordPopup';
 import Portfolio from './pages/Portfolio';
 import Home from './pages/Home';
@@ -9,7 +9,7 @@ import Navbar from './components/Navbar'
 // import { Footer } from "./components/Footer";
 import Contact from './pages/Contact';
 import NoPage from './pages/NoPage';
-import { BsFillSunFill } from 'react-icons/bs';
+import { BsFillSunFill } from 'react-icons/bs'; 
 import { FaMoon } from 'react-icons/fa';
 import './App.css';
 
