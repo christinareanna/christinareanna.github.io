@@ -14,39 +14,35 @@ import { FaMoon } from 'react-icons/fa';
 import './App.css';
 
 const AppRoutes = ({ isAuthenticated, setIsPopupOpen, setIsAuthenticated }) => {
-  const location = useLocation();
+  // const location = useLocation();
 
-  useEffect(() => {
-    // Open the popup only if navigating to the portfolio route and not authenticated
-    if (location.pathname === '/portfolio' && !isAuthenticated) {
-      setIsPopupOpen(true);
-    }
-  }, [location.pathname, isAuthenticated, setIsPopupOpen]);
+  // useEffect(() => {
+  //   if (location.pathname === '/portfolio' && !isAuthenticated) {
+  //     setIsPopupOpen(true);
+  //   }
+  // }, [location.pathname, isAuthenticated, setIsPopupOpen]);
 
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route
-        path="/portfolio"
-        element={isAuthenticated ? <Portfolio /> : <Navigate to="/" />} // Redirect if not authenticated
-      />
+      <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/projects" element={<Projects />} />
-      <Route path="/blogs" element={<Blogs/>} />
+      <Route path="/blogs" element={<Blogs />} />
       <Route path="*" element={<NoPage />} />
     </Routes>
   );
 };
 
 const App = () => {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  // const [isPopupOpen, setIsPopupOpen] = useState(false);
+  // const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [theme, setTheme] = useState('light');
 
-  useEffect(() => {
-    const authenticated = localStorage.getItem('isAuthenticated') === 'true';
-    setIsAuthenticated(authenticated);
-  }, []);
+  // useEffect(() => {
+  //   const authenticated = localStorage.getItem('isAuthenticated') === 'true';
+  //   setIsAuthenticated(authenticated);
+  // }, []);
 
   // const handleValid = () => {
   //   localStorage.setItem('isAuthenticated', 'true');
@@ -67,23 +63,23 @@ const App = () => {
       <div className={`App ${theme}`}>
         <Router>
           <Navbar />
-          {isAuthenticated && (
+          {(
             <button className="theme-button" onClick={toggleTheme}>
               {theme === "dark" ? <BsFillSunFill className="theme-button" size={40} color="white" />
                 :
                 <FaMoon size={40} className="theme-button" width="fit-content" height="fit-content" color="black" />}
             </button>
           )}
-          {isPopupOpen && !isAuthenticated && (
+          {/* {isPopupOpen && !isAuthenticated && (
             <>
               <div className="backdrop" onClick={() => setIsPopupOpen(false)} />
-              {/* <PasswordPopup onClose={() => setIsPopupOpen(false)} onValid={handleValid} /> */}
+              <PasswordPopup onClose={() => setIsPopupOpen(false)} onValid={handleValid} />
             </>
-          )}
+          )} */}
           <AppRoutes
-            isAuthenticated={isAuthenticated}
-            setIsPopupOpen={setIsPopupOpen}
-            setIsAuthenticated={setIsAuthenticated}
+            // isAuthenticated={isAuthenticated}
+            // setIsPopupOpen={setIsPopupOpen}
+            // setIsAuthenticated={setIsAuthenticated}
           />
           {/* <Footer /> */}
         </Router>
