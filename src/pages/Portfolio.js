@@ -23,34 +23,40 @@ function Portfolio(isOpen, toggle) {
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div>
             <div id="desc">
-                Welcome to my copywriting portfolio.
+                Welcome to my copywriting portfolio!
                 <br>
+                </br>
+                <br>
+                    Below are snippets of emails I wrote for a large retail tech client.
+                    I collaborated with the copy lead, creative director, QA, and design team
+                    to ensure the copy fits well with the design.
                 </br>
             </div>
             <div className="row">
                 <div className="column">
-                    {/* <h2>Outdoor Living</h2> */}
+                    <h2>Outdoor Living</h2>
                     <img className="img1" src={copy1} alt="copy" />
-                    {/* <h2>Eco-friendly Tech</h2> */}
+                    <h2>Eco-friendly Tech</h2>
                     <img className="img2" src={copy2} alt="copy" />
+                    <h2>Gaming with TCL TVs</h2>
                     <img className="img4" src={copy4} alt="copy" />
                 </div>
                 <div className="column">
-                    {/* <h2>Gaming with TCL TVs</h2> */}
-                    {/* <h2>Holiday-ready Home</h2> */}
+                    <h2>Holiday-ready Home</h2>
                     <img className="img5" src={copy5} alt="copy" />
+                    <h2>Amazon Tech</h2>
                     <img className="img6" src={copy6} alt="copy" />
                     <img className="img7" src={copy7} alt="copy" />
                 </div>
                 <div className="column">
-                    {/* <h2>Amazon Tech</h2> */}
+                    <h2>Wellness</h2>
                     <img className="img10" src={copy10} alt="copy" />
                 </div>
                 <div className="column">
-                    {/* <h2>Samsung Appliances</h2> */}
+                    <h2>Samsung Appliances</h2>
                     <img className="img8" src={copy8} alt="copy" />
+                    <h2>Clicks</h2>
                     <img className="img9" src={copy9} alt="copy" />
-
                 </div>
             </div>
         </div>
