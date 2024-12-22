@@ -23,14 +23,14 @@ function Portfolio(isOpen, toggle) {
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div>
             <div id="desc">
-                Welcome to my copywriting portfolio!
-                <br>
-                </br>
-                <br>
+                <p>
+                    Welcome to my copywriting portfolio!
+                </p>
+                <p>
                     Below are snippets of emails I wrote for a large retail tech client.
                     I collaborated with the copy lead, creative director, QA, and design team
                     to ensure the copy fits well with the design.
-                </br>
+                </p>
             </div>
             <div className="row">
                 <div className="column">
@@ -59,7 +59,7 @@ function Portfolio(isOpen, toggle) {
                     <img className="img9" src={copy9} alt="copy" />
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
