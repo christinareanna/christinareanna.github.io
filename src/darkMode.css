@@ -6,14 +6,14 @@
 }
 
 .light {
-    background-color: beige;
+    background-color: #E0EBFE;
     color: #333;
     height: auto;
     font-family: 'Century Gothic', 'AppleGothic', sans-serif;
 }
 
 .light .theme-button {
-    background-color: beige;
+    background-color: #E0EBFE;
     font-size: clamp(1em, 5px, 2em);
     color: black;
     padding: 0.3em;

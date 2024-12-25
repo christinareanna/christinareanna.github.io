@@ -30,7 +30,7 @@ const Home = ({ theme }) => {
                     Christina Knapp
                 </div>
                 <div>
-                    <p>Strategic copywriter in Chicago.
+                    <p>Strategic copywriter at Accenture in Chicago.
                         <br></br>
                         Inspired by tech, data, and the customer journey.
                         <br></br>

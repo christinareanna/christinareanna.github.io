@@ -12,6 +12,7 @@ const Contact = ({ isOpen, toggle }) => {
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div>
             <h1 className="heading">Contact</h1>
+            <p>Let's connect to see how I can help you and your business.</p>
             <ContactForm />
         </div>
     )

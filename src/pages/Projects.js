@@ -6,11 +6,13 @@ import PomodoroTimer from "../images/Pomodoro-Timer.png";
 import PomodoroTimerBreak from "../images/Pomodoro-Timer-Break.png";
 import website1 from "../images/website1.jpg";
 import website2 from "../images/website2.jpg";
+import beth from "../images/bethanyspieshop.png";
 // import LandingPage from "../landingpage.png";
 import ClockOutCrew from "../images/clockoutcrew.png";
 // import NewTable from "../NewTable.png";
 // import Search from "../Search.png";
 import { AiOutlineGithub } from 'react-icons/ai';
+import advice from "../images/frontendadvice.png";
 import { SiNetlify } from 'react-icons/si';
 import "./Projects.css";
 
@@ -36,6 +38,26 @@ const Projects = ({ isOpen, toggle }) => {
                     {/* TODO- Come back to fix the images and import them again :) */}
                     <div><img className='reservation' src={PomodoroTimer} alt='timer'></img></div>
                     <div><img className='reservation' src={PomodoroTimerBreak} alt='timer'></img></div>
+                </div>
+            </div>
+            <div className='global-container'>
+                <h1 className='global-title'>Random Advice Generator</h1>
+                <p className='global-paragraph'>A random advice generator built with React, HTML, and CSS fetching advice from the Advice Slip API.</p>
+                <div className='global'><a href='https://github.com/christinareanna/advice-generator/tree/master' rel='noreferrer' target='_blank' aria-label='Github'><AiOutlineGithub className="icon" size={70} /></a>
+                    <a href="https://christina-random-advice-generator.netlify.app/" rel='noreferrer' target='_blank'><SiNetlify className="icon" size={70} /></a></div>
+                <div className='project-pictures'>
+                    {/* TODO- Come back to fix the images and import them again :) */}
+                    <div><img className='reservation' src={advice} alt='timer'></img></div>
+                </div>
+            </div>
+            <div className='global-container'>
+                <h1 className='global-title'>Bethany's Pie Shop</h1>
+                <p className='global-paragraph'>A website built with JavaScript, HTML, and CSS.</p>
+                <div className='global'><a href='https://github.com/christinareanna/BethanysPieShop' rel='noreferrer' target='_blank' aria-label='Github'><AiOutlineGithub className="icon" size={70} /></a>
+                    <a href="https://bethanys-pieshop.netlify.app/pages/" rel='noreferrer' target='_blank'><SiNetlify className="icon" size={70} /></a></div>
+                <div className='project-pictures'>
+                    {/* TODO- Come back to fix the images and import them again :) */}
+                    <div><img className='reservation' src={beth} alt='timer'></img></div>
                 </div>
             </div>
             <div className='global-container'>
