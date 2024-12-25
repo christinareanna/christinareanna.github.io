@@ -4,13 +4,15 @@ import Sidebar from '../components/Sidebar';
 // import NewReservation from "../NewReservation.png";
 import PomodoroTimer from "../images/Pomodoro-Timer.png";
 import PomodoroTimerBreak from "../images/Pomodoro-Timer-Break.png";
+import website1 from "../images/website1.jpg";
+import website2 from "../images/website2.jpg";
 // import LandingPage from "../landingpage.png";
 import ClockOutCrew from "../images/clockoutcrew.png";
 // import NewTable from "../NewTable.png";
 // import Search from "../Search.png";
 import { AiOutlineGithub } from 'react-icons/ai';
-import { SiNetlify } from 'react-icons/si'
-import "./Projects.css"
+import { SiNetlify } from 'react-icons/si';
+import "./Projects.css";
 
 
 // import Navbar from '../components/Navbar';
@@ -23,7 +25,8 @@ const Projects = ({ isOpen, toggle }) => {
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div>
             {/* <Navbar /> */}
-            <h1 className='projects'>Projects</h1>
+            <h1>Projects</h1>
+            <p>Below are some of my front-end development projects.</p>
             <div className='global-container'>
                 <h1 className='global-title'>Pomodoro Timer</h1>
                 <p className='global-paragraph'>A pomodoro timer that plays an audio after each focus and break session.</p>
@@ -33,6 +36,20 @@ const Projects = ({ isOpen, toggle }) => {
                     {/* TODO- Come back to fix the images and import them again :) */}
                     <div><img className='reservation' src={PomodoroTimer} alt='timer'></img></div>
                     <div><img className='reservation' src={PomodoroTimerBreak} alt='timer'></img></div>
+                </div>
+            </div>
+            <div className='global-container'>
+                <h1 className='global-title'>Future of Web 3.0</h1>
+                <p className='global-paragraph'>Replicated a design via HTML and CSS.</p>
+                <div className='project-pictures'>
+                    <div><img className='reservation' src={website1} alt='website'></img></div>
+                </div>
+            </div>
+            <div className='global-container'>
+                <h1 className='global-title'>Front-end Development</h1>
+                <p className='global-paragraph'>Replicated a design via HTML and CSS.</p>
+                <div className='project-pictures'>
+                    <div><img className='reservation' src={website2} alt='website'></img></div>
                 </div>
             </div>
             <div className='global-container'>

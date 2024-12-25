@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Portfolio from './pages/Portfolio';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import Blogs from './pages/Blogs';
+// import Blogs from './pages/Blogs';
 import Navbar from './components/Navbar'
 // import { Footer } from "./components/Footer";
-import Contact from './pages/Contact';
+import Contact from './components/Contact';
 import NoPage from './pages/NoPage';
 import { BsFillSunFill } from 'react-icons/bs'; 
 import { FaMoon } from 'react-icons/fa';
@@ -28,7 +28,7 @@ const AppRoutes = ({ isAuthenticated, setIsPopupOpen, setIsAuthenticated }) => {
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/projects" element={<Projects />} />
-      <Route path="/blogs" element={<Blogs />} />
+      {/* <Route path="/blogs" element={<Blogs />} /> */}
       <Route path="*" element={<NoPage />} />
     </Routes>
   );

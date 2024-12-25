@@ -1,11 +1,15 @@
 .dark {
     background-color: #000;
     color: #f49e9e;
+    height: auto;
+    font-family: 'Century Gothic', 'AppleGothic', sans-serif;
 }
 
 .light {
     background-color: beige;
     color: #333;
+    height: auto;
+    font-family: 'Century Gothic', 'AppleGothic', sans-serif;
 }
 
 .light .theme-button {
@@ -14,7 +18,7 @@
     color: black;
     padding: 0.3em;
     cursor: pointer;
-    font-family: 'Century Gothic', 'AppleGothic', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     border: none;
     width: 6em;
 }
@@ -30,14 +34,15 @@
 }
 
 .light .contact-button {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: 'Century Gothic', 'AppleGothic', sans-serif;
     /* width: 6em; */
-    /* border-radius: 5px; */
-    border: 0;
     cursor: pointer;
     color: black;
     background-color: white;
     font-size: 24px;
+    border-radius: 7px;
+    border: 2px solid black;
+    padding: 0.5em 1em;
     /* padding-top: 10px; */
     /* padding-bottom: 10px; */
     /* transition: all 0.3s; */
@@ -45,15 +50,21 @@
     font-weight: 700;
 }
 
+.dark .input {
+    border: 2px solid #f49e9e;
+}
+
 .dark .contact-button {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: 'Century Gothic', 'AppleGothic', sans-serif;
     /* width: 6em;
     border-radius: 5px; */
-    border: 0;
     cursor: pointer;
     color: black;
     font-size: 24px;
     background-color: white;
+    border-radius: 7px;
+    border: 2px solid #f49e9e;
+    padding: 0.5em 1em;
     /* padding-top: 10px;
     padding-bottom: 10px; */
     /* transition: all 0.3s; */
@@ -61,6 +72,13 @@
     font-weight: 700;
 }
 
+.light .nopage {
+    padding-bottom: 7em;
+}
+
+.dark .nopage {
+    padding-bottom: 7em;
+}
 
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
@@ -83,6 +101,14 @@
         height: 100%;
         padding: 1em 0 0.2em 0;
     }
+
+    .light .nopage {
+        padding-bottom: 20em;
+    }
+    
+    .dark .nopage {
+        padding-bottom: 20em;
+    }
 }
 
 
@@ -100,12 +126,26 @@
     padding: 0 2em;
 }
 
+.dark .sent {
+    padding-bottom: 1.5em;
+    overflow-y: hidden;
+}
+
+.light .sent {
+    padding-bottom: 1.5em;
+    overflow-y: hidden;
+}
+
 .light .sent-message {
     color: black;
+    padding: 2em;
+    font-family: 'Century Gothic', 'AppleGothic', sans-serif;
 }
 
 .dark .sent-message {
     color: white;
+    padding: 2em;
+    font-family: 'Century Gothic', 'AppleGothic', sans-serif;
 }
 
 /* #sent-message {
@@ -133,12 +173,14 @@
 
 .dark .card-body {
     color: #f49e9e;
+    font-family: 'Century Gothic', 'AppleGothic', sans-serif;
     /* height: 400px; */
     padding: 0;
 }
 
 .light .card-body {
     /* height: 400px; */
+    font-family: 'Century Gothic', 'AppleGothic', sans-serif;
     padding: 0;
 }
 

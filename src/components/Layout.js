@@ -19,8 +19,6 @@ function Layout() {
                     <Menu />
                     <Routes />
                 </div>
-                <div className="col">
-                </div>
             </div>
         </div>
     );

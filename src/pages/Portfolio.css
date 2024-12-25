@@ -1,17 +1,21 @@
 .img1 {
-    height: 800px;
+    height: 500px;
 }
 
 .img2 {
-    height: 700px;
+    height: 400px;
 }
 
 .img4 {
-    height: 650px;
+    height: 450px;
+}
+
+.img10 {
+    height: 450px;
 }
 
 .img5 {
-    height: 1100px;
+    height: 400px;
 }
 
 .img6 {
@@ -19,19 +23,19 @@
 }
 
 .img7 {
-    height: 800px;
+    height: 700px;
 }
 
 .img8 {
-    height: 800px;
+    height: 700px;
 }
 
 .img9 {
     height: 1900px;
 }
 
-.img10 {
-    height: 2000px;
+.parent {
+    padding-bottom: 1em;
 }
 
 
