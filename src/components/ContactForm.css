@@ -1,7 +1,6 @@
 Form {
     width: 100%;
     min-height: 100vh;
-    padding: 0.3em 10em;
     text-align: center;
     overflow-y: hidden;
 }
@@ -22,7 +21,7 @@ h1 {
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
-    width: 100%;
+    width: 60%;
     box-sizing: border-box;
     outline: 0;
 }
@@ -51,7 +50,18 @@ textarea::placeholder {
 
 @media screen and (max-width: 425px) {
     Form {
-        padding: 0 1em;
+        width: 60%;
+    }
+
+    .contact-form {
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 3%;
+        padding: 0 2em;
+        overflow-y: hidden;
+    }
+
+    .input {
+        width: 100%;
     }
 }
 
@@ -63,8 +73,7 @@ textarea::placeholder {
     .contact-form {
         font-family: 'Times New Roman', Times, serif;
         border-radius: 3%;
-        padding: 1em;
-        /* margin: 0 1rem; */
+        padding: 0 3em;
         overflow-y: hidden;
     }
 
