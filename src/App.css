@@ -68,10 +68,6 @@ h2 {
   text-align: center;
 }
 
-/* ul {
-  font-size: 1em;
-} */
-
 .why {
   width: 400px;
   height: 500px;
@@ -142,15 +138,7 @@ h2 {
 }
 
 
-.global-container {
-  text-align: center;
-  padding: 0.8rem;
-  font-size: clamp(.5rem, .2rem + 5vw, 1.2rem);
-  /* -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8); */
-}
+
 
 
 .home {
@@ -193,6 +181,22 @@ h2 {
 }
 
 .button {
+  padding: 1em 0;
+}
+
+button {
+  font-family: 'Century Gothic', 'AppleGothic', sans-serif;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  font-size: 24px;
+  border-radius: 7px;
+  border: 2px solid black;
+  padding: 0.5em 1em;
+  font-weight: 700;
+}
+
+/* .button {
   padding: 1em 0 2em;
 }
 
@@ -204,7 +208,7 @@ button {
   padding: 0.6em;
   cursor: pointer;
   font-family: 'Century Gothic', 'AppleGothic', sans-serif;
-}
+} */
 
 
 @media screen and (max-width: 768px) {
@@ -242,7 +246,7 @@ button {
   }
 
   p {
-  font-size: clamp(0.5em, 3vw, 0.8em);
+    font-size: clamp(0.5em, 3vw, 0.8em);
   }
 }
 

@@ -35,7 +35,6 @@
 
 .light .contact-button {
     font-family: 'Century Gothic', 'AppleGothic', sans-serif;
-    /* width: 6em; */
     cursor: pointer;
     color: black;
     background-color: white;
@@ -43,10 +42,6 @@
     border-radius: 7px;
     border: 2px solid black;
     padding: 0.5em 1em;
-    /* padding-top: 10px; */
-    /* padding-bottom: 10px; */
-    /* transition: all 0.3s; */
-    /* margin-top: -4px; */
     font-weight: 700;
 }
 

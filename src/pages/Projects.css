@@ -4,17 +4,77 @@
     box-sizing: border-box;
 }
 
-.reservation {
-    width: 400px;
+.project {
+    width: 800px;
+}
+
+.pie-project {
+    width: 800px;
+    height: 500px;
+}
+
+.html-project {
+    width: 350px;
 }
 
 h1 {
     font-size: clamp(0.7em, .5rem + 5vw, 1em);
 }
 
+
+
+
 @media screen and (max-width: 768px) {
-    .reservation {
-        max-width: 100%;
+    .project {
+        width: 450px;
         height: 300px;
+    }
+
+    .pie-project {
+        width: 450px;
+        height: 300px;
+    }
+
+    .html-project {
+        width: 400px;
+        height: 650px;
+    }
+
+    .global-container {
+        text-align: center;
+        /* padding: 0.8rem; */
+        font-size: clamp(.5rem, .2rem + 5vw, 1.2rem);
+        /* -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8); */
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .project {
+        max-width: 300px;
+        height: 200px;
+    }
+
+    .pie-project {
+        max-width: 300px;
+        height: 200px;
+    }
+
+    .html-project {
+        max-width: 300px;
+        height: 500px;
+    }
+
+    .global-container {
+        text-align: center;
+        /* padding: 0.8rem; */
+        font-size: clamp(.5rem, .2rem + 5vw, 1.2rem);
+        /* -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8); */
     }
 }

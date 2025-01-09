@@ -1,17 +1,10 @@
 import React, { useState } from 'react';
-// import portrait from "../images/portrait.jpeg";
 import img_1 from "../images/img_1.jpg";
 import copywriter1 from "../images/copywriter1.png";
 import copywriter2 from "../images/copywriter2.png";
-// import img_2 from "../images/img_2.jpg";
-// import ChristinaKnappResume from "../images/ChristinaKnappResume.jpeg";
-// import img_3 from "../images/img_3.jpg";
-// import Thinkful from "../thinkfulimg.png"
 import Sidebar from '../components/Sidebar'
 import "../darkMode.css";
 import "../App.css";
-// import WhyChristina from "../images/why.png";
-// import ResumeLink from '../components/ResumeLink';
 
 const Home = ({ theme }) => {
     const [isOpen, setIsOpen] = useState(false)

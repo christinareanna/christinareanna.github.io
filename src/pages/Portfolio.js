@@ -29,7 +29,7 @@ function Portfolio(isOpen, toggle) {
             <div>
                 <p>Welcome to my portfolio!
                     <br></br>
-                    Here you'll find CRM emails I've written for a large retail tech client.
+                    Here you'll find snippets of CRM emails I've written for a large retail tech client.
                     <br></br>
                     I redesigned some of the original visuals in Canva.
                 </p>
