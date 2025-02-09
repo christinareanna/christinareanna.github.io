@@ -47,7 +47,7 @@ list-style: none;
 text-align: center;
 margin: 0;
 padding: 0;
-font-size: 1rem;
+font-size: 1em;
 width: 100%;
 max-width: 100%;
 justify-content: center;

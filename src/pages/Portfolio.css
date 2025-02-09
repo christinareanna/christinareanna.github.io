@@ -1,59 +1,26 @@
 .img1 {
-    height: 500px;
+    height: 750px;
 }
 
 .img2 {
-    height: 400px;
+    height: 600px;
 }
 
-.img4 {
-    height: 450px;
-}
-
-.img10 {
-    height: 500px;
+.img3 {
+    height: 600px;
 }
 
 .img5 {
-    height: 400px;
+    height: 600px;
 }
 
-.img6 {
-    height: 800px;
-}
-
-.img7 {
+.img10 {
     height: 700px;
 }
 
-.img8 {
-    height: 700px;
+h1 {
+    font-size: clamp(1em, 4vw, 5em);
 }
-
-.img9 {
-    height: 1900px;
-}
-
-.parent {
-    padding-bottom: 1em;
-}
-
-
-/* .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 0 3em 0;
-}
-
-.column {
-    flex: 40%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-} */
 
 .row {
     display: flex;
@@ -63,29 +30,269 @@
 
 /* Create four equal columns that sits next to each other */
 .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 2em;
 }
 
 .column img {
-    margin-top: 8px;
+    margin-top: 1em;
     vertical-align: middle;
     width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .column {
         flex: 50%;
         max-width: 50%;
     }
+
+    .img1 {
+        height: 450px;
+    }
+
+    .img2 {
+        height: 350px;
+    }
+
+    .img3 {
+        height: 350px;
+    }
+
+    .img5 {
+        height: 350px;
+    }
+
+    .img10 {
+        height: 450px;
+    }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+
+@media screen and (min-width: 651px) and (max-width: 768px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .img1 {
+        height: 450px;
+    }
+
+    .img2 {
+        height: 350px;
+    }
+
+    .img3 {
+        height: 350px;
+    }
+
+    .img5 {
+        height: 350px;
+    }
+
+    .img10 {
+        height: 450px;
+    }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (min-width: 551px) and (max-width: 650px) {
     .column {
         flex: 100%;
         max-width: 100%;
+    }
+
+    .column img {
+        padding: 0 2em;
+    }
+
+    .img1 {
+        height: 550px;
+    }
+
+    .img2 {
+        height: 450px;
+    }
+
+    .img3 {
+        height: 450px;
+    }
+
+    .img5 {
+        height: 450px;
+    }
+
+    .img10 {
+        height: 550px;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 425px) and (max-width: 550px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 3em;
+    }
+
+    .img1 {
+        height: 575px;
+    }
+
+    .img2 {
+        height: 425px;
+    }
+
+    .img3 {
+        height: 400px;
+    }
+
+    .img5 {
+        height: 450px;
+    }
+
+    .img10 {
+        height: 475px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 3em;
+    }
+
+    .img1 {
+        height: 300px;
+    }
+
+    .img2 {
+        height: 250px;
+    }
+
+    .img3 {
+        height: 250px;
+    }
+
+    .img10 {
+        height: 300px;
+    }
+
+    .img5 {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 3em;
+    }
+
+    .img1 {
+        height: 350px;
+    }
+
+    .img2 {
+        height: 300px;
+    }
+
+    .img3 {
+        height: 250px;
+    }
+
+    .img10 {
+        height: 350px;
+    }
+
+    .img5 {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 424px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 3em;
+    }
+
+    .icon {
+        font-size: 50px;
+    }
+
+    .footer-icon {
+        font-size: 4em;
+    }
+
+
+    .button {
+        padding: 4em;
+    }
+
+    button {
+        font-family: 'Century Gothic', 'AppleGothic', sans-serif;
+        cursor: pointer;
+        color: white;
+        background-color: black;
+        font-size: 12px;
+        border-radius: 30px;
+        border: 2px solid white;
+        padding: 0.5em 1em;
+        font-weight: 700;
+    }
+
+    .img1 {
+        height: 350px;
+    }
+
+    .img2 {
+        height: 300px;
+    }
+
+    .img3 {
+        height: 300px;
+    }
+
+    .img10 {
+        height: 350px;
+    }
+
+    .img5 {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .column img {
+        padding: 0 2em;
+    }
+
+    .img1 {
+        height: 750px;
+    }
+
+    .img2 {
+        height: 650px;
+    }
+
+    .img3 {
+        height: 650px;
+    }
+
+    .img5 {
+        height: 650px;
+    }
+
+    .img10 {
+        height: 750px;
     }
 }

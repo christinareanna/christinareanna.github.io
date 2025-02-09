@@ -8,6 +8,10 @@
     width: 800px;
 }
 
+.project-container {
+    background-color: rgb(173, 237, 234);
+}
+
 .pie-project {
     width: 800px;
     height: 500px;
@@ -17,38 +21,46 @@
     width: 350px;
 }
 
+/* .about p {
+    text-align: center;
+} */
+
 h1 {
-    font-size: clamp(0.7em, .5rem + 5vw, 1em);
+    font-size: 2.5em;
+    padding-top: 0.3em;
 }
+
+/* h1 {
+    font-size: clamp(0.7em, .5rem + 5vw, 1em);
+} */
 
 
 
 
 @media screen and (max-width: 768px) {
     .project {
-        width: 450px;
+        max-width: 450px;
         height: 300px;
     }
 
     .pie-project {
-        width: 450px;
+        max-width: 450px;
         height: 300px;
     }
 
     .html-project {
-        width: 400px;
+        max-width: 400px;
         height: 650px;
     }
 
-    .global-container {
-        text-align: center;
-        /* padding: 0.8rem; */
-        font-size: clamp(.5rem, .2rem + 5vw, 1.2rem);
-        /* -webkit-transform: scale(0.8);
-        -moz-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        transform: scale(0.8); */
+    h1 {
+        font-size: 2.5em;
     }
+
+    /* .global-container {
+        text-align: center;
+        font-size: clamp(1.6em, 2vw, 3em);
+    } */
 }
 
 
@@ -70,11 +82,9 @@ h1 {
 
     .global-container {
         text-align: center;
-        /* padding: 0.8rem; */
-        font-size: clamp(.5rem, .2rem + 5vw, 1.2rem);
-        /* -webkit-transform: scale(0.8);
-        -moz-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        transform: scale(0.8); */
+    }
+
+    h1 {
+        font-size: 2em;
     }
 }

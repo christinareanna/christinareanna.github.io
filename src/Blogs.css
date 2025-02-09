@@ -1,4 +1,4 @@
-img {
+/* img {
     width: 250px;
     height: 320px;
 }
@@ -6,14 +6,13 @@ img {
 .card {
     min-width: 250px;
     min-height: 300px;
-    /* max-width: 400px; */
+    max-width: 400px;
     margin: auto;
     padding: auto;
-    /* border: 1px solid black; */
-    /* background-color: rgb(255, 255, 255); */
-}
+    border: 1px solid black; */
 
-@media screen and (max-width: 768px) {
+
+/* @media screen and (max-width: 768px) {
     .card-body {
         height: 400px;
     }
@@ -38,7 +37,7 @@ a:link {
 
 .dark .container {
     background-color: black;
-}
+} */
 
 /* .card-body p {
     margin: auto;
