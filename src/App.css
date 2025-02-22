@@ -6,7 +6,7 @@
 
 .App {
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Avantgarde', 'TeX Gyre Adventor'; */
 }
 
 .footer {
@@ -18,12 +18,16 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  /* font-family: 'Avantgarde', 'TeX Gyre Adventor'; */
+  /* font-family: 'Apple Chancery', 'cursive'; */
+  /* font-family: 'New Century Schoolbook', 'TeX Gyre Schola', 'serif'; */
 }
 
 .about-h1 {
   text-align: left;
-  font-size: clamp(3em, 12vw, 16em);
+  font-size: clamp(4em, 12vw, 15em);
   margin: 0 0.8em;
+  font-family: 'Apple Chancery', 'cursive';
 }
 
 .copy-container {
@@ -46,6 +50,11 @@ body {
   max-width: 400px;
   height: auto;
   align-items: center;
+}
+
+.self-img {
+  width: 300px;
+  height: 300px;
 }
 
 .avatar {
@@ -133,7 +142,7 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .about-me p {
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: left;
     margin: 1em 2.5em;
   }
@@ -146,7 +155,7 @@ body {
 
   .button {
     text-align: center;
-    padding: 9em 0;
+    padding: 5.5em 0;
   }
 
   button {
@@ -154,18 +163,23 @@ body {
     cursor: pointer;
     color: white;
     background-color: black;
-    font-size: 1.4em;
+    font-size: 1em;
     border-radius: 2.5em;
     border: 2px solid white;
     padding: 0.5em 0;
     width: 250px;
     font-weight: 700;
   }
+
+  .self-img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media screen and (min-width: 376px) and (max-width: 424px) {
   .about-me p {
-    font-size: 1em;
+    font-size: 1.6em;
     text-align: left;
     margin: 1em 2.5em;
   }
@@ -178,7 +192,7 @@ body {
 
   .button {
     text-align: center;
-    padding: 9em 0;
+    padding: 7em 0;
   }
 
   button {
@@ -206,7 +220,7 @@ body {
   .about-me p {
     text-align: left;
     font-size: clamp(.4rem, .2rem + 5vw, 1rem);
-    margin: 0 3em;
+    margin: 0 2em;
   }
 
   .global-container p {
@@ -216,7 +230,7 @@ body {
   }
 
   .button {
-    padding: 7em;
+    padding: 9em 0;
   }
 
   button {
@@ -240,8 +254,8 @@ body {
 @media screen and (min-width: 551px) and (max-width: 650px) {
   .about-me p {
     text-align: left;
-    font-size: 1em;
-    margin: 0 3em;
+    font-size: 1.6em;
+    margin: 0 4em;
   }
 
   .global-container p {
@@ -251,7 +265,7 @@ body {
   }
 
   .button {
-    padding: 7em;
+    padding: 2em;
   }
 
   button {
@@ -286,16 +300,17 @@ body {
     cursor: pointer;
     color: white;
     background-color: black;
-    font-size: 24px;
-    border-radius: 30px;
+    font-size: 36px;
+    border-radius: 36px;
     border: 2px solid white;
-    padding: 0.5em 1em;
+    padding: 0.5em 2em;
     font-weight: 700;
   }
 
   .global-container p {
     font-size: clamp(1.8em, 2vw, 3em);
     margin: 1em;
+    text-align: center;
   }
 
   .global-container img {
@@ -313,8 +328,13 @@ body {
 
   .about-me p {
     text-align: left;
-    font-size: 2em;
+    font-size: 3em;
     margin: 0 4em;
+  }
+
+  .self-img {
+    width: 500px;
+    height: 500px;
   }
 
   /* .about-me p {
@@ -329,8 +349,8 @@ body {
 
   .about-me p {
     text-align: left;
-    font-size: 1.2em;
-    margin: 0 2em;
+    font-size: 2.2em;
+    margin: 0 4em;
   }
 
   .global-container p {
@@ -348,11 +368,16 @@ body {
     cursor: pointer;
     color: white;
     background-color: black;
-    font-size: 18px;
+    font-size: 24px;
     border-radius: 30px;
     border: 2px solid white;
-    padding: 0.5em 1em;
+    padding: 0.5em 2em;
     font-weight: 700;
+  }
+
+  .self-img {
+    width: 400px;
+    height: 400px;
   }
 
   .global-container img {
@@ -385,6 +410,7 @@ body {
   .global-container p {
     font-size: clamp(1.8em, 2vw, 3em);
     margin: 1em;
+    text-align: center;
   }
 
   .global-container img {

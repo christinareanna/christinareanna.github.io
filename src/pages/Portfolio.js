@@ -25,7 +25,7 @@ function Portfolio(isOpen, toggle) {
             {/* <div className='sidebar'>
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div> */}
-            <h1>Copywriting.</h1>
+            <h1>COPYWRITING</h1>
             <div className="global-container">
                 <p>Below are a few examples of email copy I created to increase engagement
                     and acquisition rates for a large tech client in the retail industry.

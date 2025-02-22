@@ -8,10 +8,12 @@ import React from 'react';
 // import { ReactComponent as Google } from "../images/google-svgrepo-com.svg";
 // import { ReactComponent as BestBuy } from "../images/best-buy-svgrepo-com.svg";
 import { ReactComponent as Arrow } from "../images/down-lg-svgrepo-com.svg";
+import UpArrow from "../images/uparrow.png";
 // import { ReactComponent as RightArrow } from "../images/rightarrow.svg";
 // import Grill from "../images/grilllikeapro.png";
 import Portfolio from './Portfolio';
 import Projects from './Projects';
+import SelfImage from "../images/selfportrait.png";
 // import "../darkMode.css";
 import "../App.css";
 
@@ -34,7 +36,7 @@ const Home = () => {
                 </h1>
                 <p>
                     <br></br>
-                    Hi, I'm Christina.
+                    Hi, I'm Christina. 👋
                     <br></br>
                     Copywriter in Chicago.
                     <br></br>
@@ -42,6 +44,7 @@ const Home = () => {
                     <br></br>
                     Powered by an education in software engineering.
                 </p>
+                <img className="self-img" src={SelfImage} alt="me" />
             </div>
             <div className='button'>
                 <a href="#down"><button>DIVE INTO MY WORK <Arrow /></button></a>
@@ -53,7 +56,7 @@ const Home = () => {
                 <Projects />
             </div>
             <div className='button'>
-                <a href="#up"><button>GO BACK UP</button></a>
+                <a href="#up"><button>GO BACK UP <img src={UpArrow} alt="up arrow" /></button></a>
             </div>
         </div >
     )
