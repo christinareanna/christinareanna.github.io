@@ -28,7 +28,7 @@ const Projects = () => {
             </div> */}
             {/* <Navbar /> */}
             <div className='project-container'>
-                <h1>Front-end development.</h1>
+                <h1>FRONT-END DEVELOPMENT</h1>
                 <div className='global-container'>
                     <strong>
                         <p>Pomodoro Timer</p>
