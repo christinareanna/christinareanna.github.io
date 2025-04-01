@@ -299,22 +299,22 @@
     }
 
     .img1 {
-        height: 750px;
+        min-height: 1000px;
     }
 
     .img2 {
-        height: 650px;
+        min-height: 1000px;
     }
 
     .img3 {
-        height: 650px;
+        min-height: 1000px;
     }
 
     .img5 {
-        height: 650px;
+        min-height: 1000px;
     }
 
     .img10 {
-        height: 750px;
+        min-height: 1000px;
     }
 }
