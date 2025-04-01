@@ -288,7 +288,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1525px) {
     .column {
         flex: 50%;
         max-width: 50%;
@@ -316,5 +316,36 @@
 
     .img10 {
         min-height: 1000px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1524px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .column img {
+        padding: 0 2em;
+    }
+
+    .img1 {
+        min-height: 750px;
+    }
+
+    .img2 {
+        min-height: 750px;
+    }
+
+    .img3 {
+        min-height: 750px;
+    }
+
+    .img5 {
+        min-height: 750px;
+    }
+
+    .img10 {
+        min-height: 750px;
     }
 }
