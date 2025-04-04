@@ -14,8 +14,49 @@
     height: 600px;
 }
 
+/* .img10 {
+    height: 300px;
+} */
+
+.fitness:hover .middle {
+    opacity: 1
+}
+
+.fitness:hover .img10 {
+    opacity: 0.3;
+}
+
+.text {
+    background-color: #04AA6D;
+    color: black;
+    font-size: 2em;
+    padding: 16px 32px;
+}
+
+.fitness {
+    position: relative;
+    width: 100%;
+}
+
 .img10 {
-    height: 700px;
+    height: 300px;
+    opacity: 1;
+    /* display: block; */
+    width: 300px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* h1 {
@@ -47,14 +88,15 @@
     font-size: clamp(2em, 4vw, 5em);
 }
 
-.global-container p {
-    justify-content: left;
-}
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .column {
+    /* .column {
         flex: 50%;
         max-width: 50%;
+    } */
+
+    .fitness {
+        flex: 100%;
     }
 
     .img1 {
@@ -74,7 +116,7 @@
     }
 
     .img10 {
-        height: 450px;
+        height: 250px;
     }
 }
 
@@ -85,6 +127,12 @@
         max-width: 50%;
     }
 
+    .fitness {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 15em;
+    }
+
     .img1 {
         height: 450px;
     }
@@ -102,15 +150,19 @@
     }
 
     .img10 {
-        height: 450px;
+        height: 250px;
     }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (min-width: 551px) and (max-width: 650px) {
-    .column {
+    /* .column {
         flex: 100%;
         max-width: 100%;
+    } */
+
+    .fitness {
+        flex: 100% 1;
     }
 
     .column img {
@@ -134,7 +186,7 @@
     }
 
     .img10 {
-        height: 550px;
+        height: 350px;
     }
 }
 
@@ -163,7 +215,7 @@
     }
 
     .img10 {
-        height: 475px;
+        height: 250px;
     }
 }
 
@@ -215,7 +267,7 @@
     }
 
     .img10 {
-        height: 350px;
+        height: 250px;
     }
 
     .img5 {
@@ -280,7 +332,7 @@
     }
 
     .img10 {
-        height: 350px;
+        height: 250px;
     }
 
     .img5 {
@@ -289,9 +341,13 @@
 }
 
 @media screen and (min-width: 1525px) {
-    .column {
+    /* .column {
         flex: 50%;
         max-width: 50%;
+    } */
+
+    .fitness {
+        flex: 100% 1;
     }
 
     .column img {
@@ -315,19 +371,18 @@
     }
 
     .img10 {
-        min-height: 1000px;
+        min-height: 500px;
     }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1524px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
+    .fitness {
+        flex: 100% 1;
     }
 
-    .column img {
+    /* .column img {
         padding: 0 2em;
-    }
+    } */
 
     .img1 {
         min-height: 750px;
@@ -346,6 +401,7 @@
     }
 
     .img10 {
-        min-height: 750px;
+        height: 400px;
+        width: 350px;
     }
 }

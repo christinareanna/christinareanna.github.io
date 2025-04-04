@@ -23,11 +23,16 @@ body {
   /* font-family: 'New Century Schoolbook', 'TeX Gyre Schola', 'serif'; */
 }
 
-.about-h1 {
+.about-h1-1 {
   text-align: left;
   font-size: clamp(4em, 12vw, 15em);
   margin: 0 0.8em;
+  height: 200px;
   font-family: 'Apple Chancery', 'cursive';
+}
+
+.about-me {
+  padding-top: 4em;
 }
 
 .copy-container {
@@ -63,24 +68,6 @@ body {
   max-width: 400px;
   height: auto;
   align-items: center;
-}
-
-.card {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  /* border: 1px black solid; */
-  width: 100%;
-  padding: 0;
-}
-
-
-.card-text {
-  text-align: center;
-  /* font-size: clamp(0.6em, 3vw, 1.2em); */
-  font-size: clamp(.7rem, .6rem + 2vw, 1.2rem);
-  /* font-size: 1.2rem; */
-  padding: 0;
 }
 
 .container-fluid {
@@ -144,7 +131,19 @@ body {
   .about-me p {
     font-size: 1.5em;
     text-align: left;
-    margin: 1em 2.5em;
+    margin: 0 2.5em;
+  }
+
+  .about-h1-1 {
+    text-align: left;
+    font-size: clamp(4em, 12vw, 15em);
+    margin: 0 0.8em;
+    height: 50px;
+    font-family: 'Apple Chancery', 'cursive';
+  }
+  
+  .about-me {
+    padding-top: 4em;
   }
 
   .global-container p {
@@ -157,6 +156,8 @@ body {
     text-align: center;
     padding: 5.5em 0;
   }
+
+ 
 
   button {
     font-family: 'Century Gothic', 'AppleGothic', sans-serif;
@@ -179,9 +180,21 @@ body {
 
 @media screen and (min-width: 376px) and (max-width: 424px) {
   .about-me p {
-    font-size: 1.6em;
+    font-size: 1.5em;
     text-align: left;
-    margin: 1em 2.5em;
+    margin: 0 2.5em;
+  }
+
+  .about-h1-1 {
+    text-align: left;
+    font-size: clamp(4em, 12vw, 15em);
+    margin: 0 0.8em;
+    height: 50px;
+    font-family: 'Apple Chancery', 'cursive';
+  }
+  
+  .about-me {
+    padding-top: 4em;
   }
 
   .global-container p {
@@ -218,9 +231,21 @@ body {
   }
 
   .about-me p {
+    font-size: 1.5em;
     text-align: left;
-    font-size: clamp(.4rem, .2rem + 5vw, 1rem);
-    margin: 0 2em;
+    margin: 0 2.5em;
+  }
+
+  .about-h1-1 {
+    text-align: left;
+    font-size: clamp(4em, 12vw, 15em);
+    margin: 0 0.8em;
+    height: 70px;
+    font-family: 'Apple Chancery', 'cursive';
+  }
+  
+  .about-me {
+    padding-top: 4em;
   }
 
   .global-container p {
@@ -253,9 +278,21 @@ body {
 
 @media screen and (min-width: 551px) and (max-width: 650px) {
   .about-me p {
+    font-size: 1.5em;
     text-align: left;
-    font-size: 1.6em;
-    margin: 0 4em;
+    margin: 0 2.5em;
+  }
+
+  .about-h1-1 {
+    text-align: left;
+    font-size: clamp(4em, 12vw, 15em);
+    margin: 0 0.8em;
+    height: 80px;
+    font-family: 'Apple Chancery', 'cursive';
+  }
+  
+  .about-me {
+    padding-top: 4em;
   }
 
   .global-container p {
@@ -327,9 +364,21 @@ body {
   }
 
   .about-me p {
+    font-size: 2em;
     text-align: left;
-    font-size: 3em;
-    margin: 0 4em;
+    margin: 0 2.5em;
+  }
+
+  .about-h1-1 {
+    text-align: left;
+    font-size: clamp(4em, 12vw, 15em);
+    margin: 0 0.5em;
+    height: 110px;
+    font-family: 'Apple Chancery', 'cursive';
+  }
+  
+  .about-me {
+    padding-top: 4em;
   }
 
   .self-img {
@@ -348,9 +397,21 @@ body {
 @media screen and (min-width: 651px) and (max-width: 768px) {
 
   .about-me p {
+    font-size: 1.5em;
     text-align: left;
-    font-size: 2.2em;
-    margin: 0 4em;
+    margin: 0 2.5em;
+  }
+
+  .about-h1-1 {
+    text-align: left;
+    font-size: clamp(4em, 12vw, 15em);
+    margin: 0 0.3em;
+    height: 90px;
+    font-family: 'Apple Chancery', 'cursive';
+  }
+  
+  .about-me {
+    padding-top: 4em;
   }
 
   .global-container p {
@@ -408,7 +469,7 @@ body {
   }
 
   .global-container p {
-    font-size: clamp(1.8em, 2vw, 3em);
+    font-size: clamp(2.2em, 2vw, 3.2em);
     margin: 1em;
     text-align: center;
   }
@@ -423,8 +484,20 @@ body {
   }
 
   .about-me p {
+    font-size: 3em;
     text-align: left;
-    font-size: 2.2em;
-    margin: 0 6em;
+    margin: 0 3em;
+  }
+
+  .about-h1-1 {
+    text-align: left;
+    font-size: clamp(4em, 12vw, 15em);
+    margin: 0 0.5em;
+    height: 180px;
+    font-family: 'Apple Chancery', 'cursive';
+  }
+  
+  .about-me {
+    padding-top: 4em;
   }
 }

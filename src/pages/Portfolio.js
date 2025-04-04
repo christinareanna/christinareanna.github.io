@@ -1,13 +1,9 @@
 import React from "react";
-import grill from "../images/grilllikeapro.png";
-import cinema from "../images/starlitcinema.png";
-import electric from "../images/electric.png";
-import holiday from "../images/holidayready.png";
-import cleaning from "../images/cleaning.png";
-import fitness from "../images/fitness.png";
-import progress from "../images/progress.png";
-import habits from "../images/habits.png";
-import glow from "../images/glow.png";
+// import grill from "../images/grilllikeapro.png";
+// import cinema from "../images/starlitcinema.png";
+import progress from "../images/1.png";
+import fitness from "../images/2.png";
+import electric from "../images/3.png";
 // import copy7 from "../images/copy7.jpg";
 // import ssg2 from "../images/copy8.jpg";
 // import copy9 from "../images/copy9.jpg";
@@ -25,29 +21,28 @@ function Portfolio(isOpen, toggle) {
             {/* <div className='sidebar'>
                 <Sidebar isopen={isOpen} toggle={toggle} />
             </div> */}
-            <h1>COPYWRITING</h1>
+            {/* <h1>Copywriting</h1> */}
             <div className="global-container">
-                <p>Below are a few examples of email copy I created to increase engagement
-                    and acquisition rates for a large tech client in the retail industry.
-                    For confidentiality purposes, these samples have been redesigned, but
-                    they still demonstrate my approach to crafting copy that drives
-                    action—whether it's increasing opens, boosting click-through rates,
-                    or encouraging product purchases—all while maintaining brand tone and voice.
+                <br />
+                <p>Below are some projects for a large retail tech client.
+                    <br />
+                    Due to an NDA, these have been redesigned.
                 </p>
             </div>
             <div className="row">
-                <div className="column">
+                {/* <div className="column">
                     <img className="img1" src={grill} alt="copy" />
                     <img className="img2" src={cinema} alt="copy" />
-                    <img className="img5" src={holiday} alt="copy" />
-                    <img className="img10" src={cleaning} alt="copy" />
-                    <img className="img3" src={electric} alt="copy" />
-                </div>
-                <div className="column">
+                </div> */}
+                <div className="fitness">
                     <img className="img10" src={progress} alt="copy" />
                     <img className="img10" src={fitness} alt="copy" />
-                    <img className="img10" src={habits} alt="copy" />
-                    <img className="img10" src={glow} alt="copy" />
+                    <img className="img10" src={electric} alt="copy" />
+                    <div className="middle">
+                        <div className='text'>Motivates the reader to embrace personal growth,
+                            boost their fitness, and consider new options.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
