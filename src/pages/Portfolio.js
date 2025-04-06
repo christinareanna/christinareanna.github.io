@@ -1,52 +1,42 @@
 import React from "react";
-// import grill from "../images/grilllikeapro.png";
-// import cinema from "../images/starlitcinema.png";
 import progress from "../images/1.png";
 import fitness from "../images/2.png";
 import electric from "../images/3.png";
-// import copy7 from "../images/copy7.jpg";
-// import ssg2 from "../images/copy8.jpg";
-// import copy9 from "../images/copy9.jpg";
-// import copy6 from "../images/copy6.jpg";
-// import "../App.css";
-// import Navbar from "../components/Navbar";
-// import Sidebar from "../components/Sidebar";
-// import "../darkMode.css";
 import "./Portfolio.css";
+import Carousel from "./Carousel";
 
-function Portfolio(isOpen, toggle) {
+function Portfolio() {
 
     return (
         <div className="project-container">
-            {/* <div className='sidebar'>
-                <Sidebar isopen={isOpen} toggle={toggle} />
-            </div> */}
-            {/* <h1>Copywriting</h1> */}
             <div className="global-container">
-                <br />
+                <h2>My Recent Projects</h2>
                 <p>Below are some projects for a large retail tech client.
                     <br />
-                    Due to an NDA, these have been redesigned.
-                </p>
+                    Due to an NDA, these have been redesigned.</p>
             </div>
+
             <div className="row">
-                {/* <div className="column">
-                    <img className="img1" src={grill} alt="copy" />
-                    <img className="img2" src={cinema} alt="copy" />
-                </div> */}
                 <div className="fitness">
                     <img className="img10" src={progress} alt="copy" />
                     <img className="img10" src={fitness} alt="copy" />
                     <img className="img10" src={electric} alt="copy" />
                     <div className="middle">
-                        <div className='text'>Motivates the reader to embrace personal growth,
-                            boost their fitness, and consider new options.
-                        </div>
+                        <p>
+                            Motivates the reader to embrace personal growth, boost their fitness, and consider new options.
+                        </p>
                     </div>
                 </div>
             </div>
+
+            <div className="global-container">
+                <h2>The Spoonie Club Instagram Posts</h2>
+                <p>These are a few posts I created for my new Instagram group called The_Spoonie_Club.</p>
+            </div>
+
+            <Carousel />
         </div>
-    )
+    );
 }
 
 export default Portfolio;

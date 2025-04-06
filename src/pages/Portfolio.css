@@ -1,81 +1,4 @@
-.img1 {
-    height: 750px;
-}
-
-.img2 {
-    height: 600px;
-}
-
-.img3 {
-    height: 600px;
-}
-
-.img5 {
-    height: 600px;
-}
-
-/* .img10 {
-    height: 300px;
-} */
-
-.fitness:hover .middle {
-    opacity: 1
-}
-
-.fitness:hover .img10 {
-    opacity: 0.3;
-}
-
-.text {
-    background-color: #04AA6D;
-    color: black;
-    font-size: 2em;
-    padding: 16px 32px;
-}
-
-.fitness {
-    position: relative;
-    width: 100%;
-}
-
-.img10 {
-    height: 300px;
-    opacity: 1;
-    /* display: block; */
-    width: 300px;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-/* h1 {
-    font-size: clamp(1em, 4vw, 5em);
-} */
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 2em;
-}
-
+/* General Styles */
 .column img {
     margin-top: 1em;
     vertical-align: middle;
@@ -88,320 +11,226 @@
     font-size: clamp(2em, 4vw, 5em);
 }
 
+/* Project Container */
+.project-container {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Subtle background color */
+    padding: 40px;
+}
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    /* .column {
-        flex: 50%;
-        max-width: 50%;
-    } */
+.global-container {
+    max-width: 1200px; /* Max width to ensure it doesn’t stretch too much on larger screens */
+    margin: 0 auto;
+    padding: 20px;
+}
 
-    .fitness {
-        flex: 100%;
+.global-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* Dark gray text for better readability */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.global-container::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #e0e0e0;
+    margin-top: 30px;
+}
+
+/* Row for project images and text */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Adds space between the images */
+    flex-wrap: wrap;
+}
+
+.fitness {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.img10 {
+    width: 100%;
+    height: auto;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+/* Show the text overlay when the image is hovered */
+.fitness:hover .middle {
+    opacity: 1; /* Make it visible when hovering */
+}
+
+/* Optional: Text styling */
+.middle p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: white;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Carousel Section Styling */
+.carousel-container {
+    position: relative; /* Positioning context for arrows */
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+    max-width: 500px; /* Optional: limit the width */
+    margin: 0 auto;
+}
+
+/* Carousel Items Wrapper */
+.carousel-items-wrapper {
+    display: flex;
+    transition: transform 1s cubic-bezier(0.39, 0.575, 0.565, 1); /* Smooth transition */
+    width: 100%;
+}
+
+/* Individual Carousel Item */
+.carousel-item {
+    flex: 0 0 100%; /* Each image takes up 100% of the container's width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+/* Carousel Item Image */
+.carousel-item img {
+    width: 100%; /* Images will take the full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+/* Arrow styles */
+.arrow {
+    position: absolute; /* Position them relative to the container */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Adjust to perfectly center vertically */
+    cursor: pointer;
+    font-size: 36px; /* Arrow size */
+    color: white; /* Arrow color */
+    z-index: 2;
+}
+
+/* Left Arrow */
+.arrow-left {
+    left: 10px; /* Position from the left side of the container */
+}
+
+/* Right Arrow */
+.arrow-right {
+    right: 10px; /* Position from the right side of the container */
+}
+
+/* Add Unicode arrows or use custom icons for a more modern look */
+.arrow-left::before {
+    content: '〈'; /* Left arrow */
+    font-size: 42px;
+}
+
+.arrow-right::before {
+    content: '〉'; /* Right arrow */
+    font-size: 42px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%; /* Ensure full width on smaller screens */
     }
 
-    .img1 {
-        height: 450px;
+    .carousel-item img {
+        width: 100%; /* Make sure the images scale well on mobile */
+        height: auto;
     }
 
-    .img2 {
-        height: 350px;
+    .arrow {
+        font-size: 24px; /* Smaller arrows for mobile */
     }
 
-    .img3 {
-        height: 350px;
-    }
-
-    .img5 {
-        height: 350px;
-    }
-
-    .img10 {
-        height: 250px;
+    .arrow-left, .arrow-right {
+        top: 50%; /* Center the arrows vertically on mobile */
+        transform: translateY(-50%); /* Ensure they stay centered */
     }
 }
 
-
-@media screen and (min-width: 651px) and (max-width: 768px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
-
-    .fitness {
-        flex: 100%;
-        max-width: 100%;
-        padding: 0 15em;
-    }
-
-    .img1 {
-        height: 450px;
-    }
-
-    .img2 {
-        height: 350px;
-    }
-
-    .img3 {
-        height: 350px;
-    }
-
-    .img5 {
-        height: 350px;
-    }
-
-    .img10 {
-        height: 250px;
-    }
+/* Styling for project titles */
+h1, h2 {
+    font-weight: 700;
+    color: #2c3e50; /* Darker color for titles */
+    margin-bottom: 20px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (min-width: 551px) and (max-width: 650px) {
-    /* .column {
-        flex: 100%;
-        max-width: 100%;
-    } */
-
-    .fitness {
-        flex: 100% 1;
-    }
-
-    .column img {
-        padding: 0 2em;
-    }
-
-    .img1 {
-        height: 550px;
-    }
-
-    .img2 {
-        height: 450px;
-    }
-
-    .img3 {
-        height: 450px;
-    }
-
-    .img5 {
-        height: 450px;
-    }
-
-    .img10 {
-        height: 350px;
-    }
+/* Add hover effect for any link */
+/* .middle {
+    color: #3498db;
+    text-decoration: none;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (min-width: 425px) and (max-width: 550px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-        padding: 0 3em;
-    }
+.middle:hover {
+    color: #2980b9;
+    text-decoration: underline;
+} */
 
-    .img1 {
-        height: 575px;
-    }
-
-    .img2 {
-        height: 425px;
-    }
-
-    .img3 {
-        height: 400px;
-    }
-
-    .img5 {
-        height: 450px;
-    }
-
-    .img10 {
-        height: 250px;
-    }
+.fitness {
+    position: relative; /* Set position context for the overlay */
+    display: inline-block; /* Keeps the container's size to the image's size */
 }
 
-@media screen and (max-width: 320px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-        padding: 0 3em;
-    }
-
-    .img1 {
-        height: 300px;
-    }
-
-    .img2 {
-        height: 250px;
-    }
-
-    .img3 {
-        height: 250px;
-    }
-
-    .img10 {
-        height: 300px;
-    }
-
-    .img5 {
-        height: 300px;
-    }
+.fitness img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
 }
 
-@media screen and (min-width: 321px) and (max-width: 375px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-        padding: 0 3em;
-    }
-
-    .img1 {
-        height: 350px;
-    }
-
-    .img2 {
-        height: 300px;
-    }
-
-    .img3 {
-        height: 250px;
-    }
-
-    .img10 {
-        height: 250px;
-    }
-
-    .img5 {
-        height: 300px;
-    }
-
-    button {
-        font-family: 'Century Gothic', 'AppleGothic', sans-serif;
-        cursor: pointer;
-        color: white;
-        background-color: black;
-        font-size: 12px;
-        border-radius: 30px;
-        border: 2px solid white;
-        padding: 0.5em 1em;
-        font-weight: 700;
-    }
+.overlay {
+    position: absolute; /* Position the text on top of the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    display: flex; /* Flexbox to center the text */
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.3s ease; /* Smooth transition for the opacity */
 }
 
-@media screen and (min-width: 376px) and (max-width: 424px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-        padding: 0 3em;
-    }
-
-    .icon {
-        font-size: 50px;
-    }
-
-    .footer-icon {
-        font-size: 4em;
-    }
-
-
-    .button {
-        padding: 4em;
-    }
-
-    button {
-        font-family: 'Century Gothic', 'AppleGothic', sans-serif;
-        cursor: pointer;
-        color: white;
-        background-color: black;
-        font-size: 12px;
-        border-radius: 30px;
-        border: 2px solid white;
-        padding: 0.5em 1em;
-        font-weight: 700;
-    }
-
-    .img1 {
-        height: 350px;
-    }
-
-    .img2 {
-        height: 300px;
-    }
-
-    .img3 {
-        height: 300px;
-    }
-
-    .img10 {
-        height: 250px;
-    }
-
-    .img5 {
-        height: 350px;
-    }
+.fitness:hover .overlay {
+    opacity: 1; /* Show the overlay text on hover */
 }
 
-@media screen and (min-width: 1525px) {
-    /* .column {
-        flex: 50%;
-        max-width: 50%;
-    } */
 
-    .fitness {
-        flex: 100% 1;
-    }
-
-    .column img {
-        padding: 0 2em;
-    }
-
-    .img1 {
-        min-height: 1000px;
-    }
-
-    .img2 {
-        min-height: 1000px;
-    }
-
-    .img3 {
-        min-height: 1000px;
-    }
-
-    .img5 {
-        min-height: 1000px;
-    }
-
-    .img10 {
-        min-height: 500px;
-    }
+/* Optional: Add a shadow to text in important sections */
+h1, h2, .text {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1524px) {
-    .fitness {
-        flex: 100% 1;
-    }
-
-    /* .column img {
-        padding: 0 2em;
-    } */
-
-    .img1 {
-        min-height: 750px;
-    }
-
-    .img2 {
-        min-height: 750px;
-    }
-
-    .img3 {
-        min-height: 750px;
-    }
-
-    .img5 {
-        min-height: 750px;
-    }
-
-    .img10 {
-        height: 400px;
-        width: 350px;
-    }
+/* Optional: Add subtle hover effect for project images */
+.fitness:hover .img10 {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease-in-out;
 }
