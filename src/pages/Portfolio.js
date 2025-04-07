@@ -3,7 +3,7 @@ import progress from "../images/1.png";
 import fitness from "../images/2.png";
 import electric from "../images/3.png";
 import "./Portfolio.css";
-import Carousel from "./Carousel";
+import Carousels from "./Carousels.js";
 
 function Portfolio() {
 
@@ -21,7 +21,7 @@ function Portfolio() {
                     <img className="img10" src={progress} alt="copy" />
                     <img className="img10" src={fitness} alt="copy" />
                     <img className="img10" src={electric} alt="copy" />
-                    <div className="middle">
+                    <div className="overlay">
                         <p>
                             Motivates the reader to embrace personal growth, boost their fitness, and consider new options.
                         </p>
@@ -32,9 +32,10 @@ function Portfolio() {
             <div className="global-container">
                 <h2>The Spoonie Club Instagram Posts</h2>
                 <p>These are a few posts I created for my new Instagram group called The_Spoonie_Club.</p>
+                <br/>
+                <p>PS: A "spoonie" is someone with a chronic illness who has limited energy for daily activities.</p>
             </div>
-
-            <Carousel />
+            <Carousels />
         </div>
     );
 }

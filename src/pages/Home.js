@@ -8,15 +8,17 @@ const Home = () => {
     return (
         <div className='container-fluid'>
             <div id="up" className='about-me'>
-                <h1 className='about-h1-1'>
-                    <strong>Creating</strong>
+                {/* <h1 className='about-h1-1'>
+                    Creating
                 </h1>
                 <h1 className='about-h1-1'>
-                    <strong>Impact.</strong>
-                </h1>
+                    Impact.
+                </h1> */}
                 <p className='about-me'>
                     <br></br>
-                    Hi, I'm Christina. 👋
+                    <strong>
+                        Hi, I'm Christina. 👋
+                    </strong>
                     <br></br>
                     Copywriter in Chicago.
                     <br></br>

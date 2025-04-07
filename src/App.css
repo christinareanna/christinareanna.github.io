@@ -6,39 +6,32 @@
 
 .App {
   text-align: center;
-  /* font-family: 'Avantgarde', 'TeX Gyre Adventor'; */
 }
 
-.footer {
+/* .footer {
   font-size: clamp(.8rem, 1vw, .9rem);
-}
+} */
 
 body {
-  /* font-size: clamp(1em, 3vw, 3em); */
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* font-family: 'Avantgarde', 'TeX Gyre Adventor'; */
-  /* font-family: 'Apple Chancery', 'cursive'; */
-  /* font-family: 'New Century Schoolbook', 'TeX Gyre Schola', 'serif'; */
 }
 
 .about-h1-1 {
   text-align: left;
-  font-size: clamp(4em, 12vw, 15em);
+  font-size: clamp(4em, 6vw, 7em);
   margin: 0 0.8em;
   height: 200px;
   font-family: 'Apple Chancery', 'cursive';
 }
 
-.about-me {
-  padding-top: 4em;
+.about-me p {
+  font-size: 3em;
+  text-align: center;
+  margin: 0 3em;
 }
 
-.copy-container {
-  padding-bottom: 6em;
-  background-color: #f9cad6;
-}
 
 /* below this and above media queries is messy. come back to clean up */
 .link {
@@ -60,14 +53,6 @@ body {
 .self-img {
   width: 300px;
   height: 300px;
-}
-
-.avatar {
-  width: 100%;
-  padding: 10px;
-  max-width: 400px;
-  height: auto;
-  align-items: center;
 }
 
 .container-fluid {
@@ -96,22 +81,6 @@ body {
   max-width: 200rem;
 }
 
-
-
-/* .button {
-  width: 6em;
-  border-radius: 5px;
-  border: 0;
-  cursor: pointer;
-  font-size: clamp(.3rem, .2rem + 5vw, 1.2rem);
-  margin: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  transition: all 0.3s;
-  font-weight: 700;
-} */
-
-
 .projects {
   font-size: 30px;
 }
@@ -129,22 +98,18 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .about-me p {
-    font-size: 1.5em;
-    text-align: left;
-    margin: 0 2.5em;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0 0.3em;
   }
 
-  .about-h1-1 {
+  /* .about-h1-1 {
     text-align: left;
     font-size: clamp(4em, 12vw, 15em);
     margin: 0 0.8em;
     height: 50px;
     font-family: 'Apple Chancery', 'cursive';
-  }
-  
-  .about-me {
-    padding-top: 4em;
-  }
+  } */
 
   .global-container p {
     text-align: center;
@@ -157,7 +122,6 @@ body {
     padding: 5.5em 0;
   }
 
- 
 
   button {
     font-family: 'Century Gothic', 'AppleGothic', sans-serif;
@@ -180,27 +144,27 @@ body {
 
 @media screen and (min-width: 376px) and (max-width: 424px) {
   .about-me p {
-    font-size: 1.5em;
-    text-align: left;
-    margin: 0 2.5em;
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0.5em;
   }
 
-  .about-h1-1 {
+  /* .about-h1-1 {
     text-align: left;
     font-size: clamp(4em, 12vw, 15em);
-    margin: 0 0.8em;
+    margin: 0;
     height: 50px;
     font-family: 'Apple Chancery', 'cursive';
-  }
+  } */
   
-  .about-me {
+  /* .about-me {
     padding-top: 4em;
-  }
+  } */
 
   .global-container p {
     text-align: center;
     font-size: 1.6em;
-    margin: 0.5em 1em;
+    margin: 0.5em;
   }
 
   .button {
@@ -231,9 +195,9 @@ body {
   }
 
   .about-me p {
-    font-size: 1.5em;
-    text-align: left;
-    margin: 0 2.5em;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0 0.4em;
   }
 
   .about-h1-1 {
@@ -244,9 +208,9 @@ body {
     font-family: 'Apple Chancery', 'cursive';
   }
   
-  .about-me {
+  /* .about-me {
     padding-top: 4em;
-  }
+  } */
 
   .global-container p {
     text-align: center;
@@ -279,8 +243,8 @@ body {
 @media screen and (min-width: 551px) and (max-width: 650px) {
   .about-me p {
     font-size: 1.5em;
-    text-align: left;
-    margin: 0 2.5em;
+    text-align: center;
+    margin: 0;
   }
 
   .about-h1-1 {
@@ -291,9 +255,9 @@ body {
     font-family: 'Apple Chancery', 'cursive';
   }
   
-  .about-me {
+  /* .about-me {
     padding-top: 4em;
-  }
+  } */
 
   .global-container p {
     text-align: center;
@@ -364,22 +328,22 @@ body {
   }
 
   .about-me p {
-    font-size: 2em;
-    text-align: left;
-    margin: 0 2.5em;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 3em;
   }
 
   .about-h1-1 {
     text-align: left;
-    font-size: clamp(4em, 12vw, 15em);
+    font-size: clamp(2em, 6vw, 8em);
     margin: 0 0.5em;
     height: 110px;
     font-family: 'Apple Chancery', 'cursive';
   }
   
-  .about-me {
+  /* .about-me {
     padding-top: 4em;
-  }
+  } */
 
   .self-img {
     width: 500px;
@@ -397,9 +361,9 @@ body {
 @media screen and (min-width: 651px) and (max-width: 768px) {
 
   .about-me p {
-    font-size: 1.5em;
-    text-align: left;
-    margin: 0 2.5em;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 3em;
   }
 
   .about-h1-1 {
@@ -410,9 +374,9 @@ body {
     font-family: 'Apple Chancery', 'cursive';
   }
   
-  .about-me {
+  /* .about-me {
     padding-top: 4em;
-  }
+  } */
 
   .global-container p {
     text-align: center;
@@ -485,19 +449,15 @@ body {
 
   .about-me p {
     font-size: 3em;
-    text-align: left;
+    text-align: center;
     margin: 0 3em;
   }
 
   .about-h1-1 {
     text-align: left;
-    font-size: clamp(4em, 12vw, 15em);
-    margin: 0 0.5em;
-    height: 180px;
+    font-size: clamp(3em, 10vw, 10em);
+    /* margin: 0 0.5em; */
+    height: 120px;
     font-family: 'Apple Chancery', 'cursive';
-  }
-  
-  .about-me {
-    padding-top: 4em;
   }
 }

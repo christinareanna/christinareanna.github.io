@@ -5,21 +5,22 @@
     width: 100%;
 }
 
-.project-container h1 {
-    font-family: 'Apple Chancery', 'cursive';
-    font-size: 5em;
+.project-container h2 {
+    font-family: 'Roboto', 'Apple Chancery', 'cursive';
     font-size: clamp(2em, 4vw, 5em);
 }
 
 /* Project Container */
 .project-container {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4; /* Subtle background color */
+    background-color: #f4f4f4;
+    /* Subtle background color */
     padding: 40px;
 }
 
 .global-container {
-    max-width: 1200px; /* Max width to ensure it doesn’t stretch too much on larger screens */
+    max-width: 1200px;
+    /* Max width to ensure it doesn’t stretch too much on larger screens */
     margin: 0 auto;
     padding: 20px;
 }
@@ -27,7 +28,8 @@
 .global-container p {
     font-size: 18px;
     line-height: 1.6;
-    color: #333; /* Dark gray text for better readability */
+    color: #333;
+    /* Dark gray text for better readability */
     margin-bottom: 20px;
     text-align: center;
 }
@@ -44,14 +46,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; /* Adds space between the images */
+    gap: 30px;
+    /* Adds space between the images */
     flex-wrap: wrap;
 }
 
 .fitness {
     position: relative;
     width: 100%;
-    max-width: 400px; /* Adjust as needed */
+    max-width: 400px;
+    /* Adjust as needed */
     border-radius: 8px;
     overflow: hidden;
 }
@@ -61,119 +65,73 @@
     height: auto;
 }
 
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 8px;
-    opacity: 0; /* Hidden by default */
-    transition: opacity 0.3s ease; /* Smooth fade-in effect */
-}
-
 /* Show the text overlay when the image is hovered */
-.fitness:hover .middle {
-    opacity: 1; /* Make it visible when hovering */
+.fitness:hover .overlay {
+    opacity: 1;
+    width: 100%;
+    /* Make it visible when hovering */
 }
 
-/* Optional: Text styling */
-.middle p {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.5;
-    color: white;
-    max-width: 80%;
-    margin: 0 auto;
-}
 
-/* Carousel Section Styling */
-.carousel-container {
-    position: relative; /* Positioning context for arrows */
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    width: 80%;
-    max-width: 500px; /* Optional: limit the width */
-    margin: 0 auto;
-}
 
-/* Carousel Items Wrapper */
+/* Carousel items wrapper */
 .carousel-items-wrapper {
     display: flex;
-    transition: transform 1s cubic-bezier(0.39, 0.575, 0.565, 1); /* Smooth transition */
+    transition: transform 0.3s ease;
+    /* Smooth transition */
     width: 100%;
 }
 
-/* Individual Carousel Item */
-.carousel-item {
-    flex: 0 0 100%; /* Each image takes up 100% of the container's width */
+/* Carousel section styling */
+.carousel-container {
+    position: relative;
+    /* Position for arrows */
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 80%;
+    max-width: 500px;
+    /* Limits the width */
+    margin: 0 auto;
 }
 
-/* Carousel Item Image */
+/* Individual carousel item */
+
+.carousel-item {
+    width: 100%;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .carousel-item img {
-    width: 100%; /* Images will take the full width of their container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures the image covers the container */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Ensures images fill the container without distortion */
 }
 
-/* Arrow styles */
+/* Arrows */
 .arrow {
-    position: absolute; /* Position them relative to the container */
-    top: 50%; /* Vertically center */
-    transform: translateY(-50%); /* Adjust to perfectly center vertically */
-    cursor: pointer;
-    font-size: 36px; /* Arrow size */
-    color: white; /* Arrow color */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    /* Base size for arrows */
+    color: white;
     z-index: 2;
 }
 
-/* Left Arrow */
 .arrow-left {
-    left: 10px; /* Position from the left side of the container */
+    left: 10px;
+    /* Position left arrow */
 }
 
-/* Right Arrow */
 .arrow-right {
-    right: 10px; /* Position from the right side of the container */
-}
-
-/* Add Unicode arrows or use custom icons for a more modern look */
-.arrow-left::before {
-    content: '〈'; /* Left arrow */
-    font-size: 42px;
-}
-
-.arrow-right::before {
-    content: '〉'; /* Right arrow */
-    font-size: 42px;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-    .carousel-container {
-        max-width: 100%; /* Ensure full width on smaller screens */
-    }
-
-    .carousel-item img {
-        width: 100%; /* Make sure the images scale well on mobile */
-        height: auto;
-    }
-
-    .arrow {
-        font-size: 24px; /* Smaller arrows for mobile */
-    }
-
-    .arrow-left, .arrow-right {
-        top: 50%; /* Center the arrows vertically on mobile */
-        transform: translateY(-50%); /* Ensure they stay centered */
-    }
+    right: 10px;
+    /* Position right arrow */
 }
 
 /* Styling for project titles */
@@ -183,54 +141,197 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
-/* Add hover effect for any link */
-/* .middle {
-    color: #3498db;
-    text-decoration: none;
-}
-
-.middle:hover {
-    color: #2980b9;
-    text-decoration: underline;
-} */
-
 .fitness {
-    position: relative; /* Set position context for the overlay */
-    display: inline-block; /* Keeps the container's size to the image's size */
+    position: relative;
+    /* Position for the overlay */
+    display: inline-block;
+    /* Keeps the container's size to the image's size */
+    width: 100%;
+    height: auto; /* Let the height adjust automatically based on content */
 }
 
 .fitness img {
-    width: 100%; /* Make the image responsive */
+    width: 100%;
     height: auto;
+    display: block;
+    /* Removes bottom space under the image */
 }
 
 .overlay {
-    position: absolute; /* Position the text on top of the image */
-    top: 0;
+    position: absolute;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; /* Set overlay height */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white; /* Text color */
-    display: flex; /* Flexbox to center the text */
+    display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Initially hide the text */
-    transition: opacity 0.3s ease; /* Smooth transition for the opacity */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+/* Text styling */
+.overlay p {
+    font-weight: 500;
+    font-size: clamp(14px, 4vw, 22px);
+    line-height: 1.5;
+    color: white;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .fitness:hover .overlay {
-    opacity: 1; /* Show the overlay text on hover */
+    opacity: 1; /* Shows overlay text on hover */
 }
 
-
-/* Optional: Add a shadow to text in important sections */
+/* Added a shadow to text in some sections */
 h1, h2, .text {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* Optional: Add subtle hover effect for project images */
+/* Added subtle hover for project images */
 .fitness:hover .img10 {
-    transform: scale(1.05); /* Slight zoom effect */
+    transform: scale(1.05); /* Slight fun zoom effect */
     transition: transform 0.3s ease-in-out;
+}
+
+
+/* Arrow styles */
+.arrow {
+    position: absolute;
+    /* Position them relative to the container */
+    top: 50%;
+    /* Vertically center */
+    transform: translateY(-50%);
+    /* Adjust to perfectly center vertically */
+    cursor: pointer;
+    font-size: 36px;
+    /* Arrow size */
+    color: white;
+    /* Arrow color */
+    z-index: 2;
+}
+
+/* Left arrow */
+.arrow-left {
+    left: 10px;
+    /* Position from the left side of the container */
+}
+
+/* Right arrow */
+.arrow-right {
+    right: 10px;
+    /* Position from the right side of the container */
+}
+
+/* Added arrows */
+.arrow-left::before {
+    content: '〈';
+    /* Left arrow */
+    font-size: 42px;
+}
+
+.arrow-right::before {
+    content: '〉';
+    /* Right arrow */
+    font-size: 42px;
+}
+
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    .carousel-container {
+        width: 40%;
+        /* 60% width on larger screens */
+        max-width: 100%;
+        /* Allow full width */
+    }
+
+    .arrow {
+        font-size: 30px;
+        /* Larger arrows for desktop */
+    }
+
+    .arrow-left {
+        left: 30px;
+    }
+
+    .arrow-right {
+        /* Position arrows a bit more centrally */
+        right: 30px;
+    }
+}
+
+/* Tablet Styles (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carousel-container {
+        width: 60%;
+        /* Reduce the container width to 75% for tablets */
+        max-width: 100%;
+        /* Allow it to stretch to full width if needed */
+    }
+
+    .arrow {
+        font-size: 28px;
+        /* Slightly larger arrows for tablet */
+    }
+
+    .arrow-left {
+        left: 30px;
+    }
+
+    .arrow-right {
+        /* Position arrows a bit more centrally */
+        right: 30px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 80%;
+        /* Ensure it takes up 90% of the screen */
+        max-width: 100%;
+        /* Allow full width on mobile */
+    }
+
+    .arrow {
+        font-size: 16px;
+        /* Smaller arrows for mobile */
+        color: white;
+        transform: scale(0.8); /* Scale the arrows down if they are icons/SVGs */
+    }
+
+    .arrow-left {
+        left: -5px;
+        transform: translate(-50%, -50%); /* Adjust to center vertically, align left */
+    }
+
+    .arrow-right {
+        /* Position arrows a bit more centrally */
+        right: -5px;
+        transform: translate(50%, -50%); /* Adjust to center vertically, align left */
+    }
+}
+
+/* Small Screen Styles (under 480px) */
+@media (max-width: 480px) {
+    .carousel-container {
+        width: 100%;
+    }
+
+    .arrow {
+        font-size: 12px;
+    }
+
+    .arrow-left {
+        left: 0%;
+        transform: translate(-50%, -50%); /* Adjust to center vertically, align left */
+    }
+
+    .arrow-right {
+        right: 0%;
+        transform: translate(50%, -50%); /* Adjust to center vertically, align left */
+    }
 }
