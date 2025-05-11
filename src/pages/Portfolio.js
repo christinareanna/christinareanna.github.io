@@ -29,6 +29,8 @@ function Portfolio() {
                             Motivates the reader to embrace personal growth, boost their fitness, and consider new options.
                         </p>
                     </div>
+                </div>
+                <div className="fitness">
                     <br />
                     <hr />
                     <br />
