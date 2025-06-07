@@ -5,6 +5,12 @@ import electric from "../images/3.png";
 import headphones1 from "../images/headphones.png";
 import headphones2 from "../images/headphones2.png";
 import headphones3 from "../images/headphones3.png";
+import dogtrainingemail from "../images/dogtrainingemail.png";
+import article from "../images/articlewritingexample.png";
+import listicle from "../images/listiclewritingexample.png";
+import gaming1 from "../images/gaming1.png";
+import gaming2 from "../images/gaming2.png";
+import gaming3 from "../images/gaming3.png";
 import "./Portfolio.css";
 import Carousels from "./Carousels.js";
 
@@ -42,6 +48,44 @@ function Portfolio() {
                             Highlights the reader's listening experience by connecting them to the emotional side of sound.
                         </p>
                     </div>
+                </div>
+                <div className="fitness">
+                    <br />
+                    <hr />
+                    <br />
+                    <img className="img10" src={gaming1} alt="copy" />
+                    <img className="img10" src={gaming2} alt="copy" />
+                    <img className="img10" src={gaming3} alt="copy" />
+                    <div className="overlay">
+                        <p>
+                            Gamers want information as quickly as possible. Short, smart, and click-worthy copy is the strategy.
+                        </p>
+                    </div>
+                </div>
+                <div className="global-container">
+                    <h2>Copy Mock Ups</h2>
+                    <p>Click any image to give the copy a closer read.</p>
+                </div>
+                <div className="fitness">
+                    <a href={dogtrainingemail} target="_blank" rel="noopener noreferrer">
+                        <img className="dogtrainingemail" src={dogtrainingemail} alt="copy" />
+                    </a>
+                </div>
+                <div className="fitness">
+                    <br />
+                    <hr />
+                    <br />
+                    <a href={article} target="_blank" rel="noopener noreferrer">
+                        <img className="article" src={article} alt="copy" />
+                    </a>
+                </div>
+                <div className="fitness">
+                    <br />
+                    <hr />
+                    <br />
+                    <a href={listicle} target="_blank" rel="noopener noreferrer">
+                        <img className="listicle" src={listicle} alt="copy" />
+                    </a>
                 </div>
             </div>
 
