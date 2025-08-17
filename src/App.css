@@ -113,8 +113,8 @@ body {
 
   .global-container p {
     text-align: center;
-    font-size: 1.6em;
-    margin: 0.5em 1em;
+    font-size: 14px;
+    margin: 0.2em 0;
   }
 
   .button {
@@ -309,7 +309,7 @@ body {
   }
 
   .global-container p {
-    font-size: clamp(1.8em, 2vw, 3em);
+    font-size: 1.8em;
     margin: 1em;
     text-align: center;
   }

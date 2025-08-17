@@ -13,7 +13,7 @@
 /* Project Container */
 .project-container {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e4c4f8;
     /* Subtle background color */
     padding: 40px;
 }
@@ -22,11 +22,11 @@
     max-width: 1200px;
     /* Max width to ensure it doesn’t stretch too much on larger screens */
     margin: 0 auto;
-    padding: 20px;
+    padding: 8px;
 }
 
 .global-container p {
-    font-size: 18px;
+    font-size: clamp(12px, 2vw, 16px);
     line-height: 1.6;
     color: #333;
     /* Dark gray text for better readability */
@@ -67,10 +67,18 @@
 }
 
 /* Show the text overlay when the image is hovered */
-.fitness:hover .overlay {
+/* .fitness:hover .overlay {
     opacity: 1;
-    width: 100%;
+    width: 100%; */
     /* Make it visible when hovering */
+/* } */
+
+.img-text {
+    font-size: clamp(16px, 2vw, 26px);
+    color: white;
+    text-align: left;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
 }
 
 
