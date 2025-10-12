@@ -25,6 +25,8 @@ const Home = () => {
                     Inspired by the user experience.
                     <br></br>
                     Powered by an education in software engineering.
+                    <br></br>
+                    Not just a copywriter, I'm your target audience.
                 </p>
                 <img className="self-img" src={SelfImage} alt="me" />
             </div>
