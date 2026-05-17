@@ -1,0 +1,71 @@
+body {
+    background-color: #7df4ce;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    text-align: center;
+    font-size: 24px;
+    margin: 0 20px;
+}
+
+.container-fluid img {
+    max-width: 250px;
+    max-height: 400px;
+    margin-top: 30px;
+    border-radius: 20%;
+}
+
+.masonry-container {
+    display: block;
+    /* Columns require block display */
+    column-count: 1;
+    column-gap: 20px;
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive breakpoints to make it not go weeeee: Adds columns as screen space increases */
+@media (min-width: 600px) {
+    .masonry-container {
+        column-count: 2;
+        /* 2 columns on tablets / large phones */
+    }
+}
+
+@media (min-width: 1024px) {
+    .masonry-container {
+        column-count: 3;
+        /* 3 columns on desktop monitors */
+    }
+}
+
+.email-module-segment {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.pin-card {
+    break-inside: avoid;
+    /* Keeps text attached to images */
+    display: inline-block;
+    /* Keeps cards from glitching across columns */
+    width: 100%;
+    /* Spans the full width of the assigned column */
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* border: 1px solid #e2e8f0; */
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) border-box;
+    border: 4px solid transparent;
+}
+
+.pin-info {
+    margin: 10px 30px;
+}

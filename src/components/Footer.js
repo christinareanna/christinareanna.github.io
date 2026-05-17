@@ -1,6 +1,5 @@
 import React from "react";
 import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
-import '../darkMode.css';
 
 
 export const Footer = () => {

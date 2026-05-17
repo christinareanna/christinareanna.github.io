@@ -1,36 +1,27 @@
 import React from 'react';
-import Portfolio from './Portfolio';
-import SelfImage from "../images/selfportrait.png";
-import "../App.css";
+import newHero from "../images/newhero.jpg";
 
 const Home = () => {
 
     return (
         <div className='container-fluid'>
+            <img src={newHero} alt='Chris'/>
             <div id="up" className='about-me'>
-                {/* <h1 className='about-h1-1'>
-                    Creating
-                </h1>
-                <h1 className='about-h1-1'>
-                    Impact.
-                </h1> */}
                 <p className='about-me'>
                     <br></br>
+                    <br></br>
                     <strong>
-                        Hi, I'm Christina. 👋
+                        Hi, I'm Chris. 👋
                     </strong>
                     <br></br>
-                    Copywriter in Chicago.
+                    Analyst at Accenture.
                     <br></br>
-                    Inspired by the user experience.
+                    Copywriter for the #1 consumer tech specialty retailer in the U.S.
                     <br></br>
-                    Powered by an education in software engineering.
-                    <br></br>
-                    Not just a copywriter, I'm your target audience.
+                    Website is a work in progress as I update the layout.
                 </p>
-                <img className="self-img" src={SelfImage} alt="me" />
+                {/* <img className="self-img" src={SelfImage} alt="me" /> */}
             </div>
-            <Portfolio />
         </div >
     )
 }
