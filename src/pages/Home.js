@@ -18,7 +18,9 @@ const Home = () => {
                     <br></br>
                     Copywriter for the #1 consumer tech specialty retailer in the U.S.
                     <br></br>
-                    Website is a work in progress as I update the layout.
+                    Emails have been redesigned for confidentiality.
+                    <br></br>
+                    Website is a work in progress.
                 </p>
                 {/* <img className="self-img" src={SelfImage} alt="me" /> */}
             </div>
