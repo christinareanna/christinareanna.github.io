@@ -1,24 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import GridLayout from './pages/gridLayout';
-import Home from "./pages/Home.js";
+import Home from './pages/Home';
+import './App.css';
 
-const AppRoutes = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<GridLayout />} />
-    </Routes>
-  );
-};
 
 const App = () => {
 
   return (
     <div className="App">
-        <Router>
-          <Home />
-          <AppRoutes />
-        </Router>
+      <Home />
     </div>
   );
 };
