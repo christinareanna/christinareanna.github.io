@@ -1,0 +1,70 @@
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100%;
+    background-color: #111;
+    padding: 16px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.music {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 50px;
+}
+
+.song {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title,
+.artist {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.previous-button,
+.next-button {
+    color: white;
+    background-color: black;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0;
+}
+
+.play-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    padding-left: 3px;
+}

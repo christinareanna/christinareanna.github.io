@@ -1,13 +1,23 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 body {
   overscroll-behavior: none;
   margin: 0;
-  font-size: 12px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  font-family: monospace, cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: black;
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
 }
 
-
 code {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: monospace, cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.App {
+  width: auto;
+  height: auto;
+  font-family: monospace;
 }
